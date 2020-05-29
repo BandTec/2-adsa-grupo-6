@@ -6,7 +6,6 @@
 package com.mycompany.teste.oshi;
 
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Random;
 import javax.swing.Timer;
 
@@ -16,6 +15,7 @@ import javax.swing.Timer;
  */
 public class Monitoramento extends javax.swing.JFrame {
     Ram ram = new Ram();
+    Cpu cpu = new Cpu();
     
     /**
      * Creates new form TesteMonitoramento
@@ -44,13 +44,21 @@ public class Monitoramento extends javax.swing.JFrame {
         lblTotalRam.setText(String.format("/ %.1f GB", ram.getMemoriaTotal()));
         //lblTotalCpu.setText(String.format("/ %.2f GHz ", pc.getPorcentagemAtual()));
         
+       
+        
+        
         Timer timer = new Timer(1500, (ActionEvent e) -> {
             
             Integer porcentagem = random.nextInt(101);
             
+            
             pbCpu.setValue(porcentagem);
             lblPorCpu.setText(String.format("%d", porcentagem));
             lblVelCpu.setText(String.format("%.2f", 3.10 * porcentagem/100));
+            jLabel56.setText(String.format("%.2f °C", cpu.mostrarTemperatura()));
+            lblMac.setText(cpu.mostrarMacAddress());
+            lblSO.setText(cpu.mostrarSO());
+            
             
             pbRam.setValue(ram.getPorcentagemAtual().intValue());
             lblPorRam.setText(String.format("%d", ram.getPorcentagemAtual().intValue()));
@@ -59,6 +67,9 @@ public class Monitoramento extends javax.swing.JFrame {
             pbDisco.setValue(porcentagem);
             lblPorDisco.setText(String.format("%d", porcentagem));
             lblTempDisco.setText(String.format("%.2f ms", 20.00 * porcentagem/100));
+            
+            
+            
             
             
             pbChrome.setValue(porcentagem * 50/100);
@@ -100,7 +111,7 @@ public class Monitoramento extends javax.swing.JFrame {
         lblPorDisco = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         jLabel47 = new javax.swing.JLabel();
-        jLabel48 = new javax.swing.JLabel();
+        lblSO = new javax.swing.JLabel();
         jLabel49 = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
         jLabel51 = new javax.swing.JLabel();
@@ -109,7 +120,7 @@ public class Monitoramento extends javax.swing.JFrame {
         jLabel54 = new javax.swing.JLabel();
         jLabel55 = new javax.swing.JLabel();
         jLabel56 = new javax.swing.JLabel();
-        jLabel57 = new javax.swing.JLabel();
+        lblMac = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
         jPanel11 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
@@ -169,7 +180,7 @@ public class Monitoramento extends javax.swing.JFrame {
 
         jLabel47.setText("Sistema Operacional");
 
-        jLabel48.setText("Windows 10");
+        lblSO.setText(".......");
 
         jLabel49.setText("Processador");
 
@@ -177,17 +188,17 @@ public class Monitoramento extends javax.swing.JFrame {
 
         jLabel51.setText("Disco Rígido");
 
-        jLabel52.setText("Rede");
+        jLabel52.setText("Temperatura");
 
-        jLabel53.setText("IP");
+        jLabel53.setText("MacAdress");
 
         jLabel54.setText("Intel i5-7200U 3.10GHz");
 
         jLabel55.setText("7.9 GB");
 
-        jLabel56.setText("Conectado à rede (Digital-HLG)");
+        jLabel56.setText("0.0");
 
-        jLabel57.setText("10.3.0.122");
+        lblMac.setText("00:00:00:00:00:00");
 
         jLabel58.setText("1000GB (450GB Disponível)");
 
@@ -206,7 +217,7 @@ public class Monitoramento extends javax.swing.JFrame {
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel59)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
                 .addComponent(pbChrome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -313,22 +324,24 @@ public class Monitoramento extends javax.swing.JFrame {
                             .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel58)
-                            .addComponent(jLabel57)
-                            .addComponent(jLabel56)
-                            .addComponent(jLabel55)
-                            .addComponent(jLabel54)
-                            .addComponent(jLabel48))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel58)
+                                    .addComponent(lblMac)
+                                    .addComponent(jLabel56)
+                                    .addComponent(jLabel55)
+                                    .addComponent(jLabel54))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(lblSO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel47)
-                    .addComponent(jLabel48))
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblSO, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel49)
@@ -348,7 +361,7 @@ public class Monitoramento extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel53)
-                    .addComponent(jLabel57))
+                    .addComponent(lblMac))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
@@ -410,56 +423,56 @@ public class Monitoramento extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(106, 106, 106)
                         .addComponent(jLabel7)))
-                .addGap(84, 84, 84)
+                .addGap(18, 18, 18)
                 .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(27, 27, 27))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
-                .addComponent(jLabel7)
-                .addGap(31, 31, 31)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(pbDisco, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblPorDisco)
-                            .addComponent(jLabel5))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblTempDisco, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(pbCpu, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblPorCpu)
-                            .addComponent(jLabel6))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblTotalCpu)
-                            .addComponent(lblVelCpu)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(pbRam, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblPorRam)
-                            .addComponent(jLabel4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblTotalRam)
-                            .addComponent(lblConsumoRam))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(26, 26, 26))
+                        .addComponent(jLabel7)
+                        .addGap(31, 31, 31)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(pbDisco, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblPorDisco)
+                                    .addComponent(jLabel5))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(lblTempDisco, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(pbCpu, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblPorCpu)
+                                    .addComponent(jLabel6))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblTotalCpu)
+                                    .addComponent(lblVelCpu)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(pbRam, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblPorRam)
+                                    .addComponent(jLabel4))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblTotalRam)
+                                    .addComponent(lblConsumoRam))))
+                        .addGap(0, 52, Short.MAX_VALUE)))
+                .addContainerGap())
         );
 
         pack();
@@ -507,7 +520,6 @@ public class Monitoramento extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
@@ -517,7 +529,6 @@ public class Monitoramento extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
@@ -530,9 +541,11 @@ public class Monitoramento extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JLabel lblConsumoRam;
+    private javax.swing.JLabel lblMac;
     private javax.swing.JLabel lblPorCpu;
     private javax.swing.JLabel lblPorDisco;
     private javax.swing.JLabel lblPorRam;
+    private javax.swing.JLabel lblSO;
     private javax.swing.JLabel lblTempDisco;
     private javax.swing.JLabel lblTotalCpu;
     private javax.swing.JLabel lblTotalRam;
