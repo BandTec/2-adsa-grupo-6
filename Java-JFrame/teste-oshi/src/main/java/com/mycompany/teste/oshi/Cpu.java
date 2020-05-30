@@ -6,10 +6,15 @@
 package com.mycompany.teste.oshi;
 
 import java.time.Instant;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.Map;
+import java.util.stream.Collectors;
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
 import oshi.hardware.HardwareAbstractionLayer;
 import oshi.hardware.NetworkIF;
+import oshi.software.os.OSProcess;
 import oshi.software.os.OperatingSystem;
 
 /**
@@ -24,6 +29,8 @@ public class Cpu {
     
     
     CentralProcessor cpu = hal.getProcessor();
+    
+    Double fraq = cpu.getProcessorIdentifier().getVendorFreq() / Math.pow(10, 9);
     
   
     private Long cpuTotal = cpu.getMaxFreq();
@@ -67,11 +74,23 @@ public class Cpu {
     }   
     
     
+    public String printProcessor() {
+        return hal.getProcessor().getProcessorIdentifier().getName();
+    }
     
     
     
     
-    
-    
+    public Double printFraq() {
+        return fraq;
+    }
     
 }
+    
+    
+    
+    
+    
+    
+    
+
