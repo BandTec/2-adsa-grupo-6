@@ -12,10 +12,12 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import oshi.SystemInfo;
 import oshi.hardware.CentralProcessor;
+import oshi.hardware.CentralProcessor.TickType;
 import oshi.hardware.HardwareAbstractionLayer;
 import oshi.hardware.NetworkIF;
 import oshi.software.os.OSProcess;
 import oshi.software.os.OperatingSystem;
+import oshi.util.Util;
 
 /**
  *
@@ -40,6 +42,17 @@ public class Cpu {
     //public Double getCpuTotal() {
        // return cpuTotal / Math.pow(10,9);
     //}
+    
+    double porcentagemCpu ;
+    
+    public Double getPorcentagemCpu(){
+        long[] prevTicks = cpu.getSystemCpuLoadTicks();
+        
+        Util.sleep(1000);  
+             
+        return porcentagemCpu = cpu.getSystemCpuLoadBetweenTicks(prevTicks) *100;
+    }
+    
     
     
     
@@ -84,6 +97,11 @@ public class Cpu {
     public Double printFraq() {
         return fraq;
     }
+    
+    
+    
+    
+        
     
 }
     

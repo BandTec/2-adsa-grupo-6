@@ -45,8 +45,9 @@ public class Monitoramento extends javax.swing.JFrame {
         
         lblTotalCpu.setText(String.format(" %.2f  GHz", cpu.printFraq()));
         //lblTotalCpu.setText(String.format("/ %.2f GHz ", pc.getPorcentagemAtual()));
+        lblPorCpu.setText(String.format(" %.2f ", cpu.getPorcentagemCpu()));
         
-       
+        pbCpu.setValue(cpu.getPorcentagemCpu().intValue());
         
         
         Timer timer = new Timer(1500, (ActionEvent e) -> {
@@ -54,11 +55,11 @@ public class Monitoramento extends javax.swing.JFrame {
             Integer porcentagem = random.nextInt(101);
             
             
-            pbCpu.setValue(porcentagem);
             
-            //lblPorCpu.setText(cpu.printProcessor());
             
-          //  lblPorCpu.setText(String.format("%d", porcentagem));
+           //lblPorCpu.setText(cpu.printProcessor());
+            
+           //  lblPorCpu.setText(String.format("%d", porcentagem));
            // lblVelCpu.setText(String.format("%.2f", 3.10 * porcentagem/100));
             jLabel56.setText(String.format("%.2f °C", cpu.mostrarTemperatura()));
             lblMac.setText(cpu.mostrarMacAddress());
@@ -102,7 +103,6 @@ public class Monitoramento extends javax.swing.JFrame {
 
         jLabel7 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         pbCpu = new javax.swing.JProgressBar();
         lblPorCpu = new javax.swing.JLabel();
         lblTotalCpu = new javax.swing.JLabel();
@@ -140,6 +140,7 @@ public class Monitoramento extends javax.swing.JFrame {
         jPanel14 = new javax.swing.JPanel();
         jLabel61 = new javax.swing.JLabel();
         pbSpotify = new javax.swing.JProgressBar();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -148,8 +149,6 @@ public class Monitoramento extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
         jLabel2.setText("CPU");
-
-        jLabel6.setText("%");
 
         pbCpu.setForeground(new java.awt.Color(5, 133, 234));
 
@@ -224,7 +223,7 @@ public class Monitoramento extends javax.swing.JFrame {
             .addGroup(jPanel12Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblTeste)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 134, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 92, Short.MAX_VALUE)
                 .addComponent(pbChrome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -374,6 +373,8 @@ public class Monitoramento extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jLabel6.setText("%");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -382,21 +383,22 @@ public class Monitoramento extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addComponent(jLabel2))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(34, 34, 34)
-                                .addComponent(pbCpu, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(46, 46, 46)
-                                .addComponent(lblPorCpu, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addGap(46, 46, 46)
-                                .addComponent(lblTotalCpu, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(56, 56, 56)
+                                .addComponent(lblPorCpu, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel6)
+                                .addGap(93, 93, 93))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(44, 44, 44)
+                                    .addComponent(jLabel2))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(34, 34, 34)
+                                    .addComponent(pbCpu, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(23, 23, 23)
+                                    .addComponent(lblTotalCpu, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(lblConsumoRam)
