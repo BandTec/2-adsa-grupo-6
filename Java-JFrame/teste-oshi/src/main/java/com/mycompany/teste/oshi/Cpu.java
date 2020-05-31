@@ -61,6 +61,8 @@ public class Cpu {
         for (NetworkIF net : hal.getNetworkIFs()) {
             if ("wlan0".equals(net.getName())) {
                 return net.getMacaddr();
+            } else {
+                net.getName();
             }
         }
         
