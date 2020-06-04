@@ -37,7 +37,20 @@ public class Monitoramento extends javax.swing.JFrame {
         pbDisco.setMaximum(100);
         pbDisco.setMinimum(0);
             
-        lblTotalRam.setText(String.format("/ %.1f GB", ram.getMemoriaTotal()));
+       
+         lblTotalRam.setText(String.format("/ %.1f GB", ram.getMemoriaTotal()));
+        
+        
+        
+//        if (ram.getMemoriaEmUso() >= 80.0 ) {
+//            SlackMessage slackMessage = SlackMessage.builder()
+//            .username("ADMIN")
+//            .text("A memoria em uso passou de 80%")
+//            .icon_emoji(":sad:")
+//            .build();
+//            SlackUtils.sendMessage(slackMessage);
+//        }
+        
         
         lblTotalCpu.setText(String.format(" %.2f  GHz", cpu.printFraq()));
         //lblTotalCpu.setText(String.format("/ %.2f GHz ", pc.getPorcentagemAtual()));
@@ -60,6 +73,8 @@ public class Monitoramento extends javax.swing.JFrame {
             lblProcessador.setText(cpu.printProcessor());
             lblDiscoTotal.setText(disco.printDiscoDisponivel());
             lblDiscoDisponivel.setText(disco.printDiscoTotal());
+            
+            
             
             
             lblRam.setText(String.format("%.2f GB", ram.getMemoriaTotal()));
