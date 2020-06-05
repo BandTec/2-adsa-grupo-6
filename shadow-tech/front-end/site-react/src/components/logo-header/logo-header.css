@@ -1,0 +1,10 @@
+.img-logo{
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 1015px){
+    .div-header-container{
+        flex-direction: column;
+    }
+}
