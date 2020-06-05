@@ -16,6 +16,17 @@ export default function Processos() {
     
     return (
         <>
+            <div className="topnav">
+                <S.topnav>
+                <ul>
+                <li><a href="" >Sair</a></li>
+                <li><a href="">Suporte</a></li>
+                <li><a href="">Aluno</a></li>
+                <li><a href="">Home</a></li>
+                </ul>
+                </S.topnav>
+            </div>
+
             <div className='containerListaAluno'>
                 <S.divProcessos>
                     {alunos.map(result =>
