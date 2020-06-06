@@ -23,30 +23,18 @@ public class Disco {
         totalDisponivel = 0;
         totalTotal = 0;
         porcentagem = 0.0;
-        System.out.println("\n\nSISTEMA DE ARQUIVOS:");
-        System.out.println(String.format("\n Descritor de Arquivo: %d/%d", 
-                fileSystem.getOpenFileDescriptors(),
-                fileSystem.getMaxFileDescriptors()
-            )
-        );
+       
         OSFileStore[] fsArray = fileSystem.getFileStores();
         for (OSFileStore fs : fsArray) {  
             long disponivel = fs.getUsableSpace();
             long total = fs.getTotalSpace();
                         
-            System.out.println("VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV");
+            
             if (String.format("%s", fs.getDescription()).equals("Fixed drive")){
                 totalDisponivel += disponivel;
                 totalTotal += total;
                 porcentagem = 100d * disponivel / total; 
-                System.out.println("MONTAGEM");
-                System.out.println(String.format("%s", fs.getMount()));
-                System.out.println("DISPONÍVEL: ");
-                System.out.println(String.format("%s", FormatUtil.formatBytes(disponivel)));
-                System.out.println("TOTAL: ");
-                System.out.println(String.format("%s", FormatUtil.formatBytes(total)));
-                System.out.println("PORCENTAGEM DISPONÍVEL: ");
-                System.out.println(String.format("%.1f%%", 100d * disponivel / total));
+                
             }
             else{
                 System.out.println("deu merda");
@@ -61,30 +49,18 @@ public class Disco {
         totalDisponivel = 0;
         totalTotal = 0;
         porcentagem = 0.0;
-        System.out.println("\n\nSISTEMA DE ARQUIVOS:");
-        System.out.println(String.format("\n Descritor de Arquivo: %d/%d", 
-                fileSystem.getOpenFileDescriptors(),
-                fileSystem.getMaxFileDescriptors()
-            )
-        );
+       
         OSFileStore[] fsArray = fileSystem.getFileStores();
         for (OSFileStore fs : fsArray) {  
             long disponivel = fs.getUsableSpace();
             long total = fs.getTotalSpace();
                         
-            System.out.println("VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV");
+            
             if (String.format("%s", fs.getDescription()).equals("Fixed drive")){
                 totalDisponivel += disponivel;
                 totalTotal += total;
                 porcentagem = 100d * disponivel / total; 
-                System.out.println("MONTAGEM");
-                System.out.println(String.format("%s", fs.getMount()));
-                System.out.println("DISPONÍVEL: ");
-                System.out.println(String.format("%s", FormatUtil.formatBytes(disponivel)));
-                System.out.println("TOTAL: ");
-                System.out.println(String.format("%s", FormatUtil.formatBytes(total)));
-                System.out.println("PORCENTAGEM DISPONÍVEL: ");
-                System.out.println(String.format("%.1f%%", 100d * disponivel / total));
+                
             }
             else{
                 System.out.println("deu merda");

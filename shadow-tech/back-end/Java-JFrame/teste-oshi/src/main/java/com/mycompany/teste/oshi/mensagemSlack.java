@@ -12,13 +12,20 @@ package com.mycompany.teste.oshi;
 public class mensagemSlack {
     
     public static void main(String[] args) {
-      SlackMessage slackMessage = SlackMessage.builder()
-        .username("Admin")
-        .text("A memoria passou de 80%")
-        .icon_emoji(":sad:")
-        .build();
-      SlackUtils.sendMessage(slackMessage);
-    }
+        
+      Integer num1 = 1;
+        Integer num2 = 2;
+        
+        if (num1 < num2) {
+            SlackMessage slackMessage = SlackMessage.builder()
+           .username("ShadowTec") 
+           .text("Bem vindo ao Projeto ShadowTech Pessoas")
+           .icon_emoji(":cansado:")
+           .build();
+           SlackUtils.sendMessage(slackMessage);
+         } else {
+            System.out.println("vai tomar no cu");
+        }
     
-    
+    }   
 }

@@ -194,7 +194,7 @@
                           </Group>
                           <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblTemperatura" min="-2" max="-2" attributes="0"/>
                               <Component id="lblMac" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -256,7 +256,7 @@
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel52" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel56" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="lblTemperatura" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
@@ -293,7 +293,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel51">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Disco Total"/>
+            <Property name="text" type="java.lang.String" value="Disco Dispon&#xed;vel"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel52">
@@ -316,7 +316,7 @@
             <Property name="text" type="java.lang.String" value="......"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel56">
+        <Component class="javax.swing.JLabel" name="lblTemperatura">
           <Properties>
             <Property name="text" type="java.lang.String" value="0.0"/>
           </Properties>
@@ -519,7 +519,7 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel54">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Disco Dispon&#xed;vel"/>
+            <Property name="text" type="java.lang.String" value="Disco Total"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblDiscoDisponivel">
@@ -641,8 +641,8 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <Component id="lblPorDisco" min="-2" pref="22" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="lblPorDisco" max="32767" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">

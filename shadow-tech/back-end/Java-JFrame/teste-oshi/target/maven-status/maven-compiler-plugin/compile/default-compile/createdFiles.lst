@@ -1,7 +1,10 @@
+com\mycompany\teste\oshi\SlackMessage.class
 com\mycompany\teste\oshi\Monitoramento.class
+com\mycompany\teste\oshi\mensagemSlack.class
 com\mycompany\teste\oshi\Cpu.class
 com\mycompany\teste\oshi\ConexaoBanco.class
 com\mycompany\teste\oshi\Disco.class
 com\mycompany\teste\oshi\Ram.class
 com\mycompany\teste\oshi\Monitoramento$1.class
-.netbeans_automatic_build
+com\mycompany\teste\oshi\SlackMessage$Builder.class
+com\mycompany\teste\oshi\SlackUtils.class
