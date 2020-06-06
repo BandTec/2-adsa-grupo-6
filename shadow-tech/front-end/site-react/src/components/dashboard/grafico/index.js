@@ -10,7 +10,7 @@ export default class Grafico extends Component {
         const myChartRef = this.chartRef.current.getContext('2d');
 
         new Chart(myChartRef, {
-            type: 'horizontalBar',
+            type: 'line',
             data: {
                 labels: ['CPU ', 'RAM', 'DISCO',],
                 datasets: [{
@@ -37,7 +37,7 @@ export default class Grafico extends Component {
                     borderWidth: 2
                 }]
             },
-            options:{
+            options: {
                 responsive: true,
                 maintainAspectRatio: false,
             }
