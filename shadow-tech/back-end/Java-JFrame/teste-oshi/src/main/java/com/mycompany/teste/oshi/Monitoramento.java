@@ -49,7 +49,7 @@ public class Monitoramento extends javax.swing.JFrame {
         
         
  
-        lblPorDisco.setText(disco.porcentagem.toString());
+        lblPorDisco.setText(String.format(" %.2f ", disco.porcentagem));
         lblTempDisco.setText(disco.printDiscoTotal());
             
         pbDisco.setValue(disco.porcentagem.intValue());
