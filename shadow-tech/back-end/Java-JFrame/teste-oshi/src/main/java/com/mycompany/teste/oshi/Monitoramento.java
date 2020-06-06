@@ -48,6 +48,8 @@ public class Monitoramento extends javax.swing.JFrame {
         
         Timer timer = new Timer(1500, (ActionEvent e) -> {
             
+            ConexaoBanco con = new ConexaoBanco();
+            
             Integer porcentagem = random.nextInt(101);
             
            //lblPorCpu.setText(cpu.printProcessor());
@@ -75,6 +77,8 @@ public class Monitoramento extends javax.swing.JFrame {
             pbChrome.setValue(porcentagem * 50/100);
             pbVscode.setValue(porcentagem * 75/100);
             pbSpotify.setValue(porcentagem * 25/100);
+            
+            con.inserirComputador();
            } 
         );    
         
