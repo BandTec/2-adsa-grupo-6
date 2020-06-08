@@ -59,14 +59,23 @@ public class Cpu {
     public String mostrarMacAddress() {        
          
         for (NetworkIF net : hal.getNetworkIFs()) {
-            if ("wlan0".equals(net.getName())) {
-                return net.getMacaddr();
-            } else {
-                net.getName();
+            if (null == net.getName()) {
+                SlackMessage slackMessage = SlackMessage.builder()
+                .text("Não foi encontrado nenhum mac address no seu computador")
+                .build();
+                SlackUtils.sendMessage(slackMessage);
+            } else switch (net.getName()) {
+                case "wlan0":
+                    return net.getMacaddr();
+                case "wlp2s0":
+                    return net.getMacaddr();
+                default:
+                    net.getName();
+                    break;
             }
         }
         
-        return "Sem placa de rede";
+        return null;
     }
     
     
