@@ -4,25 +4,26 @@ import * as S from './style.js';
 export default function Processos() {
 
     var alunos = [
-        { "nome": "rafael", "maquina": "1902491942194" },
-        { "nome": "braian", "maquina": "1902491942194" },
-        { "nome": "bachega", "maquina": "1902491942194" },
-        { "nome": "jp", "maquina": "1902491942194" },
-        { "nome": "martha", "maquina": "1902491942194" },
-        { "nome": "jhow", "maquina": "1902491942194" },
+        { "posicao": "1°","processos": "Chrome", "maquina": "1902491942194" },
+        { "posicao": "2°","processos": "Netbeans", "maquina": "1902491942194" },
+        { "posicao": "3°","processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "4°","processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "5°","processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "6°","processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "7°","processos": "VSCode", "maquina": "1902491942194" },
     ];
 
-    
-    
     return (
         <>
             <div className='containerListaAluno'>
                 <S.divProcessos>
                     {alunos.map(result =>
                         <>
-                            <label className='aluno'>{result.nome}</label>
-                            <label>{result.maquina}</label>
-                            <br/><br/>
+                            <S.processos>
+                                <label>{result.posicao}</label>
+                                <label>{result.processos}</label>
+                                <label>{result.maquina}</label>
+                            </S.processos>
                         </>
                     )}
                 </S.divProcessos>
