@@ -1,7 +1,8 @@
+com/mycompany/teste/oshi/Processos.class
 com/mycompany/teste/oshi/mensagemSlack.class
 com/mycompany/teste/oshi/ConexaoBanco.class
-com/mycompany/teste/oshi/Cpu.class
 com/mycompany/teste/oshi/Ram.class
+com/mycompany/teste/oshi/Cpu.class
 com/mycompany/teste/oshi/SlackMessage$Builder.class
 com/mycompany/teste/oshi/SlackMessage.class
 com/mycompany/teste/oshi/SlackUtils.class

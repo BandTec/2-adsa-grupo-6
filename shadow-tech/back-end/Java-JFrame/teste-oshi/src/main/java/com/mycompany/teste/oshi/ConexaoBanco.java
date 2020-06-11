@@ -32,6 +32,6 @@ public class ConexaoBanco {
    
    public void inserirComputador(){
        jdbcTemplate.update("INSERT INTO Computador (idMaquina, processador, disco, memoria, mac) VALUES (?,?,?,?,?)",
-                            "1", cpu.printProcessor(),disco.printDiscoTotal(),ram.getMemoriaTotal(),"mac");
+                            "1", cpu.printProcessor(),disco.printDiscoTotal(),ram.getMemoriaTotal(),cpu.mostrarMacAddress());
    }
 }
