@@ -19,6 +19,11 @@ public class Monitoramento extends javax.swing.JFrame {
     Disco disco = new Disco();
            
     Integer cont = 0;     
+    Integer cont_temp = 0;
+    Integer cont_cpu = 0;
+    Integer cont_cpu_100 = 0;
+    Integer cont_porcentagem_boa = 0;
+   
     
     public Monitoramento() {
         initComponents();
@@ -77,47 +82,113 @@ public class Monitoramento extends javax.swing.JFrame {
             pbChrome.setValue(porcentagem * 50/100);
             pbVscode.setValue(porcentagem * 75/100);
             pbSpotify.setValue(porcentagem * 25/100);
+
             
-            
-            
-            
-            
-            
-            
-            
-           
             // Condições para os alertas 
-            
-            
-            if (cpu.mostrarTemperatura() >= 50.0) {
+                       
+            if (cpu.mostrarTemperatura() >= 70.0) {
                  if (cont == 5) {
                  SlackMessage slackMessage = SlackMessage.builder()
-                 .text("A temperatura passou de 50%")
+                 .text("A temperatura passou de 70%")
                  .build();
                  SlackUtils.sendMessage(slackMessage);
                  cont = 0;
                  }
                  cont ++;               
                }
-         
+                              
             if (cpu.mostrarTemperatura() >= 90.0) {
-                if (cont == 5) {
+                if (cont_temp == 2) {
                  SlackMessage slackMessage = SlackMessage.builder()
                 .text("A temperatura passou de 90%")
                 .build();
                 SlackUtils.sendMessage(slackMessage);
-                cont = 0;
+                cont_temp = 0;
                 }
-                cont ++;
+                cont_temp ++;
+            }
+            
+            // Condição do Mac Address 
+            
+            if (cpu.mostrarMacAddress() == null) {
+                SlackMessage slackMessage = SlackMessage.builder()
+                .text("Não foi encontrando o numero do MacAddress do seu computador!")
+                .build();
+                SlackUtils.sendMessage(slackMessage);
+            }
+            
+            // Condição para a porcentagem do cpu 
+            
+            if (cpu.getPorcentagemCpu() >= 60.0) {
+                if (cont_cpu == 10) {
+                SlackMessage slackMessage = SlackMessage.builder()
+                .text("Não foi encontrando o numero do MacAddress do seu computador!")
+                .build();
+                SlackUtils.sendMessage(slackMessage);
+                cont_cpu = 0;
+                }
+                cont_cpu ++;
+            }
+            
+            if (cpu.getPorcentagemCpu() >= 100.0) {
+                if (cont_cpu_100 == 3) {
+                SlackMessage slackMessage = SlackMessage.builder()
+                .text("Seu Computador esta usando 100% do computador por favor , desligar o computador !!")
+                .build();
+                SlackUtils.sendMessage(slackMessage);
+                cont_cpu_100 = 0;
+                }
+                cont_cpu_100 ++;
+            }
+            
+            if (cpu.getPorcentagemCpu() <= 40.0) {
+                if (cont_porcentagem_boa == 3600) {
+                SlackMessage slackMessage = SlackMessage.builder()
+                .text("Na ultima uma hora a porcentagem do seu computador continoou estavel, parabens :) ")
+                .build();
+                SlackUtils.sendMessage(slackMessage);
+                cont_porcentagem_boa = 0;
+                }
+                cont_porcentagem_boa ++;
             }
             
             
             
+            // Processador 
+            
+            if (cpu.printProcessor() == null || "".equals(cpu.printProcessor())) {
+                SlackMessage slackMessage = SlackMessage.builder()
+                .text("O processador esta com problema por favor , reiniciar o programa")
+                .build();
+                SlackUtils.sendMessage(slackMessage);
+            }
             
             
+            // ram 
+            
+            if (ram.getMemoriaTotal() < ram.getPorcentagemAtual()) {
+                SlackMessage slackMessage = SlackMessage.builder()
+                .text("A sua memoria total esta menor que a meoria atual, algo de errado esta acontecendo !!")
+                .build();
+                SlackUtils.sendMessage(slackMessage);
+            }
             
             
+            // disco
             
+            if (disco.totalTotal == 0 ) {
+                SlackMessage slackMessage = SlackMessage.builder()
+                .text("O disco esta com 0 disponivel ?")
+                .build();
+                SlackUtils.sendMessage(slackMessage);
+            }
+            
+            if (disco.totalDisponivel == 0) {
+                SlackMessage slackMessage = SlackMessage.builder()
+                .text("O disco total esta com 0 disponivel ?")
+                .build();
+                SlackUtils.sendMessage(slackMessage);        
+            }
             
            } 
         );    

@@ -20,7 +20,7 @@ public class mensagemSlack {
             SlackMessage slackMessage = SlackMessage.builder()
            .username("ShadowTec") 
            .text("Bem vindo ao Projeto ShadowTech Pessoas")
-           .icon_emoji(":cansado:")
+           .icon_emoji(":canadá:")
            .build();
            SlackUtils.sendMessage(slackMessage);
          } else {

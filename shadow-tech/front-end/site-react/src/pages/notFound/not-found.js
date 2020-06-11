@@ -8,7 +8,7 @@ export default function NotFound() {
 
   return (
     <>
-		<h1 className="titulo">Não era pra você estar aqui!</h1>
+		<h1 className="titulo">Página não encontrada!</h1>
 		<ul>
 			<Link to="/">
 			<li className="menu-lista"><a className="teste-link">Para home</a></li>
