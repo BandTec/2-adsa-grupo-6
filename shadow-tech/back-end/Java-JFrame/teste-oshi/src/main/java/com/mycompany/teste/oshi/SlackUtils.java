@@ -18,7 +18,7 @@ import org.apache.http.impl.client.HttpClients;
  */
 public class SlackUtils {
     
-    private static String slackWebhookUrl = "https://hooks.slack.com/services/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";
+    private static String slackWebhookUrl = "https://hooks.slack.com/services/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";
   
       public static void sendMessage(SlackMessage message) {
           CloseableHttpClient client = HttpClients.createDefault();
