@@ -11,7 +11,7 @@ export default function Dashboards() {
     <>
       {/* navbar */}
       {/* chart */}
-      <Topnav />
+      <Topnav isDash={true}/>
       <div style={{
         display: "flex",
         flexDirection: "column",

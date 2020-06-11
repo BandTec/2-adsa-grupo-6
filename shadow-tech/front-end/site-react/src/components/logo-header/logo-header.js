@@ -10,7 +10,7 @@ export default function Logo(){
     return (
         <div onMouseEnter={() => setLogoShiny(true)}
         onMouseLeave={() => setLogoShiny(false)}>
-            {logoShiny ? <img className="img-logo" src={ImagemShiny} alt=""/> : <img className="img-logo" src={Imagem} /> }
+            {logoShiny ? <img className="img-logo" src={ImagemShiny} alt="logo"/> : <img className="img-logo" src={Imagem} /> }
         </div>
     );
 }
