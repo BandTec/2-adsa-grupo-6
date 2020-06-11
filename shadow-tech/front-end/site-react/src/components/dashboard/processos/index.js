@@ -3,21 +3,26 @@ import * as S from './style.js';
 
 export default function Processos() {
 
-    var alunos = [
-        { "posicao": "1°","processos": "Chrome", "maquina": "1902491942194" },
-        { "posicao": "2°","processos": "Netbeans", "maquina": "1902491942194" },
-        { "posicao": "3°","processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "4°","processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "5°","processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "6°","processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "7°","processos": "VSCode", "maquina": "1902491942194" },
+    var processos = [
+        { "posicao": "1°", "processos": "Chrome", "maquina": "1902491942194" },
+        { "posicao": "2°", "processos": "Netbeans", "maquina": "1902491942194" },
+        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "4°", "processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "5°", "processos": "VSCode", "maquina": "1902491942194" },
+        { "posicao": "6°", "processos": "VSCode", "maquina": "1902491942194" },
     ];
 
     return (
         <>
             <div className='containerListaAluno'>
                 <S.divProcessos>
-                    {alunos.map(result =>
+                    {processos.map(result =>
                         <>
                             <S.processos>
                                 <label>{result.posicao}</label>
