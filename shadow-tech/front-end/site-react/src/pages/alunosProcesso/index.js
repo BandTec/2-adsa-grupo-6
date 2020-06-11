@@ -4,7 +4,7 @@ import Topnav from '../../components/topnav';
 
 import * as S from './style.js'
 
-import imgAluno from '../../assets/persona.png';
+import imgAluno from '../../assets/aluno-legal.jpg';
 
 export default function AlunosProcesso() {
 
