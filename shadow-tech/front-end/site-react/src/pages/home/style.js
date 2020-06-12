@@ -7,15 +7,12 @@ export const DivFundoNavTopo = styled.div`
 
 // HEADER
 export const DivHeaderContainer = styled.div`
-    /* color: #3341A3; */
     display: flex;
     flex-direction: row;
     background-color: #E5E5E5;
     width: 100%;
     height: 70vh;
-    
     @media screen and (max-width: 1015px){
-        background-color: green;
         height: auto;
         flex-direction: column;
     }
@@ -26,12 +23,18 @@ export const LogoContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
     @media screen and (max-width: 1015px){
-        padding: 20px 0;
+        padding: 5vh 0;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+`;
+
+export const LogoImagem = styled.img`
+    height: 60vh;
+    @media screen and (max-width: 405px){
+        height: auto;
     }
 `;
 
@@ -57,11 +60,10 @@ export const DivAcesso = styled.div`
 `;
 
 export const AcessoH2 = styled.h2`
-    padding: 32px 0;
 `;
 
 export const AcessoBold = styled.b`
-    padding: 0 0 32px 0;
+    padding: 5vh 0 5vh 0;
 `;
 
 export const BotaoLogar = styled.button`
@@ -83,7 +85,7 @@ export const BotaoLogar = styled.button`
 export const CadastrarSpan = styled.span`
     cursor: pointer;
     font-weight: 600;
-    padding: 32px 0;
+    padding: 5vh 10vh;
     &:hover, :active{
         text-decoration: underline;
     }
@@ -127,14 +129,27 @@ export const UbiquitiAbaixo = styled.span`
     width: 100%;
     display: flex;
     flex-direction: row;
+    @media screen and (max-width: 1015px){
+        padding: 0;
+        height: auto;
+        flex-direction: column;
+    }
 `;
 export const UbiquitiEsquerda = styled.span`
     padding: 16px 32px 16px 0;
     width: 50%;
+    @media screen and (max-width: 1015px){
+        padding: 32px;
+        width: 100%;
+    }
 `;
 export const UbiquitiDireita = styled.span`
     padding: 16px 0 16px 32px;
     width: 50%;
+    @media screen and (max-width: 1015px){
+        padding: 32px;
+        width: 100%;
+    }
 `;
 export const DivSaibaMais = styled.div`
     display: flex;
@@ -202,6 +217,7 @@ export const Imagem = styled.img`
     padding: 25%;
 `;
 export const Titulo = styled.h2`
+    text-align: center;
 `;
 export const Texto = styled.p`
     padding: 32px;
@@ -240,7 +256,7 @@ export const DivSectionMapa = styled.div`
     height: 70vh;
 `;
 
-export const DivMapa = styled.div `
+export const DivMapa = styled.div`
     background-color: #FFF;
     width: 100%;
     height: 100%;
@@ -253,7 +269,8 @@ export const Mapa = styled.iframe`
 `;
 
 // CIBERSEGURANÇA
-export const ImagemCiberseguranca = styled.img`
+export const ImagemCiberSeguranca = styled.img`
+    cursor: pointer;
     height: auto;
     width: 100%;
 `;
@@ -276,4 +293,128 @@ export const PoliticasTermos = styled.span`
 
 export const ContatoLogo = styled.img`
     height: 100px;
+`;
+
+// MODAL
+export const Modal = styled.div`
+    height: auto;
+    width: 45vw;
+    min-width: 300px;
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3341A3;
+    border-right: 20px solid #3341A3;
+    border-radius: 2%;
+    @media screen and (max-width: 310px){
+        min-width: 100%;
+    }
+`;
+export const DivTituloModal = styled.div`
+    color: #3341A3;
+    padding-top: 5vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+`;
+export const TituloModal = styled.h1`
+    text-align: center;
+`;
+export const ConteudoModal = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh 0;
+    width: 80%;
+`;
+export const DivLabelInput = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vh 0;
+`;
+export const InputModal = styled.input`
+    background-color: #DDDDDD;
+    padding: 1vh 1vw;
+    width: 100%;
+`;
+export const DivCheck = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2vh 0;
+`;
+export const CheckboxModal = styled.input`
+    margin: 1vh 1vw 1vh 0;
+`;
+export const LabelModal = styled.label`
+    font-weight: 600;
+`;
+export const ButtonModal = styled.button`
+    font-weight: 600;
+    padding: 1vh 1vw;
+    outline: none;
+    cursor:pointer;
+    color: white;
+    background-color: #3341A3;
+    box-shadow: 0px 0px 5px;
+    &:hover, :active{ 
+        background-color: #3341A3AA;
+    }
+`;
+export const SpanEsqueciSenha = styled.span`
+    padding-top: 4vh;
+    cursor: pointer;
+    font-weight: 600;
+    &:hover, :active{
+        text-decoration: underline;
+    }
+`;
+export const DivEsqueciSenha = styled.div`
+    width: 100%;
+    padding: 1vh 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const ModalEsqueciSenha = styled.div`
+    height: auto;
+    width: 35vw;
+    border: 1px solid #3341A3;
+    border-radius: 2%;
+    background-color: #E5E5E5;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`;
+export const DivContainerClose = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+`;
+export const SpanClose = styled.span`
+    padding-left: 10px;
+    cursor: pointer;
+    font-size: 50px; 
+    font-weight: 1600;
+    color: #3341A3;
+`;
+export const DivDescricaoSenha = styled.div`
+    padding: 3vh 0 1vh 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+export const DescricaoEsqueciSenha = styled.b`
+    text-align: justify;
+    width: 80%;
 `;
