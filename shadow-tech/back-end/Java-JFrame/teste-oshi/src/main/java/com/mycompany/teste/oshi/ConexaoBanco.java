@@ -1,19 +1,22 @@
 
 package com.mycompany.teste.oshi;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 
 public class ConexaoBanco {
    private BasicDataSource dataSource;
    private JdbcTemplate jdbcTemplate;
-   
+ 
     Cpu cpu = new Cpu();
     Disco disco = new Disco();
     Ram ram = new Ram();
-   
+    
    public ConexaoBanco(){
        
        dataSource = new BasicDataSource();
@@ -31,7 +34,15 @@ public class ConexaoBanco {
    }
    
    public void inserirComputador(){
-       jdbcTemplate.update("INSERT INTO Computador (idMaquina, processador, disco, memoria, mac) VALUES (?,?,?,?,?)",
-                            "1", cpu.printProcessor(),disco.printDiscoTotal(),ram.getMemoriaTotal(),cpu.mostrarMacAddress());
+       jdbcTemplate.update("INSERT INTO Computador (idMaquina, fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)",
+                            "1", "1", cpu.printProcessor(),disco.printDiscoTotal(),ram.getMemoriaTotal(),cpu.mostrarMacAddress());
    }
+   
+   
+    public void incluirRegistros() {     
+        jdbcTemplate.update("INSERT INTO Registros (cpuPc, memoria, disco, dataHora, fkComputador) VALUES (?,?,?,?,?)",
+                            cpu.getPorcentagemCpu(), ram.getPorcentagemAtual(), disco.getPorcentagem(), LocalDateTime.now(), "1");
+        
+        
+    }
 }

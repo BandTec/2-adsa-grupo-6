@@ -17,7 +17,8 @@ public class Monitoramento extends javax.swing.JFrame {
     Ram ram = new Ram();
     Cpu cpu = new Cpu();
     Disco disco = new Disco();
-           
+    
+    ConexaoBanco con = new ConexaoBanco();
     Integer cont = 0;     
     Integer cont_temp = 0;
     Integer cont_cpu = 0;
@@ -28,9 +29,10 @@ public class Monitoramento extends javax.swing.JFrame {
     public Monitoramento() {
         initComponents();
         
-        ConexaoBanco con = new ConexaoBanco();
+        
 //        con.listarTodosComputador();
 //        con.inserirComputador();
+          
         
         Random random = new Random();
         Double temp;
@@ -193,7 +195,7 @@ public class Monitoramento extends javax.swing.JFrame {
                 .build();
                 SlackUtils.sendMessage(slackMessage);        
             }
-            
+            con.incluirRegistros();
            } 
         );    
         

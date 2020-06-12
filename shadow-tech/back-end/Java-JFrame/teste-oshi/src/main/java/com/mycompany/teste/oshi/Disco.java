@@ -69,5 +69,11 @@ public class Disco {
         
         return (String.format("%s", FormatUtil.formatBytes(totalDisponivel)));
    
-    }                
+    }
+
+    public Double getPorcentagem() {
+        return porcentagem;
+    }
+    
+    
 }
