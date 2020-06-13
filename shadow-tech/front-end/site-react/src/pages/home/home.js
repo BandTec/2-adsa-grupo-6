@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {useModal} from 'use-react-modal';
+import { useHistory } from 'react-router-dom';
 
 import Imagem from '../../assets/logo.png';
 import ImagemShiny from '../../assets/logo-shiny.png';
@@ -13,10 +14,14 @@ import like from '../../assets/like.png';
 import money from '../../assets/money.png';
 import draven from '../../assets/draven.png';
 
+import api from '../services/api';
+
 import * as S from './style';
 
 export default function Home() {
-    
+
+    const hist = useHistory();
+
     const [ logoShiny, setLogoShiny ] = useState(false);
     
     const [ esqueciSenha, setEsqueciSenha ] = useState(false);
@@ -35,6 +40,18 @@ export default function Home() {
     const [ abrirModalSaibaMais, fecharModalSaibaMais, isOpenSaibaMais, ModalSaibaMais ] = useModal({
         background: 'rgba(0,0,0,0.3)',
     });
+
+    async function handleLogin() {
+
+        let email = document.getElementById('txtEmail').value;
+        let senha = document.getElementById('txtSenha').value;
+
+        await api.post('/userLogin', {"email":email, "senha": senha}).then(function(res) {
+            hist.push('/dashboards');
+        }).catch(function (error) {
+            alert('Credenciais inválidas!');
+        });
+    }
 
     return(
         <>
@@ -184,17 +201,17 @@ export default function Home() {
                         <S.ConteudoModal>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
-                                <S.InputModal type="text" id="txtEmail" placeholder="Insira o seu e-mail" />
+                                <S.InputModal type="email" id="txtEmail" placeholder="Insira o seu e-mail" />
                             </S.DivLabelInput>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
-                                <S.InputModal type="text" id="txtSenha" placeholder="Insira a sua senha" />
+                                <S.InputModal type="password" id="txtSenha" placeholder="Insira a sua senha" />
                             </S.DivLabelInput>
                             <S.DivCheck>
                                 <S.CheckboxModal type="checkbox" id="chkLembrar"/>
                                 <S.LabelModal htmlFor="chkLembrar">Lembrar de mim</S.LabelModal>
                             </S.DivCheck>
-                            <S.ButtonModal>
+                            <S.ButtonModal onClick={handleLogin}>
                                 ACESSAR
                             </S.ButtonModal>
                             <S.DivEsqueciSenha>
