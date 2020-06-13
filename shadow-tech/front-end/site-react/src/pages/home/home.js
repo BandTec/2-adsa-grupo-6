@@ -53,6 +53,44 @@ export default function Home() {
         });
     }
 
+    async function handleRegister() {
+        
+        let nome = document.getElementById('txtNome').value;
+        let email = document.getElementById('txtEmail').value;
+        let senha = document.getElementById('txtSenha').value;
+        let confirmarSenha = document.getElementById('txtConfirmaSenha').value;
+
+        let emailBanco;
+
+        await api.post('/listEmail', {"email":email}).then(function(res) {
+            console.log(res.data[0].login);
+
+            alert('Já tá cadastrado');
+            
+        }).catch(function (error) {
+
+            if (error.response.status === 404) {
+                
+                if(senha === confirmarSenha){
+                    
+                    api.post('/user', {"nome": nome, "email":email, "senha": senha}).then(function(res) {
+                        alert('Usuario cadastrado com sucesso');
+                    }).catch(function (error) {
+                        alert('Credenciais inválidas!');
+                    });
+                }else{
+                    alert('Senhas não compativeis ');
+                }
+            }
+            if(error.response.status === 500){
+                alert('Sem conexão com o banco')
+            }
+
+        })
+
+
+    }
+
     return(
         <>
         <S.DivFundoNavTopo />
@@ -279,17 +317,17 @@ export default function Home() {
                             </S.DivLabelInput>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
-                                <S.InputModal type="text" id="txtSenha" placeholder="Insira a sua senha" />
+                                <S.InputModal type="password" id="txtSenha" placeholder="Insira a sua senha" />
                             </S.DivLabelInput>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtConfirmaSenha">Confirmação da Senha:</S.LabelModal>
-                                <S.InputModal type="text" id="txtConfirmaSenha" placeholder="Insira novamente a sua senha" />
+                                <S.InputModal type="password" id="txtConfirmaSenha" placeholder="Insira novamente a sua senha" />
                             </S.DivLabelInput>
                             <S.DivCheck>
                                 <S.CheckboxModal type="checkbox" id="chkLembrar"/>
                                 <S.LabelModal htmlFor="chkLembrar">Receber novidades por e-mail</S.LabelModal>
                             </S.DivCheck>
-                            <S.ButtonModal>
+                            <S.ButtonModal onClick={handleRegister}>
                                 CADASTRAR
                             </S.ButtonModal>
                         </S.ConteudoModal>

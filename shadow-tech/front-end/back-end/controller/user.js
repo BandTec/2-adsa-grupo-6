@@ -5,7 +5,6 @@ const create = async function (req, res) {
 
     const userModel = new UserModel();
     
-    console.log(req.body);
     await userModel.create(nome, email, senha)
     .then(function (response) {
         res.status(201).send('Usuário criado com sucesso! ');
@@ -32,7 +31,28 @@ const list = async function (req, res) {
     
 }
 
+const listEmail = async function (req, res) {
+    let { email } = req.body;
+    
+    const userModel = new UserModel();
+
+    await userModel.listEmail(email)
+    .then(function (response) {
+        if(response[0] != undefined){
+            res.status(200).json(response);
+        }else{
+            res.status(404).json(response);
+        }
+    }).catch( function (error) {
+        res.status(500).send('Conexão!' + error);
+    });
+    
+}
+
+
+
 module.exports = {
     create,
-    list
+    list,
+    listEmail
 }

@@ -16,6 +16,10 @@ server.post('/user', function (req, res) {
     UserController.create(req, res);
 })
 
+server.post('/listEmail', function (req, res) {
+    UserController.listEmail(req, res);
+})
+
 const port = 5000
 server.listen(port, function() {
     console.log("Servidor rodando na porta " + port);
