@@ -60,6 +60,9 @@ export default function Home() {
         let senha = document.getElementById('txtSenha').value;
         let confirmarSenha = document.getElementById('txtConfirmaSenha').value;
 
+        console.log(nome);
+        
+
         let emailBanco;
 
         await api.post('/listEmail', {"email":email}).then(function(res) {
@@ -71,15 +74,21 @@ export default function Home() {
 
             if (error.response.status === 404) {
                 
-                if(senha === confirmarSenha){
-                    
-                    api.post('/user', {"nome": nome, "email":email, "senha": senha}).then(function(res) {
-                        alert('Usuario cadastrado com sucesso');
-                    }).catch(function (error) {
-                        alert('Credenciais inválidas!');
-                    });
-                }else{
-                    alert('Senhas não compativeis ');
+                if (!nome === "" && 
+                    !email === "" && 
+                    !senha === "") {
+                    if(senha === confirmarSenha){
+                        
+                        api.post('/user', {"nome": nome, "email":email, "senha": senha}).then(function(res) {
+                            alert('Usuario cadastrado com sucesso');
+                        }).catch(function (error) {
+                            alert('Credenciais inválidas!');
+                        });
+                    }else{
+                        alert('Senhas não compativeis ');
+                    }                    
+                } else {
+                    alert('Por favor , não deixar nenhum campo vazio');
                 }
             }
             if(error.response.status === 500){
@@ -309,11 +318,11 @@ export default function Home() {
                         <S.ConteudoModal>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtNome">Nome:</S.LabelModal>
-                                <S.InputModal type="text" id="txtNome" placeholder="Insira o seu nome" />
+                                <S.InputModal type="text" min='5' max='45' id="txtNome" placeholder="Insira o seu nome" />
                             </S.DivLabelInput>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
-                                <S.InputModal type="text" id="txtEmail" placeholder="Insira o seu e-mail" />
+                                <S.InputModal type="e-mail" id="txtEmail" placeholder="Insira o seu e-mail" />
                             </S.DivLabelInput>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
