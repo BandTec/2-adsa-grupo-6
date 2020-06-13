@@ -1,6 +1,6 @@
 const UserModel = require('../models/user');
 
-const create = async function (req, res) {
+const create = async (req, res) =>{
     let { nome, email, senha} = req.body;    
 
     const userModel = new UserModel();
@@ -13,7 +13,7 @@ const create = async function (req, res) {
     });
 }
 
-const list = async function (req, res) {
+const list = async (req, res) => {
     let { email, senha } = req.body;
     
     const userModel = new UserModel();
@@ -31,7 +31,7 @@ const list = async function (req, res) {
     
 }
 
-const listEmail = async function (req, res) {
+const listEmail = async (req, res) => {
     let { email } = req.body;
     
     const userModel = new UserModel();
@@ -48,7 +48,6 @@ const listEmail = async function (req, res) {
     });
     
 }
-
 
 
 module.exports = {

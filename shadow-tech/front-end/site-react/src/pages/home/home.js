@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {useModal} from 'use-react-modal';
+import React, { useState } from 'react';
+import { useModal } from 'use-react-modal';
 import { useHistory } from 'react-router-dom';
 
 import Imagem from '../../assets/logo.png';
@@ -22,22 +22,22 @@ export default function Home() {
 
     const hist = useHistory();
 
-    const [ logoShiny, setLogoShiny ] = useState(false);
-    
-    const [ esqueciSenha, setEsqueciSenha ] = useState(false);
+    const [logoShiny, setLogoShiny] = useState(false);
 
-    const [ abrirModalLogin, fecharModalLogin, isOpenModalLogin, ModalLogin ] = useModal({
+    const [esqueciSenha, setEsqueciSenha] = useState(false);
+
+    const [abrirModalLogin, fecharModalLogin, isOpenModalLogin, ModalLogin] = useModal({
         background: 'rgba(0,0,0,0.3)',
         onClose({ targetEl, event, portal }) {
             setEsqueciSenha(false);
         }
     });
 
-    const [ abrirModalCadastro, fecharModalCadastro, isOpenCadastro, ModalCadastro ] = useModal({
+    const [abrirModalCadastro, fecharModalCadastro, isOpenCadastro, ModalCadastro] = useModal({
         background: 'rgba(0,0,0,0.3)'
     });
-    
-    const [ abrirModalSaibaMais, fecharModalSaibaMais, isOpenSaibaMais, ModalSaibaMais ] = useModal({
+
+    const [abrirModalSaibaMais, fecharModalSaibaMais, isOpenSaibaMais, ModalSaibaMais] = useModal({
         background: 'rgba(0,0,0,0.3)',
     });
 
@@ -46,69 +46,63 @@ export default function Home() {
         let email = document.getElementById('txtEmail').value;
         let senha = document.getElementById('txtSenha').value;
 
-        await api.post('/userLogin', {"email":email, "senha": senha}).then(function(res) {
+        await api.post('/userLogin', { "email": email, "senha": senha }).then(res => {
+            fecharModalLogin();
             hist.push('/dashboards');
-        }).catch(function (error) {
+        }).catch(error => {
             alert('Credenciais inválidas!');
         });
     }
 
     async function handleRegister() {
-        
+
         let nome = document.getElementById('txtNome').value;
         let email = document.getElementById('txtEmail').value;
         let senha = document.getElementById('txtSenha').value;
         let confirmarSenha = document.getElementById('txtConfirmaSenha').value;
 
-        console.log(nome);
-        
-
-        let emailBanco;
-
-        await api.post('/listEmail', {"email":email}).then(function(res) {
-            console.log(res.data[0].login);
-
-            alert('Já tá cadastrado');
-            
-        }).catch(function (error) {
-
+        await api.post('/listEmail', { "email": email }).then(res => {
+            alert('Usuário já cadastrado');
+        }).catch(error => {
             if (error.response.status === 404) {
-                
-                if (!nome === "" && 
-                    !email === "" && 
-                    !senha === "") {
-                    if(senha === confirmarSenha){
-                        
-                        api.post('/user', {"nome": nome, "email":email, "senha": senha}).then(function(res) {
-                            alert('Usuario cadastrado com sucesso');
-                        }).catch(function (error) {
-                            alert('Credenciais inválidas!');
-                        });
-                    }else{
-                        alert('Senhas não compativeis ');
-                    }                    
+                if (nome !== "" &&
+                    email !== "" &&
+                    senha !== "") {
+                        if(senha.length > 5){
+                            if (senha === confirmarSenha) {
+                                if(email.endsWith('@bandtec.com.br') && email !== '@bandtec.com.br'){
+                                    api.post('/user', { "nome": nome, "email": email, "senha": senha }).then(function (res) {
+                                        alert('Usuario cadastrado com sucesso');
+                                    }).catch(function (error) {
+                                        alert('Credenciais inválidas!');
+                                    });
+                                }else{
+                                    alert('Seu email não pertence a nenhuma instituição cadastrada')
+                                }
+                            } else {
+                                alert('Senhas não compativeis ');
+                            }
+                        }else{
+                            alert('Senha deve conter no minimo 6 caracteres');
+                        }
                 } else {
                     alert('Por favor , não deixar nenhum campo vazio');
-                }
-            }
-            if(error.response.status === 500){
+                    }
+            } else {
                 alert('Sem conexão com o banco')
             }
-
         })
-
-
     }
 
-    return(
+    return (
         <>
-        <S.DivFundoNavTopo />
+            <S.DivFundoNavTopo />
 
-        <S.DivHeaderContainer>
+            <S.DivHeaderContainer>
                 <S.LogoContainer>
                     <div onMouseEnter={() => setLogoShiny(true)}
                         onMouseLeave={() => setLogoShiny(false)}>
-                        { logoShiny  ?  <S.LogoImagem src={ImagemShiny} alt=""/>  :  <S.LogoImagem style={{height: '60vh'}} src={Imagem} /> }
+                        {logoShiny ? <S.LogoImagem src={ImagemShiny} alt="" /> : <S.LogoImagem style={{ height: '60vh' }} src={Imagem} />}
                     </div>
                 </S.LogoContainer>
                 <S.ConteudoHeader>
@@ -126,26 +120,26 @@ export default function Home() {
                     </S.DivConteudo>
                 </S.ConteudoHeader>
             </S.DivHeaderContainer>
-            
+
             <S.BannerContrate src={imagem} alt="" srcset="" />
-            
+
             <S.DivUbiquiti>
                 <S.UbiquitiImg src={ubiquiti} />
                 <S.UbiquitiTexto>
                     <S.UbiquitiPrincipal>
-                        Somos especializados em infraestrutura de TI. Nosso objetivo é entender as necessidades de 
-                        nossos clientes e parceiros para elaborar os melhores projetos e soluções, sempre com transparência, 
+                        Somos especializados em infraestrutura de TI. Nosso objetivo é entender as necessidades de
+                        nossos clientes e parceiros para elaborar os melhores projetos e soluções, sempre com transparência,
                         qualidade e flexibilidade.
                     </S.UbiquitiPrincipal>
                     <S.UbiquitiAbaixo>
                         <S.UbiquitiEsquerda>
-                            Somos especializados em infraestrutura de TI. Nosso objetivo é entender as necessidades de 
-                            nossos clientes e parceiros para elaborar os melhores projetos e soluções, sempre com transparência, 
+                            Somos especializados em infraestrutura de TI. Nosso objetivo é entender as necessidades de
+                            nossos clientes e parceiros para elaborar os melhores projetos e soluções, sempre com transparência,
                             qualidade e flexibilidade.
                         </S.UbiquitiEsquerda>
                         <S.UbiquitiDireita>
-                            Somos especializados em infraestrutura de TI. Nosso objetivo é entender as necessidades de 
-                            nossos clientes e parceiros para elaborar os melhores projetos e soluções, sempre com transparência, 
+                            Somos especializados em infraestrutura de TI. Nosso objetivo é entender as necessidades de
+                            nossos clientes e parceiros para elaborar os melhores projetos e soluções, sempre com transparência,
                             qualidade e flexibilidade.
                         </S.UbiquitiDireita>
                     </S.UbiquitiAbaixo>
@@ -163,22 +157,22 @@ export default function Home() {
                 </S.DivComparadorTitulo>
                 <S.DivQuadros>
                     <S.Quadro>
-                        <S.Imagem src={money}/>
+                        <S.Imagem src={money} />
                         <S.Titulo>ECONOMIZE</S.Titulo>
                         <S.Texto>Ao comparar os planos das operadoras, é possível economizar até 63%</S.Texto>
                     </S.Quadro>
                     <S.Quadro>
-                        <S.Imagem src={hourglass}/>
+                        <S.Imagem src={hourglass} />
                         <S.Titulo>POUPE TEMPO</S.Titulo>
                         <S.Texto>Mostramos somente os planos disponíveis na sua cidade</S.Texto>
                     </S.Quadro>
                     <S.Quadro>
-                        <S.Imagem src={like}/>
+                        <S.Imagem src={like} />
                         <S.Titulo>IMPARCIAL</S.Titulo>
                         <S.Texto>Os resultados que mostramos não são influenciados por nenhuma operadora</S.Texto>
                     </S.Quadro>
                     <S.Quadro>
-                        <S.Imagem src={search}/>
+                        <S.Imagem src={search} />
                         <S.Titulo>FÁCIL</S.Titulo>
                         <S.Texto>Nos dê alguns detalhes do que procura e encontramos para você</S.Texto>
                     </S.Quadro>
@@ -191,43 +185,44 @@ export default function Home() {
                         Equipe
                     </S.TituloEquipe>
                     <S.DivFotinhos>
-                        <S.MembroImagem src={draven}/>
-                        <S.MembroImagem src={draven}/>
-                        <S.MembroImagem src={draven}/>
-                        <S.MembroImagem src={draven}/>
-                        <S.MembroImagem src={draven}/>
-                        <S.MembroImagem src={draven}/>
+                        <S.MembroImagem src={draven} />
+                        <S.MembroImagem src={draven} />
+                        <S.MembroImagem src={draven} />
+                        <S.MembroImagem src={draven} />
+                        <S.MembroImagem src={draven} />
+                        <S.MembroImagem src={draven} />
                     </S.DivFotinhos>
                 </S.DivEquipe>
             </S.DivSectionEquipe>
-            
+
             <S.DivSectionMapa>
                 <S.DivMapa>
-                        <S.Mapa 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2862323672266!2d-46.
+                    <S.Mapa
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2862323672266!2d-46.
                             66372668533753!3d-23.558161267358525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59d2a5
                             270055%3A0x3c7ea4f4c7d51fb6!2sRua%20Haddock%20Lobo%2C%20595%20-%20Cerqueira%20C%C3%A9sar%2C%20S%C3%A3o%20Paulo%20
-                            -%20SP%2C%2001414-002!5e0!3m2!1spt-BR!2sbr!4v1570480919396!5m2!1spt-BR!2sbr" 
-                            frameborder="0" allowfullscreen=""
-                        />
+                            -%20SP%2C%2001414-002!5e0!3m2!1spt-BR!2sbr!4v1570480919396!5m2!1spt-BR!2sbr"
+                        frameborder="0" allowfullscreen=""
+                    />
                 </S.DivMapa>
             </S.DivSectionMapa>
 
-            <S.ImagemCiberSeguranca src={ciber}  onClick={() => window.open('https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html', '_blank')} alt="" srcset="" />
+            <S.ImagemCiberSeguranca src={ciber} onClick={() => window.open('https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html', '_blank')} alt="" srcset="" />
 
-            <S.DivContato style={{  
+            <S.DivContato style={{
                 backgroundImage: `url(${contato})`,
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat'}} 
+                backgroundRepeat: 'no-repeat'
+            }}
             >
                 <S.Copyright>
-                    © 2020 ShadowTech. Todos os direitos reservados. 
+                    © 2020 ShadowTech. Todos os direitos reservados.
                 </S.Copyright>
                 <S.PoliticasTermos>
-                        <a href="https://policies.google.com/privacy"> Política de privacidade </a>
-                        | 
-                        <a href="https://policies.google.com/terms"> Termos e condições</a> 
+                    <a href="https://policies.google.com/privacy"> Política de privacidade </a>
+                        |
+                        <a href="https://policies.google.com/terms"> Termos e condições</a>
                 </S.PoliticasTermos>
                 <S.ContatoLogo src={Imagem} />
             </S.DivContato>
@@ -248,14 +243,14 @@ export default function Home() {
                         <S.ConteudoModal>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
-                                <S.InputModal type="email" id="txtEmail" placeholder="Insira o seu e-mail" />
+                                <S.InputModal type="email" name="email" id="txtEmail" placeholder="Insira o seu e-mail" />
                             </S.DivLabelInput>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
                                 <S.InputModal type="password" id="txtSenha" placeholder="Insira a sua senha" />
                             </S.DivLabelInput>
                             <S.DivCheck>
-                                <S.CheckboxModal type="checkbox" id="chkLembrar"/>
+                                <S.CheckboxModal type="checkbox" id="chkLembrar" />
                                 <S.LabelModal htmlFor="chkLembrar">Lembrar de mim</S.LabelModal>
                             </S.DivCheck>
                             <S.ButtonModal onClick={handleLogin}>
@@ -267,7 +262,7 @@ export default function Home() {
                                 </S.SpanEsqueciSenha>
                             </S.DivEsqueciSenha>
                         </S.ConteudoModal>
-                       
+
                         {esqueciSenha && (
                             <S.ModalEsqueciSenha>
                                 <S.DivContainerClose>
@@ -285,7 +280,7 @@ export default function Home() {
                                         Ao utilizar este formulário, será enviada uma nova senha para o e-mail inserido no campo abaixo.
                                     </S.DescricaoEsqueciSenha>
                                 </S.DivDescricaoSenha>
-                                <S.ConteudoModal style={{paddingTop: '0'}}>
+                                <S.ConteudoModal style={{ paddingTop: '0' }}>
                                     <S.DivLabelInput>
                                         <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
                                         <S.InputModal type="text" id="txtEmail" placeholder="Insira o seu e-mail" />
@@ -300,8 +295,8 @@ export default function Home() {
                     </S.Modal>
                 </ModalLogin>
             )}
-            
-            
+
+
             {isOpenCadastro && (
                 <ModalCadastro>
                     <S.Modal>
@@ -318,11 +313,11 @@ export default function Home() {
                         <S.ConteudoModal>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtNome">Nome:</S.LabelModal>
-                                <S.InputModal type="text" min='5' max='45' id="txtNome" placeholder="Insira o seu nome" />
+                                <S.InputModal type="text" id="txtNome" placeholder="Insira o seu nome" />
                             </S.DivLabelInput>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
-                                <S.InputModal type="e-mail" id="txtEmail" placeholder="Insira o seu e-mail" />
+                                <S.InputModal type="email" name="email" id="txtEmail" placeholder="Insira o seu e-mail" />
                             </S.DivLabelInput>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
@@ -333,7 +328,7 @@ export default function Home() {
                                 <S.InputModal type="password" id="txtConfirmaSenha" placeholder="Insira novamente a sua senha" />
                             </S.DivLabelInput>
                             <S.DivCheck>
-                                <S.CheckboxModal type="checkbox" id="chkLembrar"/>
+                                <S.CheckboxModal type="checkbox" id="chkLembrar" />
                                 <S.LabelModal htmlFor="chkLembrar">Receber novidades por e-mail</S.LabelModal>
                             </S.DivCheck>
                             <S.ButtonModal onClick={handleRegister}>
@@ -343,7 +338,7 @@ export default function Home() {
                     </S.Modal>
                 </ModalCadastro>
             )}
-            
+
             {isOpenSaibaMais && (
                 <ModalSaibaMais>
                     <S.Modal>
@@ -367,7 +362,7 @@ export default function Home() {
                                 <S.InputModal type="text" id="txtSenha" placeholder="Insira a sua senha" />
                             </S.DivLabelInput>
                             <S.DivCheck>
-                                <S.CheckboxModal type="checkbox" id="chkLembrar"/>
+                                <S.CheckboxModal type="checkbox" id="chkLembrar" />
                                 <S.LabelModal htmlFor="chkLembrar">Lembrar de mim</S.LabelModal>
                             </S.DivCheck>
                             <S.ButtonModal>
@@ -382,7 +377,7 @@ export default function Home() {
                     </S.Modal>
                 </ModalSaibaMais>
             )}
-            
+
         </>
     );
 }
