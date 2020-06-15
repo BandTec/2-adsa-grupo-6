@@ -36,7 +36,7 @@ public class Monitoramento extends javax.swing.JFrame {
      
         
 //        con.listarTodosComputador();
-        con.inserirComputador();
+//        con.inserirComputador();
         
         
         Random random = new Random();
@@ -60,15 +60,15 @@ public class Monitoramento extends javax.swing.JFrame {
         lblTotalCpu.setText(String.format(" %.2f  GHz", cpu.printFraq()));
         lblPorCpu.setText(String.format(" %.2f ", cpu.getPorcentagemCpu()));   
         pbCpu.setValue(cpu.getPorcentagemCpu().intValue());
-        lblDiscoTotal.setText(disco.printDiscoDisponivel());
-        lblDiscoDisponivel.setText(disco.printDiscoTotal());
+        lblDiscoTotal.setText(String.format("%d", disco.discoTotal()));
+        lblDiscoDisponivel.setText(String.format("%d", disco.discoLivre()));
         
         
  
-        lblPorDisco.setText(String.format(" %.2f ", disco.porcentagem));
-        lblTempDisco.setText(disco.printDiscoTotal());
+        lblPorDisco.setText(String.format(" %d ", disco.discoPorcentagem()));
+        lblTempDisco.setText(String.format("%d", disco.discoLivre()));
             
-        pbDisco.setValue(disco.porcentagem.intValue());
+        pbDisco.setValue(disco.discoPorcentagem().intValue());
 
  
         
@@ -187,20 +187,20 @@ public class Monitoramento extends javax.swing.JFrame {
             
             // disco
             
-            if (disco.totalTotal == 0 ) {
+            if (disco.discoTotal() == 0 ) {
                 SlackMessage slackMessage = SlackMessage.builder()
                 .text("O disco esta com 0 disponivel ?")
                 .build();
                 SlackUtils.sendMessage(slackMessage);
             }
             
-            if (disco.totalDisponivel == 0) {
+            if (disco.discoLivre() == 0) {
                 SlackMessage slackMessage = SlackMessage.builder()
                 .text("O disco total esta com 0 disponivel ?")
                 .build();
                 SlackUtils.sendMessage(slackMessage);        
             }
-            con.incluirRegistros();
+//            con.incluirRegistros();
            } 
         );    
               
@@ -833,7 +833,7 @@ public class Monitoramento extends javax.swing.JFrame {
                 
                  try {
                     Icone frame = new Icone();
-                    frame.setVisible(false);
+                    frame.setVisible(true);
                     frame.setIconImage(Toolkit.getDefaultToolkit().getImage("/home/digital/Desktop/ShadowTech/shadow-tech/back-end/Java-JFrame/teste-oshi/src/main/resources/img-logo.png"));
                 } catch (Exception e) {
                     e.printStackTrace();

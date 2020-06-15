@@ -36,14 +36,14 @@ public class ConexaoBanco {
    
    public void inserirComputador(){
        jdbcTemplate.update("INSERT INTO Computador (idMaquina, fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)",
-                            "1", "1", cpu.printProcessor(),disco.printDiscoTotal(),ram.getMemoriaTotal(),cpu.mostrarMacAddress());
+                            "1", "1", cpu.printProcessor(),disco.discoTotal(),ram.getMemoriaTotal(),cpu.mostrarMacAddress());
    }
    
    
     public void incluirRegistros() { 
         cont ++;
         jdbcTemplate.update("INSERT INTO Registros (cpuPc, memoria, disco, dataHora,fkComputador) VALUES (?,?,?,?,?)",
-                           cpu.getPorcentagemCpu(), ram.getPorcentagemAtual(), disco.getPorcentagem(), LocalDateTime.now(),"1");
+                           cpu.getPorcentagemCpu(), ram.getPorcentagemAtual(), disco.discoPorcentagem(), LocalDateTime.now(),"1");
     }
 
     
