@@ -5,9 +5,14 @@
  */
 package com.mycompany.teste.oshi;
 
+import java.awt.BorderLayout;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.util.Random;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 import javax.swing.Timer;
+import javax.swing.border.EmptyBorder;
 
 /**
  *
@@ -18,20 +23,20 @@ public class Monitoramento extends javax.swing.JFrame {
     Cpu cpu = new Cpu();
     Disco disco = new Disco();
     
-    ConexaoBanco con = new ConexaoBanco();
+//    ConexaoBanco con = new ConexaoBanco();
    Integer cont = 0;     
    Integer cont_temp = 0;
    Integer cont_cpu = 0;
    Integer cont_cpu_100 = 0;
    Integer cont_porcentagem_boa = 0;
 
-    
+   
     public Monitoramento() {
         initComponents();
-        
+     
         
 //        con.listarTodosComputador();
-        con.inserirComputador();
+//        con.inserirComputador();
         
         
         Random random = new Random();
@@ -195,7 +200,7 @@ public class Monitoramento extends javax.swing.JFrame {
                 .build();
                 SlackUtils.sendMessage(slackMessage);        
             }
-            con.incluirRegistros();
+//            con.incluirRegistros();
            } 
         );    
               
@@ -825,9 +830,18 @@ public class Monitoramento extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Monitoramento().setVisible(true);
+                
+                 try {
+                    Icone frame = new Icone();
+                    frame.setVisible(true);
+                    frame.setIconImage(Toolkit.getDefaultToolkit().getImage("/home/digital/Desktop/ShadowTech/shadow-tech/back-end/Java-JFrame/teste-oshi/src/main/resources/img-logo.png"));
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
     }
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
