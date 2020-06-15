@@ -23,7 +23,7 @@ public class Monitoramento extends javax.swing.JFrame {
     Cpu cpu = new Cpu();
     Disco disco = new Disco();
     
-//    ConexaoBanco con = new ConexaoBanco();
+    ConexaoBanco con = new ConexaoBanco();
    Integer cont = 0;     
    Integer cont_temp = 0;
    Integer cont_cpu = 0;
@@ -36,7 +36,7 @@ public class Monitoramento extends javax.swing.JFrame {
      
         
 //        con.listarTodosComputador();
-//        con.inserirComputador();
+        con.inserirComputador();
         
         
         Random random = new Random();
@@ -200,7 +200,7 @@ public class Monitoramento extends javax.swing.JFrame {
                 .build();
                 SlackUtils.sendMessage(slackMessage);        
             }
-//            con.incluirRegistros();
+            con.incluirRegistros();
            } 
         );    
               
@@ -833,7 +833,7 @@ public class Monitoramento extends javax.swing.JFrame {
                 
                  try {
                     Icone frame = new Icone();
-                    frame.setVisible(true);
+                    frame.setVisible(false);
                     frame.setIconImage(Toolkit.getDefaultToolkit().getImage("/home/digital/Desktop/ShadowTech/shadow-tech/back-end/Java-JFrame/teste-oshi/src/main/resources/img-logo.png"));
                 } catch (Exception e) {
                     e.printStackTrace();
