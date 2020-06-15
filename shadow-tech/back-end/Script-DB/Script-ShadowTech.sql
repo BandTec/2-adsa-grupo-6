@@ -7,9 +7,7 @@ create table Usuario (
 idUsuario int primary key auto_increment,
 nome varchar(45),
 login varchar(45),
-senha varchar(45),
-tipo varchar(9),
-check(tipo = 'Professor' or tipo = 'Aluno'))auto_increment = 1;
+senha varchar(45));
 
 -- create table Rede (idMaquina
 -- idRede int primary key,
@@ -48,11 +46,10 @@ dataHora datetime,
 fkComputador int,
 foreign key (fkComputador) references Computador(idMaquina))auto_increment = 1;
 
--- create table Processos (
--- idProcessos int primary key,
--- nome varchar(45),
--- fkComputador int,
--- foreign key (fkComputador) references Computador(idMaquina));
+create table Processos (
+idProcessos int primary key,
+nome varchar(45),
+fkComputador int,
+foreign key (fkComputador) references Computador(idMaquina));
 
-insert into Usuario values (null, "Raphael Bachega", "bachega", "bachega", "Aluno");
-select * from Registros;
+insert into Usuario(nome, login, senha) values ('braia', 'braian@braian', '123');
