@@ -17,6 +17,7 @@ public class ConexaoBanco {
     Disco disco = new Disco();
     Ram ram = new Ram();
     
+    Integer cont = 0;   
    public ConexaoBanco(){
        
        dataSource = new BasicDataSource();
@@ -39,10 +40,11 @@ public class ConexaoBanco {
    }
    
    
-    public void incluirRegistros() {     
-        jdbcTemplate.update("INSERT INTO Registros (cpuPc, memoria, disco, dataHora, fkComputador) VALUES (?,?,?,?,?)",
-                            cpu.getPorcentagemCpu(), ram.getPorcentagemAtual(), disco.getPorcentagem(), LocalDateTime.now(), "1");
-        
-        
+    public void incluirRegistros() { 
+        cont ++;
+        jdbcTemplate.update("INSERT INTO Registros (cpuPc, memoria, disco, dataHora,fkComputador) VALUES (?,?,?,?,?)",
+                           cpu.getPorcentagemCpu(), ram.getPorcentagemAtual(), disco.getPorcentagem(), LocalDateTime.now(),"1");
     }
+
+    
 }

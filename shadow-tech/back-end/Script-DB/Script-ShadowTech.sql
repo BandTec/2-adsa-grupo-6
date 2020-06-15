@@ -11,7 +11,7 @@ senha varchar(45),
 tipo varchar(9),
 check(tipo = 'Professor' or tipo = 'Aluno'))auto_increment = 1;
 
--- create table Rede (
+-- create table Rede (idMaquina
 -- idRede int primary key,
 -- nome varchar(45),
 -- dataHora datetime);
@@ -40,12 +40,12 @@ foreign key (fkUsuario) references Usuario(idUsuario));
 -- As tableas a seguir serão tableas com FK más que se relacionam com a tabela Computador.
 
 create table Registros (
-fkComputador int,
 idRegistros int primary key auto_increment,
 cpuPc varchar(45),
 memoria varchar(45),
 disco varchar(45),
 dataHora datetime,
+fkComputador int,
 foreign key (fkComputador) references Computador(idMaquina))auto_increment = 1;
 
 -- create table Processos (
@@ -55,3 +55,4 @@ foreign key (fkComputador) references Computador(idMaquina))auto_increment = 1;
 -- foreign key (fkComputador) references Computador(idMaquina));
 
 insert into Usuario values (null, "Raphael Bachega", "bachega", "bachega", "Aluno");
+select * from Registros;

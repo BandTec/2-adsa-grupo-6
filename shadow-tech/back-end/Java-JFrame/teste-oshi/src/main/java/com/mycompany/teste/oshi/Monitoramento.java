@@ -19,20 +19,20 @@ public class Monitoramento extends javax.swing.JFrame {
     Disco disco = new Disco();
     
     ConexaoBanco con = new ConexaoBanco();
-    Integer cont = 0;     
-    Integer cont_temp = 0;
-    Integer cont_cpu = 0;
-    Integer cont_cpu_100 = 0;
-    Integer cont_porcentagem_boa = 0;
-   
+   Integer cont = 0;     
+   Integer cont_temp = 0;
+   Integer cont_cpu = 0;
+   Integer cont_cpu_100 = 0;
+   Integer cont_porcentagem_boa = 0;
+
     
     public Monitoramento() {
         initComponents();
         
         
 //        con.listarTodosComputador();
-//        con.inserirComputador();
-          
+        con.inserirComputador();
+        
         
         Random random = new Random();
         Double temp;
@@ -68,7 +68,7 @@ public class Monitoramento extends javax.swing.JFrame {
  
         
         
-        
+                
 
         Timer timer = new Timer(1500, (ActionEvent e) -> {
             
@@ -198,7 +198,7 @@ public class Monitoramento extends javax.swing.JFrame {
             con.incluirRegistros();
            } 
         );    
-        
+              
         timer.setRepeats(true);
         timer.start();
     }
