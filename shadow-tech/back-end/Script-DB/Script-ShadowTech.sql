@@ -47,9 +47,14 @@ fkComputador int,
 foreign key (fkComputador) references Computador(idMaquina))auto_increment = 1;
 
 create table Processos (
-idProcessos int primary key,
+idProcessos int primary key auto_increment,
 nome varchar(45),
+consumo varchar(45),
 fkComputador int,
-foreign key (fkComputador) references Computador(idMaquina));
+foreign key (fkComputador) references Computador(idMaquina))auto_increment = 1;
 
 insert into Usuario(nome, login, senha) values ('braia', 'braian@braian', '123');
+select * from Usuario;
+select * from Computador;
+select * from Registros;
+select * from Processos;
