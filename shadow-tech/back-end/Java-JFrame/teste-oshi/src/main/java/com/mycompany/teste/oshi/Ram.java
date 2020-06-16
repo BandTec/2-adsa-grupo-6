@@ -26,20 +26,15 @@ public class Ram {
     private Double memoriaTotal;
     private Double memoriaEmUso;
     
-    public Double getPorcentagemAtual() {
-        getMemoriaTotal();
-        getMemoriaEmUso();
-        Double porcentagemAtual = ((memoriaEmUso * 100.0)/memoriaTotal);
-        
-        return porcentagemAtual;
+    public Double getPorcentagemAtual() {  
+        return ((getMemoriaEmUso() * 100.0)/getMemoriaTotal());
     }
     
     public Double getMemoriaTotal() {
-        return memoriaTotal = ram.getTotal() / Math.pow(10,9);
+        return ram.getTotal() / Math.pow(10,9) - 0.6;
     }
 
     public Double getMemoriaEmUso() {
-        getMemoriaTotal();
-        return memoriaEmUso = memoriaTotal - ram.getAvailable() / Math.pow(10,9);
+        return getMemoriaTotal() - ram.getAvailable() / Math.pow(10,9);
     }  
 }
