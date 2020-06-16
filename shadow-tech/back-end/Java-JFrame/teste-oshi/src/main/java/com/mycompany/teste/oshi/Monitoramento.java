@@ -584,9 +584,9 @@ public class Monitoramento extends javax.swing.JFrame {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGap(16, 16, 16)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel50)
-                            .addComponent(lblRam)))
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblRam, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel50)))
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel15)))
@@ -607,9 +607,9 @@ public class Monitoramento extends javax.swing.JFrame {
                     .addComponent(jLabel18)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGap(9, 9, 9)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel52)
-                            .addComponent(lblTemperatura))))
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblTemperatura)
+                            .addComponent(jLabel52))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel19)
@@ -685,9 +685,7 @@ public class Monitoramento extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblConsumoRam)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(lblTotalRam, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(lblTotalRam, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                     .addGap(10, 10, 10)
                                     .addComponent(lblPorRam, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -765,10 +763,11 @@ public class Monitoramento extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(pbRam, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                            .addComponent(jLabel4)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(lblPorRam)
-                                            .addComponent(lblPorRam1))
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                .addComponent(jLabel4)
+                                                .addComponent(lblPorRam1)))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                             .addComponent(lblConsumoRam)
@@ -820,12 +819,12 @@ public class Monitoramento extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Monitoramento().setVisible(true);
-                
-                 try {
-                    Icone frame = new Icone();
-                    frame.setVisible(true);
-                    frame.setIconImage(Toolkit.getDefaultToolkit().getImage("/home/digital/Desktop/ShadowTech/shadow-tech/back-end/Java-JFrame/teste-oshi/src/main/resources/img-logo.png"));
+                try {
+                    JFrame tela = new Monitoramento();
+                    tela.setIconImage(Toolkit.getDefaultToolkit().getImage("C://Users//Digital Solutions//Desktop//ShadowTech//shadow-tech//front-end//site-react//src//assets//logo.png"));
+//                    tela.setIconImage(Toolkit.getDefaultToolkit().getImage("/home/digital/Desktop/ShadowTech/shadow-tech/back-end/Java-JFrame/teste-oshi/src/main/resources/img-logo.png"));
+//                    MUDAR O ENDEREÇO DA IMAGEM PARA NÃO BUGAR ESSA PORRA
+                    tela.setVisible(true);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
