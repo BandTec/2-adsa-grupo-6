@@ -15,33 +15,23 @@ public class Disco {
     FileSystem fileSystem = os.getFileSystem();
     OSFileStore[] fileStore = fileSystem.getFileStores();
     
-    private long discoTotal;
-    private long livre;
-    private long usado;
+    private Double usado;
     private Integer porcentagem;
-    private String label;
-    private String tipo;
     private Integer hdAtual = 0;
     private Integer hdTotal = fileStore.length;
     
 
-    public long discoTotal(){
-        discoTotal = fileStore[hdAtual].getTotalSpace();
-        
-        return discoTotal;
+    public Double discoTotal(){
+        return (double)fileStore[hdAtual].getTotalSpace() / Math.pow(10,9);
     }
     
-    public long discoLivre(){
-        livre = fileStore[hdAtual].getFreeSpace();
-        
-        return livre;
+    public Double discoLivre(){   
+        return (double)fileStore[hdAtual].getFreeSpace() / Math.pow(10, 9);
     }
     
-    public long discoUsado(){
-        usado = fileStore[hdAtual].getTotalSpace() - 
-                fileStore[hdAtual].getFreeSpace();
-        
-        return usado;
+    public Double discoUsado(){
+        return (double)(fileStore[hdAtual].getTotalSpace() - 
+                fileStore[hdAtual].getFreeSpace()) / Math.pow(10, 9) ;
     }
     
     public Integer discoPorcentagem(){
