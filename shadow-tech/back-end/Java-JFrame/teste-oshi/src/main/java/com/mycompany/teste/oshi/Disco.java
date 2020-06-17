@@ -2,11 +2,10 @@ package com.mycompany.teste.oshi;
 
 import javax.swing.JOptionPane;
 import oshi.SystemInfo;
-import oshi.hardware.HardwareAbstractionLayer;
 import oshi.software.os.FileSystem;
 import oshi.software.os.OSFileStore;
+import oshi.software.os.OSProcess;
 import oshi.software.os.OperatingSystem;
-import oshi.util.FormatUtil;
 
 public class Disco {
 
@@ -65,4 +64,9 @@ public class Disco {
                     "primeirp HD/Partição.");
         }
     }
+    
+    
+    
+    
+    
 }

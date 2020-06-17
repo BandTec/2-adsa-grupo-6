@@ -24,33 +24,65 @@ public class Processos {
         SystemInfo si = new SystemInfo();
         HardwareAbstractionLayer hard = si.getHardware();
         OperatingSystem os = si.getOperatingSystem();
-            
-        for(OSProcess process : os.getProcesses()){
-            //retorna o nome do processo
-            System.out.println("Nome Processo :" + process.getName());
-            
-            //retorna o id do processo
-            System.out.println("Id Processo: " + process.getParentProcessID());
-            
-            //retorna o estado do processo
-            System.out.println("Estado processo: " + process.getState());
-            
-            // retorna o usuario que esta rodando o processo
-            System.out.println("Usuario: " + process.getUser());
-            
-            // retorna a quantidade da cpu consumida pelo processo
-            //ps: se eu não me engano é em porcentagem
-            //precisa usar o String.format('%.1f')
-            System.out.println("Cpu: " + 
-                    (100d * (process.getKernelTime() + process.getUserTime()) 
-                            / process.getUpTime()));
-            
-            //retorna a quantidade usada de memoria em cada processo
-            System.out.println("Memoria: " + FormatUtil.formatBytes(process.getResidentSetSize()));
-            
-            System.out.println("-----");
-        }
         
+        Integer processCount = 0;  
+            
+//        for(OSProcess process : os.getProcesses(5, OperatingSystem.ProcessSort.NEWEST)){
+//            //retorna o nome do processo
+//            System.out.println("Nome Processo :" + process.getName());
+//            
+//            //retorna o id do processo
+//            System.out.println("Id Processo: " + process.getParentProcessID());
+//            
+//            //retorna o estado do processo
+//            System.out.println("Estado processo: " + process.getState());
+//            
+//            // retorna o usuario que esta rodando o processo
+//            System.out.println("Usuario: " + process.getUser());
+//            
+//            // retorna a quantidade da cpu consumida pelo processo
+//            //ps: se eu não me engano é em porcentagem
+//            //precisa usar o String.format('%.1f')
+//            System.out.println("Cpu: " + 
+//                    (100d * (process.getKernelTime() + process.getUserTime()) 
+//                            / process.getUpTime()));
+//            
+//            //retorna a quantidade usada de memoria em cada processo
+//            System.out.println("Memoria: " + FormatUtil.formatBytes(process.getResidentSetSize()));
+//            
+//            System.out.println("-----");
+//        }
+
+        
+        for (OSProcess process : os.getProcesses(10,OperatingSystem.ProcessSort.MEMORY)) {
+                processCount++;
+                System.out.println("Nome Processo :" + process.getName());
+                System.out.println("Id Processo: " + process.getParentProcessID());
+                System.out.println("Estado processo: " + process.getState());
+                System.out.println("Usuario: " + process.getUser());
+                System.out.println("Cpu: "
+                        + (100d * (process.getKernelTime() + process.getUserTime())
+                                / process.getUpTime()));
+                System.out.println("Memoria: " + FormatUtil.formatBytes(process.getResidentSetSize()));
+                System.out.println("-----");        
+            }        
+
+
+//             for (OSProcess process : os.getProcess()) {
+//                processCount++;
+//                System.out.println("Nome Processo :" + process.getName());
+//                System.out.println("Id Processo: " + process.getParentProcessID());
+//                System.out.println("Estado processo: " + process.getState());
+//                System.out.println("Usuario: " + process.getUser());
+//                System.out.println("Cpu: "
+//                        + (100d * (process.getKernelTime() + process.getUserTime())
+//                                / process.getUpTime()));
+//                System.out.println("Memoria: " + FormatUtil.formatBytes(process.getResidentSetSize()));
+//                System.out.println("-----");        
+//            }
+        
+                
+        }
     }
     
-}
+
