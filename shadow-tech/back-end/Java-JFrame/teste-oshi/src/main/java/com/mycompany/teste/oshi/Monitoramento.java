@@ -22,7 +22,6 @@ public class Monitoramento extends javax.swing.JFrame {
     Ram ram = new Ram();
     Cpu cpu = new Cpu();
     Disco disco = new Disco();
-
     
     ConexaoBanco con = new ConexaoBanco();
    Integer cont = 0;     
@@ -64,10 +63,6 @@ public class Monitoramento extends javax.swing.JFrame {
         lblTotalCpu.setText(String.format(" %.2f  GHz", cpu.printFraq()));
 
         lblDiscoTotal.setText(String.format("%.0f GB", disco.discoTotal()));
-        
-        
-        
-     
         
         Timer timer = new Timer(5, (ActionEvent e) -> {
 
@@ -902,3 +897,4 @@ public class Monitoramento extends javax.swing.JFrame {
     private javax.swing.JProgressBar pbVscode;
     // End of variables declaration//GEN-END:variables
 }
+

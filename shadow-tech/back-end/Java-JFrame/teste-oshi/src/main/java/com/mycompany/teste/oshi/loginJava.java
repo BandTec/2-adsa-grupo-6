@@ -66,7 +66,6 @@ public class loginJava extends javax.swing.JFrame {
         jLabel1.setText("Login");
 
         btnFechar.setBackground(new java.awt.Color(255, 255, 255));
-        btnFechar.setForeground(new java.awt.Color(51, 51, 51));
         btnFechar.setText("X");
         btnFechar.setBorder(null);
         btnFechar.addActionListener(new java.awt.event.ActionListener() {
@@ -137,8 +136,8 @@ public class loginJava extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(131, 131, 131)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
-                .addComponent(btnFechar, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addComponent(btnFechar, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
