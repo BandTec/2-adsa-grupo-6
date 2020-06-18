@@ -25,7 +25,7 @@ export default class Grafico extends Component {
         new Chart(myChartRef, {
             type: 'horizontalBar',
             data: {
-                labels: [nome[0][0].nome, nome[0][1].nome, nome[0][2].nome, nome[0][3].nome],
+                labels: ["Google Chrome", "VSCODE", "Minecraft", "COD"],
                 datasets: [{
                     label: '',
                     data: [
