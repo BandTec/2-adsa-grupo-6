@@ -11,7 +11,7 @@ import java.util.Map;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-public class ConexaoBanco {
+public class ConexaoBancoLogTeste {
 
    private BasicDataSource dataSource;
    private JdbcTemplate jdbcTemplate;
@@ -30,7 +30,7 @@ public class ConexaoBanco {
    public void forcarCatch(){
        try {
             jdbcTemplate.update("INSERT INTO Computador (idMaquina, fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)",
-                                 "1", "1", cpu.printProcessor(),disco.discoTotal(),ram.getMemoriaTotal(),cpu.mostrarMacAddress());
+                                 "1", "1", "asfasf",1.0,0.89,"asafasfsa");
        } catch (Exception e) {
                 System.out.println(e);
                 testeMetodo(e);
