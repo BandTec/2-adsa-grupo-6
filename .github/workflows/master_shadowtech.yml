@@ -38,4 +38,4 @@ jobs:
         app-name: 'shadowtech'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_21a288b1fa074b66b62392e53cf4dcad }}
-        package: working-directory: ${{env.working-directory}} 
+        package: ./shadow-tech/front-end/back-end/
