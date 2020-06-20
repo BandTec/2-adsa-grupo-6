@@ -4,9 +4,13 @@ const UserController = require('./controller/user');
 const DashController = require('./controller/dash');
 const server = express();
 
+const path = require('path');
+
 var cors = require('cors');
 const User = require('./models/user');
 server.use(cors())
+
+server.use('/', express.static(path.resolve(__dirname, "public")));
 
 server.use(bodyParser.json());
 
@@ -26,7 +30,7 @@ server.get('/plotDash', (req, res) => {
     DashController.ultimosRegistrosProcessos(req, res);
 });
 
-const port = 5000
+const port = process.env.port || 3001;
 server.listen(port, function() {
     console.log("Servidor rodando na porta " + port);
 })

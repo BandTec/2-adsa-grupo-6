@@ -1,0 +1,99 @@
+
+
+--+--INÍCIO LOG
+
+     DATA: 20/06/2020  20:12:30
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 20/06/2020  20:12:34
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 20/06/2020  20:12:37
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 20/06/2020  20:12:41
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 20/06/2020  20:12:44
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 20/06/2020  20:12:47
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 20/06/2020  20:12:50
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 20/06/2020  20:12:53
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 20/06/2020  20:12:57
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter  as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import NotFound from './pages/notFound/not-found';
 import Home from './pages/home/home';
@@ -9,7 +9,7 @@ import AlunosProcesso from './pages/alunosProcesso';
 
 export default function Routes() {
     return(
-        <Router>
+        <BrowserRouter basename="/">
             <Switch>
                 <Route path="/" exact component={Home}/>
                 <Route path="/dashboards" component={Dashboards}/>
@@ -17,6 +17,6 @@ export default function Routes() {
                 <Route path="/profile" component={Profile}/>
                 <Route path="*" component={NotFound}/>
             </Switch>
-        </Router>
+        </BrowserRouter>
     );
 }

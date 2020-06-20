@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "./static/css/main.58073f2b.chunk.css",
+    "main.js": "./static/js/main.ec906550.chunk.js",
+    "main.js.map": "./static/js/main.ec906550.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.dd9e0809.js",
+    "runtime-main.js.map": "./static/js/runtime-main.dd9e0809.js.map",
+    "static/js/2.788543d1.chunk.js": "./static/js/2.788543d1.chunk.js",
+    "static/js/2.788543d1.chunk.js.map": "./static/js/2.788543d1.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.84208d6b71ccece88c1e77f1cd0853c8.js": "./precache-manifest.84208d6b71ccece88c1e77f1cd0853c8.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.58073f2b.chunk.css.map": "./static/css/main.58073f2b.chunk.css.map",
+    "static/js/2.788543d1.chunk.js.LICENSE.txt": "./static/js/2.788543d1.chunk.js.LICENSE.txt",
+    "static/media/aluno-legal.jpg": "./static/media/aluno-legal.2c63a041.jpg",
+    "static/media/draven.png": "./static/media/draven.8b3f3eb3.png",
+    "static/media/fundo-contato.png": "./static/media/fundo-contato.d097cb73.png",
+    "static/media/imagem-cybersecurity.png": "./static/media/imagem-cybersecurity.4a1ea299.png",
+    "static/media/imagem-rede.png": "./static/media/imagem-rede.6a4ebffb.png",
+    "static/media/logo-shiny.png": "./static/media/logo-shiny.848d323f.png",
+    "static/media/logo.png": "./static/media/logo.eacc7611.png",
+    "static/media/ubiquiti.png": "./static/media/ubiquiti.246fb2ab.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd9e0809.js",
+    "static/js/2.788543d1.chunk.js",
+    "static/css/main.58073f2b.chunk.css",
+    "static/js/main.ec906550.chunk.js"
+  ]
+}
