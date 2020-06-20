@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const DivFundoNavTopo = styled.div`
+    height: 80px;
+    background-color: #3341A3;
+`;
+
 export const global = styled.div`
     width: 100%;
     display: flex;

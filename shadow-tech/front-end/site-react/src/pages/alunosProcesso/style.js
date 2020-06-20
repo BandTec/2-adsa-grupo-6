@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const DivFundoNavTopo = styled.div`
+    height: 80px;
+    background-color: #3341A3;
+`;
+
 export const alunosSearch = styled.div`
     height: 80%;
     display: flex;
@@ -20,8 +25,10 @@ export const search = styled.div`
         height: 40px;
         width: 80%;
         margin-right: 10px;
-        background-color: #011638;
+        background-color: #3341A3;
         border-radius: 5px;
+        padding: 1vh 1vw;
+        color: white;
     }
 
     input::placeholder{
@@ -37,7 +44,7 @@ export const listAlunos = styled.div`
     max-height: 80vh;
     overflow: auto;
 
-    /* background-color: #FFF; */
+    // background-color: #ccc;
 `;
 
 export const alunos = styled.div`
@@ -45,18 +52,23 @@ export const alunos = styled.div`
     justify-content: center;
     width: 97%;
     margin: 1vh 1vw;
+    background-color: white;
+    border: 2px solid #3341A3;
+    border-radius: 5px;
+    padding-left: 2px;
+    background-color: red;
 
     cursor: pointer;
 
     div{
         cursor: pointer;
-        background-color: #011638;
+        background-color: #FFF;
         display: flex;
         width: 100%;
         margin: 0 1%;
         border-radius: 5px;
         align-items: center;
         padding: 0 10px;
-        color: white;
+        color: black;
     }
 `;

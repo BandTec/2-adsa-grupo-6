@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
 import {useModal} from 'use-react-modal';
+import {useHistory} from 'react-router-dom';
 
 import logo from '../../assets/logo.png';
 import logoShiny from '../../assets/logo-shiny.png';
 import * as S from './style';
 
-export default function NavigationBar(){
+export default function NavigationBar({ isDash }){
+
+    const hist = useHistory();
 
     const [mostrarDropdown, setMostrarDropdown] = useState(false);
     const [mostrarLogoShiny, setMostrarLogoShiny] = useState(false);
@@ -17,6 +20,13 @@ export default function NavigationBar(){
     const [ abrirModalCadastro, fecharModalCadastro, isOpenCadastro, ModalCadastro ] = useModal({
         background: 'rgba(0,0,0,0.3)'
     });
+    const [ abrirModalPerfil, fecharModalPerfil, isOpenPerfil, ModalPerfil ] = useModal({
+        background: 'rgba(0,0,0,0.3)'
+    });
+
+    const sair = () =>{
+        window.alert("VOCÊ SAIU!");
+    }
 
     return(
         <>
@@ -25,13 +35,20 @@ export default function NavigationBar(){
                     <S.LogoContainer>
                     <div onMouseEnter={() => setMostrarLogoShiny(true)}
                         onMouseLeave={() => setMostrarLogoShiny(false)}>
-                        { mostrarLogoShiny  ?  <S.LogoImagem src={logoShiny} alt=""/>  :  <S.LogoImagem src={logo} /> }
+                        { mostrarLogoShiny  ?  <S.LogoImagem src={logoShiny} onClick={() => hist.push('/')} alt=""/>  :  <S.LogoImagem src={logo} /> }
                     </div>
                     </S.LogoContainer>
                     <S.ButtonsContainer>
+                    {isDash ?
+                        <>
+                        <S.Button onClick={() => hist.push('/alunosProcesso')}>Aluno</S.Button>
+                        <S.Button>Suporte</S.Button>
+                        </>: 
+                        <> 
                         <S.Button>Produto</S.Button>
                         <S.Button>Sobre</S.Button>
                         <S.Button>Equipe</S.Button>
+                        </>}
                         <S.Button 
                         onMouseEnter={() => setMostrarDropdown(true)}
                         onMouseLeave={() => setMostrarDropdown(false)}>
@@ -46,10 +63,16 @@ export default function NavigationBar(){
                         <S.DropdownContainer>
                             <S.DivDropdown>
                                 <S.DropdownOption>
-
-                                    <S.DropdownItem onClick={abrirModalLogin}>Login</S.DropdownItem>
-                                    <S.DropdownItem onClick={abrirModalCadastro}>Cadastro</S.DropdownItem>
-                                
+                                    {!isDash ?
+                                        <>
+                                            <S.DropdownItem onClick={abrirModalLogin}>Login</S.DropdownItem>
+                                            <S.DropdownItem onClick={abrirModalCadastro}>Cadastro</S.DropdownItem>
+                                        </> :
+                                        <>
+                                            <S.DropdownItem onClick={abrirModalPerfil}>Perfil</S.DropdownItem>
+                                            <S.DropdownItem onClick={sair}>Sair</S.DropdownItem>
+                                        </>
+                                    }
                                 </S.DropdownOption>
                             </S.DivDropdown>
                         </S.DropdownContainer>
@@ -167,6 +190,40 @@ export default function NavigationBar(){
                         </S.ConteudoModal>
                     </S.Modal>
                 </ModalCadastro>
+            )}
+
+            {isOpenPerfil && (
+                <ModalPerfil>
+                    <S.Modal>
+                        <S.DivContainerClose>
+                            <S.SpanClose onClick={fecharModalPerfil}>
+                                &times;
+                            </S.SpanClose>
+                        </S.DivContainerClose>
+                        <S.DivTituloModal>
+                            <S.TituloModal>
+                                PERFIL
+                            </S.TituloModal>
+                        </S.DivTituloModal>
+                        <S.ConteudoModal>
+                            <S.DivLabelInput>
+                                <S.LabelModal htmlFor="nome">Nome:</S.LabelModal>
+                            </S.DivLabelInput>
+                            <S.DivLabelInput>
+                                <S.LabelModal htmlFor="email">E-mail:</S.LabelModal>
+                            </S.DivLabelInput>
+                            <S.DivLabelInput>
+                                <S.LabelModal htmlFor="senha">Senha:</S.LabelModal>
+                            </S.DivLabelInput>
+                            <S.DivLabelInput>
+                                <S.LabelModal htmlFor="confirmaSenha">Confirmação da Senha:</S.LabelModal>
+                            </S.DivLabelInput>
+                            <S.ButtonModal>
+                                EDITAR DADOS
+                            </S.ButtonModal>
+                        </S.ConteudoModal>
+                    </S.Modal>
+                </ModalPerfil>
             )}
             
         </> 

@@ -29,6 +29,7 @@ export default function Profile() {
 
     return (
         <>
+            <S.DivFundoNavTopo />
             <Topnav isDash={true}/>
             <S.global>
                 <S.left>

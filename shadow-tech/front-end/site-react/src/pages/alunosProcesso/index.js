@@ -31,6 +31,7 @@ export default function AlunosProcesso() {
 
     return (
         <>
+            <S.DivFundoNavTopo />
             <Topnav isDash={true} />
             <S.alunosSearch>
                 <S.search>

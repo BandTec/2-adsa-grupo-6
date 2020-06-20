@@ -48,22 +48,22 @@ export const Button = styled.button`
     }
 `;
 export const Dropdown = styled.div`
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: red;
 `;
 export const DropdownContainer = styled.div`
+    box-sizing: border-box;
     display: flex; 
     justify-content: flex-end;
     width: 100%;
-    background-color: green;
 `;
 export const DivDropdown = styled.div`
+    box-sizing: border-box;
     z-index: 1000;
     width: 50%;
     height: 0;
-    background-color: blue;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -72,6 +72,7 @@ export const DivDropdown = styled.div`
     }
 `;
 export const DropdownOption = styled.div`
+    box-sizing: border-box;
     width: 23%;
     height: 20vh;
     min-height: 80px;
@@ -105,6 +106,10 @@ export const DropdownItem = styled.div`
         border-bottom-left-radius: 20px;
     }
 `;
+
+
+
+
 
 export const Modal = styled.div`
     height: auto;

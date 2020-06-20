@@ -14,6 +14,8 @@ import like from '../../assets/like.png';
 import money from '../../assets/money.png';
 import draven from '../../assets/draven.png';
 
+import NavigationBar from '../../components/navigation-bar/navigation-bar';
+
 import api from '../services/api';
 
 import * as S from './style';
@@ -97,7 +99,7 @@ export default function Home() {
     return (
         <>
             <S.DivFundoNavTopo />
-
+            <NavigationBar />
             <S.DivHeaderContainer>
                 <S.LogoContainer>
                     <div onMouseEnter={() => setLogoShiny(true)}
@@ -355,17 +357,17 @@ export default function Home() {
                         <S.ConteudoModal>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
-                                <S.InputModal type="text" id="txtEmail" placeholder="Insira o seu e-mail" />
+                                <S.InputModal type="email" name="email" id="txtEmail" placeholder="Insira o seu e-mail" />
                             </S.DivLabelInput>
                             <S.DivLabelInput>
                                 <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
-                                <S.InputModal type="text" id="txtSenha" placeholder="Insira a sua senha" />
+                                <S.InputModal type="password" id="txtSenha" placeholder="Insira a sua senha" />
                             </S.DivLabelInput>
                             <S.DivCheck>
                                 <S.CheckboxModal type="checkbox" id="chkLembrar" />
                                 <S.LabelModal htmlFor="chkLembrar">Lembrar de mim</S.LabelModal>
                             </S.DivCheck>
-                            <S.ButtonModal>
+                            <S.ButtonModal onClick={handleLogin}>
                                 ACESSAR
                             </S.ButtonModal>
                             <S.DivEsqueciSenha>

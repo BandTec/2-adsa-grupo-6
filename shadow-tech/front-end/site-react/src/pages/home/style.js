@@ -340,6 +340,8 @@ export const InputModal = styled.input`
     background-color: #DDDDDD;
     padding: 1vh 1vw;
     width: 100%;
+    border: 1px solid #3341A3;
+    border-radius: 50px;
 `;
 export const DivCheck = styled.div`
     display: flex;
@@ -360,6 +362,8 @@ export const ButtonModal = styled.button`
     outline: none;
     cursor:pointer;
     color: white;
+    border: 1px solid white;
+    border-radius: 50px;
     background-color: #3341A3;
     box-shadow: 0px 0px 5px;
     &:hover, :active{ 

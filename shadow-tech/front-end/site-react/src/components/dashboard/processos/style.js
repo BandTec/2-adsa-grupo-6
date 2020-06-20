@@ -14,8 +14,7 @@ export const processos = styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
-  background-color: #011638;
-  opacity: 0.8;
+  background-color: #3341A3;
   min-height: 8vh;
   width: 98%;
   margin: 1% 0;
