@@ -24,9 +24,10 @@ public class Processos {
         SystemInfo si = new SystemInfo();
         HardwareAbstractionLayer hard = si.getHardware();
         OperatingSystem os = si.getOperatingSystem();
+        Disco d = new Disco();
         
-        Integer processCount = 0;  
-            
+        Integer processCount = 0; 
+        
 //        for(OSProcess process : os.getProcesses(5, OperatingSystem.ProcessSort.NEWEST)){
 //            //retorna o nome do processo
 //            System.out.println("Nome Processo :" + process.getName());
@@ -53,19 +54,19 @@ public class Processos {
 //            System.out.println("-----");
 //        }
 
-        
-        for (OSProcess process : os.getProcesses(10,OperatingSystem.ProcessSort.MEMORY)) {
-                processCount++;
-                System.out.println("Nome Processo :" + process.getName());
-                System.out.println("Id Processo: " + process.getParentProcessID());
-                System.out.println("Estado processo: " + process.getState());
-                System.out.println("Usuario: " + process.getUser());
-                System.out.println("Cpu: "
-                        + (100d * (process.getKernelTime() + process.getUserTime())
-                                / process.getUpTime()));
-                System.out.println("Memoria: " + FormatUtil.formatBytes(process.getResidentSetSize()));
-                System.out.println("-----");        
-            }        
+//        
+//        for (OSProcess process : os.getProcesses(10,OperatingSystem.ProcessSort.MEMORY)) {
+//                processCount++;
+//                System.out.println("Nome Processo :" + process.getName());
+//                System.out.println("Id Processo: " + process.getParentProcessID());
+//                System.out.println("Estado processo: " + process.getState());
+//                System.out.println("Usuario: " + process.getUser());
+//                System.out.println("Cpu: "
+//                        + (100d * (process.getKernelTime() + process.getUserTime())
+//                                / process.getUpTime()));
+//                System.out.println("Memoria: " + FormatUtil.formatBytes(process.getResidentSetSize()));
+//                System.out.println("-----");        
+//            }        
 
 
 //             for (OSProcess process : os.getProcess()) {
@@ -81,7 +82,12 @@ public class Processos {
 //                System.out.println("-----");        
 //            }
         
-                
+                for (OSProcess process : os.getProcesses(10, OperatingSystem.ProcessSort.MEMORY)) {
+                      for(OSProcess processp:os.getChildProcesses(process.getParentProcessID(), 0, null)){
+                      System.out.println(processp.getName());
+                      System.out.println("Memoria: " + FormatUtil.formatBytes(processp.getResidentSetSize()));
+                  }
+        }
         }
     }
     

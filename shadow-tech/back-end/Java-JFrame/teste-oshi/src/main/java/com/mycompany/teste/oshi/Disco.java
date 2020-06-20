@@ -1,72 +1,77 @@
 package com.mycompany.teste.oshi;
 
-import javax.swing.JOptionPane;
+import java.util.ArrayList;
+import java.util.List;
 import oshi.SystemInfo;
 import oshi.software.os.FileSystem;
 import oshi.software.os.OSFileStore;
-import oshi.software.os.OSProcess;
 import oshi.software.os.OperatingSystem;
 
 public class Disco {
-
-    SystemInfo sy = new SystemInfo();
-    OperatingSystem os = sy.getOperatingSystem();
-    FileSystem fileSystem = os.getFileSystem();
-    OSFileStore[] fileStore = fileSystem.getFileStores();
+    List<OSFileStore> fileStore;
+   
     
-    private Double usado;
-    private Integer porcentagem;
-    private Integer hdAtual = 0;
-    private Integer hdTotal = fileStore.length;
+    public Disco(){
+        SystemInfo sy = new SystemInfo();
+        OperatingSystem os = sy.getOperatingSystem();
+        FileSystem fileSystem = os.getFileSystem();
+        fileStore = fileSystem.getFileStores();
+    }
+//    private Double usado;
+//    private Integer porcentagem;
+//    private Integer hdAtual = 0;
+//    private Integer hdTotal = fileStore.length;
     
-
     public Double discoTotal(){
-        return (double)fileStore[hdAtual].getTotalSpace() / Math.pow(10,9);
-    }
-    
-    public Double discoLivre(){   
-        return (double)fileStore[hdAtual].getFreeSpace() / Math.pow(10, 9);
-    }
-    
-    public Double discoUsado(){
-        return (double)(fileStore[hdAtual].getTotalSpace() - 
-                fileStore[hdAtual].getFreeSpace()) / Math.pow(10, 9) ;
-    }
-    
-    public Integer discoPorcentagem(){
-        Double usado = (double)fileStore[hdAtual].getTotalSpace() 
-                     - (double)fileStore[hdAtual].getFreeSpace();
+        List<Double> unidades = new ArrayList();
+        Double discoTotal = 0.0;
         
-        Double total = (double)fileStore[hdAtual].getTotalSpace();
+        for (OSFileStore fs : fileStore) {
+            Long espacoTotal = fs.getTotalSpace();
+            Double espacoTotalgb = espacoTotal/Math.pow(1024, 3);
+            unidades.add(espacoTotalgb);
+        }
+        for (Double unidade : unidades) {
+            discoTotal += unidade;
+        }
+        return discoTotal;
+    }
+    
+     public Double discoLivre(){
+        List<Double> unidades = new ArrayList();
+        Double discoLivre = 0.0;
         
-        porcentagem = (int)((usado / total)*100);
-
-        return porcentagem;
+        for (OSFileStore fs : fileStore) {
+            Long espacoTotalLivre = fs.getFreeSpace();
+            Double espacoLivrelgb = espacoTotalLivre/Math.pow(1024, 3);
+            unidades.add(espacoLivrelgb);
+        }
+        for (Double unidade : unidades) {
+            discoLivre += unidade;
+        }
+        return discoLivre;
     }
      
-   
-    public void paginaProxima(){
-        if(hdAtual < hdTotal - 1){
-            hdAtual ++;
-            
-        }else{
-            JOptionPane.showMessageDialog(null, 
-                    "utlimo HD=Partição.");
+     public Double discoUsado(){
+        List<Double> unidades = new ArrayList();
+        Double discoUsado = 0.0;
+        
+        for (OSFileStore fs : fileStore) {
+//            Long espacoUsado = fs.getUsableSpace();
+              Long espacoTotal = fs.getTotalSpace();
+              Long espacoLivre = fs.getFreeSpace();
+            Double espacoUsadogb = (espacoTotal - espacoLivre)/Math.pow(1024, 3);
+            unidades.add(espacoUsadogb);
         }
-    }
-    
-    public void paginaAnterior(){
-        if(hdAtual > 0){
-            hdAtual --;
-            
-        }else{
-            JOptionPane.showMessageDialog(null, 
-                    "primeirp HD/Partição.");
+        for (Double unidade : unidades) {
+            discoUsado += unidade;
         }
+        return discoUsado;
     }
-    
-    
-    
-    
-    
+     
+     public Double discoPorcentagem() {
+         Double porcentagem = 0.0;
+         porcentagem = (discoTotal() * discoUsado())/100;
+         return porcentagem;
+     }
 }

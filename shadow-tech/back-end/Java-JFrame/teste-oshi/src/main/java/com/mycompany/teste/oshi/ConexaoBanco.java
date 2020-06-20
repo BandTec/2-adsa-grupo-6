@@ -30,34 +30,47 @@ public class ConexaoBanco {
        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
        dataSource.setUrl("jdbc:mysql://localhost:3306/shadowtec ");
        dataSource.setUsername("root");
-       dataSource.setPassword("@Bateria2007");
+       dataSource.setPassword("@Bateria2009");
        
        jdbcTemplate = new JdbcTemplate(this.dataSource);
    }
    
-   public List listarTodosComputador(){
-       List<Map<String,Object>> lista = jdbcTemplate.queryForList("SELECT * FROM Computador");
-       return lista;
-   }
+//   public List listarTodosComputador(){
+//       List<Map<String,Object>> lista = jdbcTemplate.queryForList("SELECT * FROM Computador");
+//       return lista;
+//   }
    
    public void inserirComputador(){
+       try {
        jdbcTemplate.update("INSERT INTO Computador (idMaquina, fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)",
                             "1", "1", cpu.printProcessor(),disco.discoTotal(),ram.getMemoriaTotal(),cpu.mostrarMacAddress());
+           
+       } catch (Exception e) {
+           Log.gravarLog(e);
+       }
    }
    
    
-    public void incluirRegistros() { 
-        cont ++;
-        jdbcTemplate.update("INSERT INTO Registros (cpuPc, memoria, disco, dataHora,fkComputador) VALUES (?,?,?,?,?)",
-                           cpu.getPorcentagemCpu(), ram.getPorcentagemAtual(), disco.discoUsado(), LocalDateTime.now(),"1");
+    public void incluirRegistros() {
+        try {
+            jdbcTemplate.update("INSERT INTO Registros (cpuPc, memoria, disco, dataHora,fkComputador) VALUES (?,?,?,?,?)",
+                           cpu.getPorcentagemCpu(), ram.getPorcentagemAtual(), disco.discoUsado(), LocalDateTime.now(),"1"); 
+        } catch (Exception e) {
+            Log.gravarLog(e);
+        }
     }
     
     public void incluirProcessos() {
-         for(OSProcess process : os.getProcesses()){
-        jdbcTemplate.update("INSERT INTO Processos (nome, consumo, fkComputador) VALUES (?,?,?)",
-                          process.getName(),(100d * (process.getKernelTime() + process.getUserTime()) 
-                            / process.getUpTime()),"1");
+        try {
+           for(OSProcess process : os.getProcesses()){
+            jdbcTemplate.update("INSERT INTO Processos (nome, consumo, fkComputador) VALUES (?,?,?)",
+                          process.getName(),
+                          (100d * (process.getKernelTime() + process.getUserTime()) / process.getUpTime()),"1");
     }
+            
+        } catch (Exception e) {
+            Log.gravarLog(e);
+        }
     }
 
     
