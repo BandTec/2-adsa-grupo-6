@@ -25,6 +25,7 @@ jobs:
         npm install
         npm run build --if-present
         npm run test --if-present
+      working-directory: /shadow-tech/front-end/site-react
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v1
@@ -32,4 +33,4 @@ jobs:
         app-name: 'shadowtech'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_f799bd8e966c47b8ba10f2f8fa6a9a31 }}
-        package: .
+        package: ./shadow-tech/front-end/site-react/build
