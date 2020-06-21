@@ -13,7 +13,7 @@ jobs:
     runs-on: windows-latest
 
     env:
-      working-directory: ./shadow-tech/front-end/back-end/
+      working-directory: ./shadow-tech/front-end/site-react
 
 
     steps:
@@ -38,4 +38,4 @@ jobs:
         app-name: 'shadowtech'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_21a288b1fa074b66b62392e53cf4dcad }}
-        package: ./shadow-tech/front-end/back-end/
+        package: ./shadow-tech/front-end/site-react/build
