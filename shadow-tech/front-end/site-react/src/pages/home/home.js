@@ -52,7 +52,11 @@ export default function Home() {
             fecharModalLogin();
             hist.push('/dashboards');
         }).catch(error => {
-            alert('Credenciais inválidas!');
+            if (error.response.status === 404) {
+                alert('Credenciais inválidas!');
+            }else{
+                alert('Erro de conexão!');
+            }
         });
     }
 
