@@ -16,7 +16,7 @@ import draven from '../../assets/draven.png';
 
 import NavigationBar from '../../components/navigation-bar/navigation-bar';
 
-import api from '../services/api';
+import api from '../../services/api';
 
 import * as S from './style';
 

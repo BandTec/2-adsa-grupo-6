@@ -4,13 +4,13 @@ const UserController = require('./controller/user');
 const DashController = require('./controller/dash');
 const server = express();
 
-const path = require('path');
+// const path = require('path');
 
 var cors = require('cors');
 const User = require('./models/user');
 server.use(cors())
 
-server.use('/', express.static(path.resolve(__dirname, "public")));
+// server.use('/', express.static(path.reso'lve(__dirname, "public")));
 
 server.use(bodyParser.json());
 

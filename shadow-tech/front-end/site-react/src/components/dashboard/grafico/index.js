@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Chart from "chart.js";
 import * as S from './style.js';
 
-import api from '../../../pages/services/api';
+import api from '../../../services/api';
 
 export default class Grafico extends Component {
     chartRef = React.createRef();
