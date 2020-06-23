@@ -25,7 +25,7 @@ export default function NavigationBar({ isDash }){
     });
 
     const sair = () =>{
-        sessionStorage().clear();
+        sessionStorage.clear();
 
         hist.push('/');
     }
