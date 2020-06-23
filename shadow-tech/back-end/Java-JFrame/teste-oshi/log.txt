@@ -2325,3 +2325,146 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
      java.lang.NullPointerException
 
 --+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:10:54
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:10:58
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:11:01
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:11:05
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:11:08
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:11:11
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:11:15
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:11:18
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:11:21
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:11:25
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:11:28
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:11:31
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  23:11:34
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
+
+--+--FIM LOG
