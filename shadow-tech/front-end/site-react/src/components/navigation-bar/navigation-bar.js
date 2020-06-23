@@ -25,7 +25,9 @@ export default function NavigationBar({ isDash }){
     });
 
     const sair = () =>{
-        window.alert("VOCÊ SAIU!");
+        sessionStorage().clear();
+
+        hist.push('/');
     }
 
     return(
