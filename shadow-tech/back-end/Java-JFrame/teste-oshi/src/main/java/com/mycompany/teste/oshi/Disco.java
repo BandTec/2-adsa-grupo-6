@@ -70,8 +70,7 @@ public class Disco {
     }
      
      public Double discoPorcentagem() {
-         Double porcentagem = 0.0;
-         porcentagem = (discoTotal() * discoUsado())/100;
-         return porcentagem;
+         
+         return (double)(discoUsado()/ discoTotal()* 100);
      }
 }

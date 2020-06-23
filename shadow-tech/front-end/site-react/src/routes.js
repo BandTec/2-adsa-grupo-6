@@ -9,7 +9,7 @@ import AlunosProcesso from './pages/alunosProcesso';
 
 export default function Routes() {
     return(
-        <BrowserRouter basename="/">
+        <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Home}/>
                 <Route path="/dashboards" component={Dashboards}/>

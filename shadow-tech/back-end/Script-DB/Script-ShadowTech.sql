@@ -44,7 +44,7 @@ memoria varchar(45),
 disco varchar(45),
 dataHora datetime,
 fkComputador int,
-foreign key (fkComputador) references Computador(idMaquina))auto_increment = 1;
+foreign key (fkComputador) references Computador(idMaquina));
 
 create table Processos (
 idProcessos int primary key auto_increment,

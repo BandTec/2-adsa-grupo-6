@@ -136,3 +136,1367 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
 
 --+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:33:27
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:33:49
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:33:52
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:33:55
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:33:59
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:34:02
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:34:06
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:34:09
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:34:13
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:34:16
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:34:20
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:34:23
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:34:26
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:34:46
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:34:53
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:34:56
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:00
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:03
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:07
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:10
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:14
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:17
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:20
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:24
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:27
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:31
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:34
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:37
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:35:41
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:40:34
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:40:42
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:40:45
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:40:49
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:40:52
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:40:56
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:40:59
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:41:03
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:41:34
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:41:41
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:41:44
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:41:47
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:44:26
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:44:32
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:44:35
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:44:39
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:44:42
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:44:45
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:44:48
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:44:52
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:44:55
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:44:58
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:45:02
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:45:05
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:45:08
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:45:11
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:45:15
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:45:18
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:45:21
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:45:24
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:45:28
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:45:31
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:46:01
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:46:06
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:46:09
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:46:12
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:47:10
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:47:16
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:47:19
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:47:23
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:48:20
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:48:26
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:48:29
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:51:09
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:51:21
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:51:25
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:51:28
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:52:42
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:52:47
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:52:51
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:52:54
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:52:57
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:53:01
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:53:04
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:53:07
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:53:55
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:54:00
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:54:03
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:56:44
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:57:51
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:57:57
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:58:01
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:58:04
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:58:07
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:58:11
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:59:00
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:59:05
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:59:08
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:59:12
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:59:15
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:01:47
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:01:58
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:02
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:05
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:09
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:13
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:16
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:20
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:23
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:27
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:30
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:33
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:37
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:02:40
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:03:38
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:03:44
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:03:48
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:03:51
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:03:54
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:03:58
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:06:05
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:06:12
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:06:15
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:06:18
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:06:22
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
+
+--+--FIM LOG
