@@ -41,9 +41,11 @@ export default function NavigationBar({ isDash }){
                     <S.ButtonsContainer>
                     {isDash ?
                         <>
+                        <S.Button onClick={() => hist.push('/dashboards')}>Dashboard</S.Button>
                         <S.Button onClick={() => hist.push('/alunosProcesso')}>Aluno</S.Button>
                         <S.Button>Suporte</S.Button>
-                        </>: 
+                        </>
+                        : 
                         <> 
                         <S.Button>Produto</S.Button>
                         <S.Button>Sobre</S.Button>
