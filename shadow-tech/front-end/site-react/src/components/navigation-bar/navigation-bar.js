@@ -37,7 +37,7 @@ export default function NavigationBar({ isDash }){
                     <S.LogoContainer>
                     <div onMouseEnter={() => setMostrarLogoShiny(true)}
                         onMouseLeave={() => setMostrarLogoShiny(false)}>
-                        { mostrarLogoShiny  ?  <S.LogoImagem src={logoShiny} onClick={() => hist.push('/')} alt=""/>  :  <S.LogoImagem src={logo} /> }
+                        { mostrarLogoShiny  ?  <S.LogoImagem src={logoShiny} onClick={() => isDash ? "" : alert('opa')} alt=""/>  :  <S.LogoImagem src={logo} /> }
                     </div>
                     </S.LogoContainer>
                     <S.ButtonsContainer>

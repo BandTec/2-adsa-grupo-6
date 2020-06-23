@@ -27,10 +27,10 @@ public class ConexaoBanco {
    public ConexaoBanco(){
        
        dataSource = new BasicDataSource();
-       dataSource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-       dataSource.setUrl("jdbc:shadowtech.database.windows.net");
-       dataSource.setUsername("adminst");
-       dataSource.setPassword("@Gfgrupo6");
+       dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+       dataSource.setUrl("jdbc:mysql://localhost:3306/shadowtec ");
+       dataSource.setUsername("root");
+       dataSource.setPassword("@Bateria2009");
        
        jdbcTemplate = new JdbcTemplate(this.dataSource);
    }

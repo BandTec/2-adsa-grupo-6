@@ -1500,3 +1500,828 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
      org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create JDBC driver of class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' for connect URL 'jdbc:shadowtech.database.windows.net'
 
 --+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:20:21
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot load JDBC driver class 'jdbc:sqlserver:com.microsoft.sqlserver'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:20:39
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot load JDBC driver class 'jdbc:sqlserver:com.microsoft.sqlserver'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:20:43
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot load JDBC driver class 'jdbc:sqlserver:com.microsoft.sqlserver'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:20:46
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot load JDBC driver class 'jdbc:sqlserver:com.microsoft.sqlserver'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:20:49
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot load JDBC driver class 'jdbc:sqlserver:com.microsoft.sqlserver'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:20:53
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot load JDBC driver class 'jdbc:sqlserver:com.microsoft.sqlserver'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:21:42
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot load JDBC driver class 'jdbc:sqlserver:com.microsoft.sqlserver'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:21:48
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot load JDBC driver class 'jdbc:sqlserver:com.microsoft.sqlserver'
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:22:08
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:69ea8b10-794f-4a72-83eb-7e746a10cbac)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:22:14
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:4de8fe58-301b-4b3d-b6c2-b178f49b6634)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:22:18
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:cdc797d0-fe8b-4661-aca7-2c512d433c05)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:22:22
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:c1919578-cdea-4179-872d-3bfd9190ee25)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:22:26
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:78170a4d-3a5f-42d5-8a46-5bead865cae8)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:22:29
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:56a64a79-7462-438d-b7ce-15b5613cd232)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:22:33
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:2a799f9e-38be-4eb0-88e9-6f9d53c30063)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:22:37
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:8613e836-e924-413e-a66b-998bfe94dcf8)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:22:40
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:a6f9457a-2a8c-4c9a-bdf6-ada102ae22a9)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:22:44
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:2a5859f3-b1af-46af-b52a-86721e86de76)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:22:47
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:e4c33fd9-7e86-4e80-8c28-ba2c033daf3c)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:23:24
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:c7d72620-be02-45b4-874a-e20cf228eb6f)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:23:30
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:ad0ddd8b-00e2-4f2b-aa0f-3e877749e515)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:23:34
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:7332181a-c673-4b6d-b9b8-abe44f71e272)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:23:38
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:bce9dbfb-b930-4f87-82f7-92facc9dc620)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:23:41
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:188a27eb-8d1a-47eb-973d-6d30d131e11c)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:23:45
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:76175fd6-e47b-4370-a811-4afcf35ff686)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:23:48
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:5e36c238-ab00-4e00-8b08-75537cf8a661)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:23:52
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:05b22b31-f818-4aee-b478-26b9e3d196d1)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:23:56
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:b047e00c-d7b4-4ee2-802c-4c2fcdf19f6e)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:23:59
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:d8e20fa4-eb2c-411b-9c4b-8b94535412c4)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:24:02
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:bb912009-d909-42c8-a998-e1156a44e0ad)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:24:06
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:8ab74721-00df-4f28-86b6-3af1498ac607)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:24:09
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Login failed for user 'adminst'. ClientConnectionId:eaedde03-2154-44bc-aec0-368aac98b358)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:39:46
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:02
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:05
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:09
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:12
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:15
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:18
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:22
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:25
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:28
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:31
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:35
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:38
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:41
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:44
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:48
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:51
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:54
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:42:57
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:03
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     com.microsoft.sqlserver.jdbc.SQLServerException: A instrução não retornou um conjunto de resultados.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:08
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:12
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:15
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:18
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:21
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:25
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:28
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:31
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:34
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:38
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:41
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:44
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:47
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:51
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:44:54
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:45:06
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     com.microsoft.sqlserver.jdbc.SQLServerException: A instrução não retornou um conjunto de resultados.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:45:11
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:45:14
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:45:18
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:45:21
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:45:24
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:45:27
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  22:45:31
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     java.lang.NullPointerException
+
+--+--FIM LOG
