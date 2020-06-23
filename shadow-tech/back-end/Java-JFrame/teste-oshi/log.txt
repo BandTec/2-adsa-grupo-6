@@ -97,3 +97,42 @@
      org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Access denied for user 'root'@'localhost' (using password: YES))
 
 --+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:05:24
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:05:32
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 22/06/2020  21:05:40
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51, serial number=NXGQBAL00474372C069501
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+
+--+--FIM LOG
