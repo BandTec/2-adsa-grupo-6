@@ -7,22 +7,17 @@ import api from '../../../services/api';
 
 export default function Processos() {
 
-    let [processos, setProcesso] = useState([]);
+    let [processos, setProcesso] = useState(['']);
 
 
-    useEffect(async () => {
-        await api.get('/plotDash').then(res => {
-            setProcesso(res.data[0]);
-
-            
-            // processos.push({"data": res.data});
+    useEffect(() => {
+        api.get('/plotDash').then(res => {
+            setProcesso(res.data);
         }).catch(error => {
-            alert(error)
+            alert('Erro de conexão');
         })
     }, [])
     
-    console.log(processos);
-
     return (
         <>
             <div className='containerListaAluno'>
