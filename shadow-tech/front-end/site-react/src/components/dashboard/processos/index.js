@@ -1,22 +1,27 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
+// import {useEffect} from "react-router-dom";
 import * as S from './style.js';
+
+
+import api from '../../../services/api';
 
 export default function Processos() {
 
-    var processos = [
-        { "posicao": "1°", "processos": "Chrome", "maquina": "1902491942194" },
-        { "posicao": "2°", "processos": "Netbeans", "maquina": "1902491942194" },
-        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "3°", "processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "4°", "processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "5°", "processos": "VSCode", "maquina": "1902491942194" },
-        { "posicao": "6°", "processos": "VSCode", "maquina": "1902491942194" },
-    ];
+    let [processos, setProcesso] = useState([]);
+
+
+    useEffect(async () => {
+        await api.get('/plotDash').then(res => {
+            setProcesso(res.data[0]);
+
+            
+            // processos.push({"data": res.data});
+        }).catch(error => {
+            alert(error)
+        })
+    }, [])
+    
+    console.log(processos);
 
     return (
         <>
@@ -25,9 +30,7 @@ export default function Processos() {
                     {processos.map(result =>
                         <>
                             <S.processos>
-                                <label>{result.posicao}</label>
-                                <label>{result.processos}</label>
-                                <label>{result.maquina}</label>
+                                <label>{result.nome}</label>
                             </S.processos>
                         </>
                     )}

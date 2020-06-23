@@ -10,7 +10,7 @@ class User {
     
     create(name, email, pass) {
         const sql =
-        `INSERT INTO Usuario(nome, login, senha) VALUES ("${name}", "${email}", "${pass}");`;
+        `INSERT INTO Usuario(nome, login, senha) VALUES ('${name}', '${email}', '${pass}');`;
         
         return database.query(sql);
     };

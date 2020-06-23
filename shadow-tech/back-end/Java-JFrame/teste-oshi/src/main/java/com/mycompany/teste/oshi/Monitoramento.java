@@ -19,52 +19,50 @@ import javax.swing.border.EmptyBorder;
  * @author reis
  */
 public class Monitoramento extends javax.swing.JFrame {
+
     Ram ram = new Ram();
     Cpu cpu = new Cpu();
     Disco disco = new Disco();
-    
-    ConexaoBanco con = new ConexaoBanco();
-   Integer cont = 0;     
-   Integer cont_temp = 0;
-   Integer cont_cpu = 0;
-   Integer cont_cpu_100 = 0;
-   Integer cont_porcentagem_boa = 0;
 
-   
+    ConexaoBanco con = new ConexaoBanco();
+    Integer cont = 0;
+    Integer cont_temp = 0;
+    Integer cont_cpu = 0;
+    Integer cont_cpu_100 = 0;
+    Integer cont_porcentagem_boa = 0;
+
     public Monitoramento() {
         initComponents();
-     
-        
+
 //        con.listarTodosComputador();
         con.inserirComputador();
-        
-        
+
         Random random = new Random();
         Double temp;
-        
+
         pbCpu.setOrientation(pbCpu.VERTICAL);
         pbRam.setOrientation(pbRam.VERTICAL);
         pbDisco.setOrientation(pbDisco.VERTICAL);
-        
+
         pbCpu.setMaximum(100);
         pbCpu.setMinimum(0);
-        
+
         pbRam.setMaximum(100);
         pbRam.setMinimum(0);
-        
+
         pbDisco.setMaximum(100);
         pbDisco.setMinimum(0);
-       
+
         lblMac.setText(cpu.mostrarMacAddress());
         lblSO.setText(cpu.mostrarSO());
         lblProcessador.setText(cpu.printProcessor());
-            
+
         lblTotalRam.setText(String.format("/ %.1f GB", ram.getMemoriaTotal()));
         lblTotalCpu.setText(String.format(" %.2f  GHz", cpu.printFraq()));
 
         lblDiscoTotal.setText(String.format("%.0f GB", disco.discoTotal()));
         lblDiscoDisponivel.setText(String.format("%.0f GB", disco.discoLivre()));
-        
+
         Timer timer = new Timer(5, (ActionEvent e) -> {
 
             lblTemperatura.setText(String.format("%.2f °C", cpu.mostrarTemperatura()));
@@ -73,16 +71,16 @@ public class Monitoramento extends javax.swing.JFrame {
             pbRam.setValue(ram.getPorcentagemAtual().intValue());
             lblPorRam.setText(String.format("%d", ram.getPorcentagemAtual().intValue()));
             lblConsumoRam.setText(String.format("%.1f", ram.getMemoriaEmUso()));
-            
+
             // Condições para os alertas 
             lblPorDisco.setText(String.format(" %.0f ", disco.discoPorcentagem()));
             lblTempDisco.setText(String.format("%.0f / %.0f GB", disco.discoUsado(), disco.discoTotal()));
-            
-            lblPorCpu.setText(String.format(" %.0f ", cpu.getPorcentagemCpu()));   
+
+            lblPorCpu.setText(String.format(" %.0f ", cpu.getPorcentagemCpu()));
             pbCpu.setValue(cpu.getPorcentagemCpu().intValue());
-        
+
             pbDisco.setValue(disco.discoPorcentagem().intValue());
-                       
+
 //            if (cpu.mostrarTemperatura() >= 70.0) {
 //                 if (cont == 5) {
 //                 SlackMessage slackMessage = SlackMessage.builder()
@@ -187,13 +185,12 @@ public class Monitoramento extends javax.swing.JFrame {
 //                SlackUtils.sendMessage(slackMessage);        
 //            }
             con.incluirRegistros();
-           } 
-        );    
-              
+        }
+        );
+
         timer.setRepeats(true);
         timer.start();
     }
-
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -814,7 +811,7 @@ public class Monitoramento extends javax.swing.JFrame {
             }
         });
     }
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
@@ -880,4 +877,3 @@ public class Monitoramento extends javax.swing.JFrame {
     private javax.swing.JProgressBar pbVscode;
     // End of variables declaration//GEN-END:variables
 }
-

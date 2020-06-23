@@ -52,10 +52,10 @@ export default function Home() {
             fecharModalLogin();
             hist.push('/dashboards');
         }).catch(error => {
-            if(error.response.status === 404){
+            if (error.response.status === 404) {
                 alert('Credenciais inválidas!');
-            }else{
-                alert('Problema de conexão!');   
+            } else {
+                alert('Problema de conexão!');
             }
         });
     }
@@ -69,31 +69,31 @@ export default function Home() {
 
         await api.post('/listEmail', { "email": email }).then(res => {
             alert('Usuário já cadastrado');
-        }).catch(error => {
+        }).catch(async (error) => {
             if (error.response.status === 404) {
                 if (nome !== "" &&
                     email !== "" &&
                     senha !== "") {
-                        if(senha.length > 5){
-                            if (senha === confirmarSenha) {
-                                if(email.endsWith('@bandtec.com.br') && email !== '@bandtec.com.br'){
-                                    api.post('/user', { "nome": nome, "email": email, "senha": senha }).then(function (res) {
-                                        alert('Usuario cadastrado com sucesso');
-                                    }).catch(function (error) {
-                                        alert('Credenciais inválidas!');
-                                    });
-                                }else{
-                                    alert('Seu email não pertence a nenhuma instituição cadastrada')
-                                }
+                    if (senha.length > 5) {
+                        if (senha === confirmarSenha) {
+                            if (email.endsWith('@bandtec.com.br') && email !== '@bandtec.com.br') {
+                                await api.post('/user', { "nome": nome, "email": email, "senha": senha }).then(function (res) {
+                                    alert('Usuario cadastrado com sucesso');
+                                }).catch(function (error) {
+                                    alert('Problema de conexão!');
+                                });
                             } else {
-                                alert('Senhas não compativeis ');
+                                alert('Seu email não pertence a nenhuma instituição cadastrada')
                             }
-                        }else{
-                            alert('Senha deve conter no minimo 6 caracteres');
+                        } else {
+                            alert('Senhas não compativeis ');
                         }
+                    } else {
+                        alert('Senha deve conter no minimo 6 caracteres');
+                    }
                 } else {
                     alert('Por favor , não deixar nenhum campo vazio');
-                    }
+                }
             } else {
                 alert('Sem conexão com o banco')
             }
