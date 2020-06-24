@@ -19,15 +19,12 @@ export default class Grafico extends Component {
             alert('erro de conexão')
         })
 
-        console.log(processos);
-
-
         new Chart(myChartRef, {
-            type: 'bar',
+            type: 'horizontalBar',
             data: {
                 labels: [processos[0][0].nome, processos[0][1].nome, processos[0][2].nome],
                 datasets: [{
-                    label: '',
+                    label: 'Acessos por máquina',
                     data: [
                         processos[0][0].n,
                         processos[0][1].n,
@@ -56,9 +53,10 @@ export default class Grafico extends Component {
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                    yAxes: [{
+                    xAxes: [{
                         ticks: {
                             min: 0,
+                            max: 65,
                             stepSize: 1
                         }
                     }]

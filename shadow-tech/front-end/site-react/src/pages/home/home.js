@@ -14,6 +14,8 @@ import like from '../../assets/like.png';
 import money from '../../assets/money.png';
 import draven from '../../assets/draven.png';
 
+// import { WaveLoading } from 'react-loadingg';
+
 import NavigationBar from '../../components/navigation-bar/navigation-bar';
 
 import api from '../../services/api';
@@ -47,6 +49,7 @@ export default function Home() {
 
         let email = document.getElementById('txtEmail').value;
         let senha = document.getElementById('txtSenha').value;
+
 
         await api.post('/userLogin', { "email": email, "senha": senha }).then(res => {
             fecharModalLogin();
@@ -233,156 +236,162 @@ export default function Home() {
                 <S.ContatoLogo src={Imagem} />
             </S.DivContato>
 
-            {isOpenModalLogin && (
-                <ModalLogin>
-                    <S.Modal>
-                        <S.DivContainerClose>
-                            <S.SpanClose onClick={fecharModalLogin}>
-                                &times;
+            {
+                isOpenModalLogin && (
+                    <ModalLogin>
+                        <S.Modal>
+                            <S.DivContainerClose>
+                                <S.SpanClose onClick={fecharModalLogin}>
+                                    &times;
                             </S.SpanClose>
-                        </S.DivContainerClose>
-                        <S.DivTituloModal>
-                            <S.TituloModal>
-                                LOGIN
+                            </S.DivContainerClose>
+                            <S.DivTituloModal>
+                                <S.TituloModal>
+                                    LOGIN
                             </S.TituloModal>
-                        </S.DivTituloModal>
-                        <S.ConteudoModal>
-                            <S.DivLabelInput>
-                                <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
-                                <S.InputModal type="email" name="email" id="txtEmail" placeholder="Insira o seu e-mail" />
-                            </S.DivLabelInput>
-                            <S.DivLabelInput>
-                                <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
-                                <S.InputModal type="password" id="txtSenha" placeholder="Insira a sua senha" />
-                            </S.DivLabelInput>
-                            <S.DivCheck>
-                                <S.CheckboxModal type="checkbox" id="chkLembrar" />
-                                <S.LabelModal htmlFor="chkLembrar">Lembrar de mim</S.LabelModal>
-                            </S.DivCheck>
-                            <S.ButtonModal onClick={handleLogin}>
-                                ACESSAR
+                            </S.DivTituloModal>
+                            <S.ConteudoModal>
+                                <S.DivLabelInput>
+                                    <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
+                                    <S.InputModal type="email" name="email" id="txtEmail" placeholder="Insira o seu e-mail" />
+                                </S.DivLabelInput>
+                                <S.DivLabelInput>
+                                    <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
+                                    <S.InputModal type="password" id="txtSenha" placeholder="Insira a sua senha" />
+                                </S.DivLabelInput>
+                                <S.DivCheck>
+                                    <S.CheckboxModal type="checkbox" id="chkLembrar" />
+                                    <S.LabelModal htmlFor="chkLembrar">Lembrar de mim</S.LabelModal>
+                                </S.DivCheck>
+                                <S.ButtonModal onClick={handleLogin}>
+                                    ACESSAR
                             </S.ButtonModal>
-                            <S.DivEsqueciSenha>
-                                <S.SpanEsqueciSenha onClick={() => setEsqueciSenha(true)}>
-                                    Esqueci minha senha
+                                <S.DivEsqueciSenha>
+                                    <S.SpanEsqueciSenha onClick={() => setEsqueciSenha(true)}>
+                                        Esqueci minha senha
                                 </S.SpanEsqueciSenha>
-                            </S.DivEsqueciSenha>
-                        </S.ConteudoModal>
+                                </S.DivEsqueciSenha>
+                            </S.ConteudoModal>
 
-                        {esqueciSenha && (
-                            <S.ModalEsqueciSenha>
-                                <S.DivContainerClose>
-                                    <S.SpanClose onClick={() => setEsqueciSenha(false)}>
-                                        &times;
+                            {esqueciSenha && (
+                                <S.ModalEsqueciSenha>
+                                    <S.DivContainerClose>
+                                        <S.SpanClose onClick={() => setEsqueciSenha(false)}>
+                                            &times;
                                     </S.SpanClose>
-                                </S.DivContainerClose>
-                                <S.DivTituloModal>
-                                    <S.TituloModal>
-                                        ESQUECI MINHA SENHA
+                                    </S.DivContainerClose>
+                                    <S.DivTituloModal>
+                                        <S.TituloModal>
+                                            ESQUECI MINHA SENHA
                                     </S.TituloModal>
-                                </S.DivTituloModal>
-                                <S.DivDescricaoSenha>
-                                    <S.DescricaoEsqueciSenha>
-                                        Ao utilizar este formulário, será enviada uma nova senha para o e-mail inserido no campo abaixo.
+                                    </S.DivTituloModal>
+                                    <S.DivDescricaoSenha>
+                                        <S.DescricaoEsqueciSenha>
+                                            Ao utilizar este formulário, será enviada uma nova senha para o e-mail inserido no campo abaixo.
                                     </S.DescricaoEsqueciSenha>
-                                </S.DivDescricaoSenha>
-                                <S.ConteudoModal style={{ paddingTop: '0' }}>
-                                    <S.DivLabelInput>
-                                        <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
-                                        <S.InputModal type="text" id="txtEmail" placeholder="Insira o seu e-mail" />
-                                    </S.DivLabelInput>
-                                    <S.ButtonModal>
-                                        SOLICITAR
+                                    </S.DivDescricaoSenha>
+                                    <S.ConteudoModal style={{ paddingTop: '0' }}>
+                                        <S.DivLabelInput>
+                                            <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
+                                            <S.InputModal type="text" id="txtEmail" placeholder="Insira o seu e-mail" />
+                                        </S.DivLabelInput>
+                                        <S.ButtonModal>
+                                            SOLICITAR
                                     </S.ButtonModal>
-                                </S.ConteudoModal>
-                            </S.ModalEsqueciSenha>
-                        )}
+                                    </S.ConteudoModal>
+                                </S.ModalEsqueciSenha>
+                            )}
 
-                    </S.Modal>
-                </ModalLogin>
-            )}
+                        </S.Modal>
+                    </ModalLogin>
+                )
+            }
 
 
-            {isOpenCadastro && (
-                <ModalCadastro>
-                    <S.Modal>
-                        <S.DivContainerClose>
-                            <S.SpanClose onClick={fecharModalCadastro}>
-                                &times;
+            {
+                isOpenCadastro && (
+                    <ModalCadastro>
+                        <S.Modal>
+                            <S.DivContainerClose>
+                                <S.SpanClose onClick={fecharModalCadastro}>
+                                    &times;
                             </S.SpanClose>
-                        </S.DivContainerClose>
-                        <S.DivTituloModal>
-                            <S.TituloModal>
-                                CADASTRO
+                            </S.DivContainerClose>
+                            <S.DivTituloModal>
+                                <S.TituloModal>
+                                    CADASTRO
                             </S.TituloModal>
-                        </S.DivTituloModal>
-                        <S.ConteudoModal>
-                            <S.DivLabelInput>
-                                <S.LabelModal htmlFor="txtNome">Nome:</S.LabelModal>
-                                <S.InputModal type="text" id="txtNome" placeholder="Insira o seu nome" />
-                            </S.DivLabelInput>
-                            <S.DivLabelInput>
-                                <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
-                                <S.InputModal type="email" name="email" id="txtEmail" placeholder="Insira o seu e-mail" />
-                            </S.DivLabelInput>
-                            <S.DivLabelInput>
-                                <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
-                                <S.InputModal type="password" id="txtSenha" placeholder="Insira a sua senha" />
-                            </S.DivLabelInput>
-                            <S.DivLabelInput>
-                                <S.LabelModal htmlFor="txtConfirmaSenha">Confirmação da Senha:</S.LabelModal>
-                                <S.InputModal type="password" id="txtConfirmaSenha" placeholder="Insira novamente a sua senha" />
-                            </S.DivLabelInput>
-                            <S.DivCheck>
-                                <S.CheckboxModal type="checkbox" id="chkLembrar" />
-                                <S.LabelModal htmlFor="chkLembrar">Receber novidades por e-mail</S.LabelModal>
-                            </S.DivCheck>
-                            <S.ButtonModal onClick={handleRegister}>
-                                CADASTRAR
+                            </S.DivTituloModal>
+                            <S.ConteudoModal>
+                                <S.DivLabelInput>
+                                    <S.LabelModal htmlFor="txtNome">Nome:</S.LabelModal>
+                                    <S.InputModal type="text" id="txtNome" placeholder="Insira o seu nome" />
+                                </S.DivLabelInput>
+                                <S.DivLabelInput>
+                                    <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
+                                    <S.InputModal type="email" name="email" id="txtEmail" placeholder="Insira o seu e-mail" />
+                                </S.DivLabelInput>
+                                <S.DivLabelInput>
+                                    <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
+                                    <S.InputModal type="password" id="txtSenha" placeholder="Insira a sua senha" />
+                                </S.DivLabelInput>
+                                <S.DivLabelInput>
+                                    <S.LabelModal htmlFor="txtConfirmaSenha">Confirmação da Senha:</S.LabelModal>
+                                    <S.InputModal type="password" id="txtConfirmaSenha" placeholder="Insira novamente a sua senha" />
+                                </S.DivLabelInput>
+                                <S.DivCheck>
+                                    <S.CheckboxModal type="checkbox" id="chkLembrar" />
+                                    <S.LabelModal htmlFor="chkLembrar">Receber novidades por e-mail</S.LabelModal>
+                                </S.DivCheck>
+                                <S.ButtonModal onClick={handleRegister}>
+                                    CADASTRAR
                             </S.ButtonModal>
-                        </S.ConteudoModal>
-                    </S.Modal>
-                </ModalCadastro>
-            )}
+                            </S.ConteudoModal>
+                        </S.Modal>
+                    </ModalCadastro>
+                )
+            }
 
-            {isOpenSaibaMais && (
-                <ModalSaibaMais>
-                    <S.Modal>
-                        <S.DivContainerClose>
-                            <S.SpanClose onClick={fecharModalSaibaMais}>
-                                &times;
+            {
+                isOpenSaibaMais && (
+                    <ModalSaibaMais>
+                        <S.Modal>
+                            <S.DivContainerClose>
+                                <S.SpanClose onClick={fecharModalSaibaMais}>
+                                    &times;
                             </S.SpanClose>
-                        </S.DivContainerClose>
-                        <S.DivTituloModal>
-                            <S.TituloModal>
-                                SAIBA MAIS
+                            </S.DivContainerClose>
+                            <S.DivTituloModal>
+                                <S.TituloModal>
+                                    SAIBA MAIS
                             </S.TituloModal>
-                        </S.DivTituloModal>
-                        <S.ConteudoModal>
-                            <S.DivLabelInput>
-                                <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
-                                <S.InputModal type="email" name="email" id="txtEmail" placeholder="Insira o seu e-mail" />
-                            </S.DivLabelInput>
-                            <S.DivLabelInput>
-                                <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
-                                <S.InputModal type="password" id="txtSenha" placeholder="Insira a sua senha" />
-                            </S.DivLabelInput>
-                            <S.DivCheck>
-                                <S.CheckboxModal type="checkbox" id="chkLembrar" />
-                                <S.LabelModal htmlFor="chkLembrar">Lembrar de mim</S.LabelModal>
-                            </S.DivCheck>
-                            <S.ButtonModal onClick={handleLogin}>
-                                ACESSAR
+                            </S.DivTituloModal>
+                            <S.ConteudoModal>
+                                <S.DivLabelInput>
+                                    <S.LabelModal htmlFor="txtEmail">E-mail:</S.LabelModal>
+                                    <S.InputModal type="email" name="email" id="txtEmail" placeholder="Insira o seu e-mail" />
+                                </S.DivLabelInput>
+                                <S.DivLabelInput>
+                                    <S.LabelModal htmlFor="txtSenha">Senha:</S.LabelModal>
+                                    <S.InputModal type="password" id="txtSenha" placeholder="Insira a sua senha" />
+                                </S.DivLabelInput>
+                                <S.DivCheck>
+                                    <S.CheckboxModal type="checkbox" id="chkLembrar" />
+                                    <S.LabelModal htmlFor="chkLembrar">Lembrar de mim</S.LabelModal>
+                                </S.DivCheck>
+                                <S.ButtonModal onClick={handleLogin}>
+                                    ACESSAR
                             </S.ButtonModal>
-                            <S.DivEsqueciSenha>
-                                <S.SpanEsqueciSenha>
-                                    Esqueci minha senha
+                                <S.DivEsqueciSenha>
+                                    <S.SpanEsqueciSenha>
+                                        Esqueci minha senha
                                 </S.SpanEsqueciSenha>
-                            </S.DivEsqueciSenha>
-                        </S.ConteudoModal>
-                    </S.Modal>
-                </ModalSaibaMais>
-            )}
+                                </S.DivEsqueciSenha>
+                            </S.ConteudoModal>
+                        </S.Modal>
+                    </ModalSaibaMais>
+                )
+            }
 
         </>
     );

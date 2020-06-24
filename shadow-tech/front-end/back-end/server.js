@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const UserController = require('./controller/user');
 const DashController = require('./controller/dash');
+const ListUSer = require('./controller/listUser');
 const server = express();
 
 // const path = require('path');
@@ -28,6 +29,10 @@ server.post('/listEmail', (req, res) => {
 
 server.get('/plotDash', (req, res) => {
     DashController.ultimosRegistrosProcessos(req, res);
+});
+
+server.get('/alunosProcesso', (req, res) => {
+    ListUSer.list(req, res);
 });
 
 const port = process.env.port || 3001;

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { useHistory } from 'react-router-dom';
 import Topnav from '../../components/navigation-bar/navigation-bar';
+
+import api from '../../services/api';
 
 import * as S from './style.js'
 
@@ -10,20 +12,15 @@ export default function AlunosProcesso() {
 
     const hist = useHistory();
 
-    var alunos = [
-        { "nome": "aRaul", "processo": "VSCODE" },
-        { "nome": "Oliveira", "processo": "VSCODE" },
-        { "nome": "Algum Nome", "processo": "VSCODE" },
-        { "nome": "Algum Nome", "processo": "VSCODE" },
-        { "nome": "algum nome", "processo": "VSCODE" },
-        { "nome": "algum nome", "processo": "VSCODE" },
-        { "nome": "algum nome", "processo": "VSCODE" },
-        { "nome": "algum nome", "processo": "VSCODE" },
-        { "nome": "algum nome", "processo": "VSCODE" },
-        { "nome": "algum nome", "processo": "VSCODE" },
-        { "nome": "algum nome", "processo": "VSCODE" },
-        { "nome": "algum nome", "processo": "VSCODE" },
-    ];
+    let [alunos, setAlunos] = useState(['']);
+
+    useEffect(() => {
+        api.get('/alunosProcesso').then(res => {
+            setAlunos(res.data);
+        }).catch(error => {
+            alert('Erro de conexão');
+        })
+    }, [])
 
     function redirect(path) {
         hist.push(path);
