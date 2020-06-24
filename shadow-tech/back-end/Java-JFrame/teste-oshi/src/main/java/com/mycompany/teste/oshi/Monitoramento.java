@@ -5,20 +5,19 @@
  */
 package com.mycompany.teste.oshi;
 
-import java.awt.BorderLayout;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.util.Random;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.JProgressBar;
 import javax.swing.Timer;
-import javax.swing.border.EmptyBorder;
 
 /**
  *
  * @author reis
  */
 public class Monitoramento extends javax.swing.JFrame {
+
+    private static final long serialVersionUID = 1L;
 
     Ram ram = new Ram();
     Cpu cpu = new Cpu();
@@ -35,14 +34,14 @@ public class Monitoramento extends javax.swing.JFrame {
         initComponents();
 
 //        con.listarTodosComputador();
-        con.inserirComputador();
+       
 
         Random random = new Random();
         Double temp;
 
-        pbCpu.setOrientation(pbCpu.VERTICAL);
-        pbRam.setOrientation(pbRam.VERTICAL);
-        pbDisco.setOrientation(pbDisco.VERTICAL);
+        pbCpu.setOrientation(JProgressBar.VERTICAL);
+        pbRam.setOrientation(JProgressBar.VERTICAL);
+        pbDisco.setOrientation(JProgressBar.VERTICAL);
 
         pbCpu.setMaximum(100);
         pbCpu.setMinimum(0);
@@ -184,7 +183,8 @@ public class Monitoramento extends javax.swing.JFrame {
 //                .build();
 //                SlackUtils.sendMessage(slackMessage);        
 //            }
-            con.incluirRegistros();
+//            con.incluirRegistros();
+ con.inserirComputador();
         }
         );
 
@@ -797,17 +797,15 @@ public class Monitoramento extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                try {
-                    JFrame tela = new Monitoramento();
+        java.awt.EventQueue.invokeLater(() -> {
+            try {
+                JFrame tela = new Monitoramento();
 //                    tela.setIconImage(Toolkit.getDefaultToolkit().getImage("C://Users//Digital Solutions//Desktop//ShadowTech//shadow-tech//front-end//site-react//src//assets//logo.png"));
 //                    tela.setIconImage(Toolkit.getDefaultToolkit().getImage("/home/digital/Desktop/ShadowTech/shadow-tech/back-end/Java-JFrame/teste-oshi/src/main/resources/img-logo.png"));
 //                    MUDAR O ENDEREÇO DA IMAGEM PARA NÃO BUGAR ESSA PORRA
-                    tela.setVisible(true);
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+tela.setVisible(true);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         });
     }
