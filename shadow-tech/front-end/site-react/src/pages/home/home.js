@@ -69,15 +69,17 @@ export default function Home() {
     }
 
     async function handleRegister() {
-
+        setIsLoading(true);
         let nome = document.getElementById('txtNome').value;
         let email = document.getElementById('txtEmail').value;
         let senha = document.getElementById('txtSenha').value;
         let confirmarSenha = document.getElementById('txtConfirmaSenha').value;
 
         await api.post('/listEmail', { "email": email }).then(res => {
+            setIsLoading(false);
             alert('Usuário já cadastrado');
         }).catch(async (error) => {
+            setIsLoading(false);
             if (error.response.status === 404) {
                 if (nome !== "" &&
                     email !== "" &&
@@ -318,6 +320,7 @@ export default function Home() {
                 isOpenCadastro && (
                     <ModalCadastro>
                         <S.Modal>
+                            {isLoading ? <Loading /> : null}
                             <S.DivContainerClose>
                                 <S.SpanClose onClick={fecharModalCadastro}>
                                     &times;
