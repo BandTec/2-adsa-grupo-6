@@ -75,3 +75,520 @@
      org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (Falha na conex�o TCP/IP com o host shadowtech.database.windows.net,1433, porta 1433. Erro: "shadowtech.database.windows.net,1433. Verifique as propriedades da conex�o. Verifique se uma inst�ncia do SQL Server est� sendo executada no host e se est� aceitando conex�es TCP/IP na porta. Verifique se as conex�es TCP na porta n�o foram bloqueadas por um firewall.".)
 
 --+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:31:57
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:32:14
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433: Name or service not known. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:32:31
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:32:47
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:33:04
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:33:21
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:33:40
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:33:57
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:34:14
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:34:30
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433: Name or service not known. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:34:47
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:35:04
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:35:21
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: Cannot create PoolableConnectionFactory (The TCP/IP connection to the host shadowtech.database.windows.net,1433, port 1433 has failed. Error: "shadowtech.database.windows.net,1433. Verify the connection properties. Make sure that an instance of SQL Server is running on the host and accepting TCP/IP connections at the port. Make sure that TCP connections to the port are not blocked by a firewall.".)
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:37:13
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:38:34
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:38:37
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:38:40
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:38:42
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:38:45
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:38:47
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:38:49
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:38:52
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:38:54
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:38:56
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:38:59
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:01
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:03
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:06
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:08
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:10
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:13
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:15
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:17
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:19
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:22
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:24
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:27
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:30
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:32
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:34
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:36
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:39
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:41
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:43
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:45
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  18:39:47
+     IPV4: 
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Computador (idMaquina,fkUsuario, processador, disco, memoria, mac) VALUES (?,?,?,?,?,?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 5.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 5.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 24/06/2020  21:05:32
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: StatementCallback; uncategorized SQLException for SQL [SELECT mac, idMaquina FROM [dbo].[Computador] where mac = 5c:c9:d3:97:08:6e]; SQL state [S0001]; error code [102]; Incorrect syntax near '97'.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '97'.
+
+--+--FIM LOG

@@ -34,7 +34,7 @@ public class Monitoramento extends javax.swing.JFrame {
         initComponents();
 
 //        con.listarTodosComputador();
-       
+        con.inserirComputador();
 
         Random random = new Random();
         Double temp;
@@ -184,7 +184,6 @@ public class Monitoramento extends javax.swing.JFrame {
 //                SlackUtils.sendMessage(slackMessage);        
 //            }
 //            con.incluirRegistros();
- con.inserirComputador();
         }
         );
 
@@ -714,7 +713,7 @@ public class Monitoramento extends javax.swing.JFrame {
                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(71, 71, 71)
                         .addComponent(jLabel10)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -803,7 +802,7 @@ public class Monitoramento extends javax.swing.JFrame {
 //                    tela.setIconImage(Toolkit.getDefaultToolkit().getImage("C://Users//Digital Solutions//Desktop//ShadowTech//shadow-tech//front-end//site-react//src//assets//logo.png"));
 //                    tela.setIconImage(Toolkit.getDefaultToolkit().getImage("/home/digital/Desktop/ShadowTech/shadow-tech/back-end/Java-JFrame/teste-oshi/src/main/resources/img-logo.png"));
 //                    MUDAR O ENDEREÇO DA IMAGEM PARA NÃO BUGAR ESSA PORRA
-tela.setVisible(true);
+                tela.setVisible(true);
             } catch (Exception e) {
                 e.printStackTrace();
             }
