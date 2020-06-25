@@ -29,6 +29,10 @@ public class ConexaoBanco {
 
     Integer cont = 0;
 
+    public BasicDataSource getDataSource() {
+        return dataSource;
+    }
+
     public ConexaoBanco() {
 
         try {
@@ -43,17 +47,23 @@ public class ConexaoBanco {
             System.out.println("Deu ruim");
 
         }
-
-//        dataSource = new BasicDataSource();
-//        dataSource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-//        dataSource.setUrl("jdbc:sqlserver://shadowtech.database.windows.net,1433;database=bdshadowtech;Persist Security Info=False;User ID=adminst;Password={#Gfgrupo6};IntegratedSecurity = true;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
-//        dataSource.setUsername("192-2a-grupo6@badntec.com.br");
-//        dataSource.setPassword("#Gfgrupo6");
         jdbcTemplate = new JdbcTemplate(this.dataSource);;
     }
 
-    public BasicDataSource getDataSource() {
-        return dataSource;
+    public boolean login(String email, String senha) {
+        try {
+             List<Map<String, Object>> loginJava = jdbcTemplate.queryForList("SELECT login,senha  FROM [dbo].[Usuario] where login ='" + email + "'" + "and senha = '" + senha + "'");             
+            if (loginJava.size() != 0) {
+                return true;
+            } 
+            return false;
+
+        } catch (Exception e) {
+            
+            e.printStackTrace();
+            Log.gravarLog(e);
+            return false;
+        }
     }
 
     public void inserirComputador() {
@@ -66,18 +76,17 @@ public class ConexaoBanco {
             System.out.println(LocalDateTime.now().getYear());
 
             List<Map<String, Object>> mac = jdbcTemplate.queryForList("SELECT mac, idMaquina FROM [dbo].[Computador] where mac ='" + cpu.mostrarMacAddress() + "'");
-            
-            if(mac.size() == 0){
+
+            if (mac.size() == 0) {
                 jdbcTemplate.update("insert into computador(processador, disco, memoria, mac) values  (?,?,?,?)",
                         cpu.printProcessor(), disco.discoTotal(), ram.getMemoriaTotal(), cpu.mostrarMacAddress());
-            }else{
+            } else {
                 System.out.println(mac.get(0).get("idMaquina"));
             }
-            
 
         } catch (Exception e) {
             e.printStackTrace();
-            
+
             Log.gravarLog(e);
 
         }
