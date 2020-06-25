@@ -14,7 +14,7 @@ import like from '../../assets/like.png';
 import money from '../../assets/money.png';
 import draven from '../../assets/draven.png';
 
-// import { WaveLoading } from 'react-loadingg';
+import Loading from '../../components/Loading';
 
 import NavigationBar from '../../components/navigation-bar/navigation-bar';
 
@@ -25,6 +25,8 @@ import * as S from './style';
 export default function Home() {
 
     const hist = useHistory();
+
+    let [isLoading, setIsLoading] = useState(false);
 
     const [logoShiny, setLogoShiny] = useState(false);
 
@@ -46,15 +48,18 @@ export default function Home() {
     });
 
     async function handleLogin() {
+        setIsLoading(true);
 
         let email = document.getElementById('txtEmail').value;
         let senha = document.getElementById('txtSenha').value;
 
 
         await api.post('/userLogin', { "email": email, "senha": senha }).then(res => {
+            setIsLoading(false);
             fecharModalLogin();
             hist.push('/dashboards');
         }).catch(error => {
+            setIsLoading(false);
             if (error.response.status === 404) {
                 alert('Credenciais inválidas!');
             } else {
@@ -240,6 +245,7 @@ export default function Home() {
                 isOpenModalLogin && (
                     <ModalLogin>
                         <S.Modal>
+                            {isLoading ? <Loading /> : null}
                             <S.DivContainerClose>
                                 <S.SpanClose onClick={fecharModalLogin}>
                                     &times;

@@ -23,6 +23,10 @@ body{
     background-color: #E5E5E5;
 }
 
+input{
+    outline: none;
+}
+
 ::-webkit-scrollbar {
     width: 15px;
     height: 15px;
