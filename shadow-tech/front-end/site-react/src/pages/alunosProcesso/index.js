@@ -4,11 +4,14 @@ import Topnav from '../../components/navigation-bar/navigation-bar';
 
 import api from '../../services/api';
 
+import Loading from '../../components/Loading';
+
 import * as S from './style.js'
 
 import imgAluno from '../../assets/aluno-legal.jpg';
 
 export default function AlunosProcesso() {
+    let [isLoading, setIsLoading] = useState(true);
 
     const hist = useHistory();
 
@@ -16,8 +19,10 @@ export default function AlunosProcesso() {
 
     useEffect(() => {
         api.get('/alunosProcesso').then(res => {
+            setIsLoading(false)
             setAlunos(res.data);
         }).catch(error => {
+            setIsLoading(false)
             alert('Erro de conexão');
         })
     }, [])
@@ -28,6 +33,7 @@ export default function AlunosProcesso() {
 
     return (
         <>
+            {isLoading ? <Loading /> : null}
             <S.DivFundoNavTopo />
             <Topnav isDash={true} />
             <S.alunosSearch>
