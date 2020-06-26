@@ -82,7 +82,7 @@ public class Processos {
 //                System.out.println("-----");        
 //            }
         
-                for (OSProcess process : os.getProcesses(10, OperatingSystem.ProcessSort.MEMORY)) {
+                for (OSProcess process : os.getProcesses(10, OperatingSystem.ProcessSort.MEMORY)) {;;
                       for(OSProcess processp:os.getChildProcesses(process.getParentProcessID(), 0, null)){
                       System.out.println(processp.getName());
                       System.out.println("Memoria: " + FormatUtil.formatBytes(processp.getResidentSetSize()));
