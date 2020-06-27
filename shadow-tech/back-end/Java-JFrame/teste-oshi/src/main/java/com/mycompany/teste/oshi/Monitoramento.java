@@ -33,7 +33,6 @@ public class Monitoramento extends javax.swing.JFrame {
     public Monitoramento() {
         initComponents();
 
-//        con.listarTodosComputador();
         con.inserirComputador();
 
         Random random = new Random();
@@ -183,7 +182,7 @@ public class Monitoramento extends javax.swing.JFrame {
 //                .build();
 //                SlackUtils.sendMessage(slackMessage);        
 //            }
-//            con.incluirRegistros();
+            con.incluirProcessos();
         }
         );
 

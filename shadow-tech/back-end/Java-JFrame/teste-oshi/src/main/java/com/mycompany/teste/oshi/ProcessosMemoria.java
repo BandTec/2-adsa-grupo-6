@@ -10,6 +10,7 @@ import oshi.software.os.OSProcess;
 import oshi.software.os.OperatingSystem;
 
 public class ProcessosMemoria {
+
     @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         SystemInfo info = new SystemInfo();
@@ -21,22 +22,21 @@ public class ProcessosMemoria {
             System.out.println(i + "\n");
         });
     }
-    
-    
-@SuppressWarnings("unchecked")
-public static List printProcesses(OperatingSystem os, GlobalMemory memory) {
+
+    @SuppressWarnings("unchecked")
+    public static List printProcesses(OperatingSystem os, GlobalMemory memory) {
 
         List oshi = new ArrayList();
         OSProcess myProc = os.getProcess(os.getProcessId());
-        List<OSProcess> procs = os.getProcesses(30, OperatingSystem.ProcessSort.CPU);
+        List<OSProcess> procs = os.getProcesses(30, OperatingSystem.ProcessSort.MEMORY); //OperatingSystem.ProcessSort.CPU
         oshi.add(" %CPU %MEM   Name");
-        for (int i = 0; i < procs.size() ; i++) {
+        for (int i = 0; i < procs.size(); i++) {
             OSProcess p = procs.get(i);
-            oshi.add(String.format("%5.1f %2.1f   %s",
+            oshi.add(String.format("%5.1f %2.2f   %s",
                     100d * (p.getKernelTime() + p.getUserTime()) / p.getUpTime(),
                     100d * p.getResidentSetSize() / memory.getTotal(),
                     p.getName()));
         }
         return oshi;
- }
+    }
 }

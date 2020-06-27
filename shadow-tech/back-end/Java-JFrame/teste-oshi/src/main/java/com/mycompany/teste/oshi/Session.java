@@ -13,6 +13,17 @@ public class Session {
  
     public static Integer idMaquina;
     public static Integer idAluno;
+    public static Integer idUsuarioComputador;
 
-    
+    public static Integer getIdMaquina() {
+        return idMaquina;
+    }
+
+    public static Integer getIdAluno() {
+        return idAluno;
+    }
+
+    public static Integer getIdUsuarioComputador() {
+        return idUsuarioComputador;
+    }
 }

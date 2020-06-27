@@ -1,6 +1,5 @@
 package com.mycompany.teste.oshi;
 
-import java.time.LocalDateTime;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import oshi.SystemInfo;
@@ -8,8 +7,11 @@ import oshi.hardware.HardwareAbstractionLayer;
 import oshi.software.os.OperatingSystem;
 
 import java.sql.*;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import oshi.hardware.GlobalMemory;
 import oshi.software.os.OSProcess;
 
 public class ConexaoBanco {
@@ -25,10 +27,13 @@ public class ConexaoBanco {
     HardwareAbstractionLayer hard = si.getHardware();
     OperatingSystem os = si.getOperatingSystem();
 
+    GlobalMemory memory = hard.getMemory();
+
     String connectionString;
     Connection conn;
     private Integer idMaquina;
     private Integer idAluno;
+    private Integer idUsuarioComputador;
 
     Integer cont = 0;
 
@@ -55,12 +60,6 @@ public class ConexaoBanco {
 
     public void inserirComputador() {
         try {
-
-//            System.out.println(LocalDateTime.now());
-//            System.out.println(LocalDateTime.now().getDayOfMonth());
-//            System.out.println(LocalDateTime.now().getMonthValue());
-//            System.out.println(LocalDateTime.now().getYear());
-
             List<Map<String, Object>> mac = jdbcTemplate.queryForList("SELECT mac, idMaquina FROM [dbo].[Computador] where mac ='" + cpu.mostrarMacAddress() + "'");
             if (mac.isEmpty()) {
                 jdbcTemplate.update("insert into computador(processador, disco, memoria, mac) values  (?,?,?,?)",
@@ -70,6 +69,7 @@ public class ConexaoBanco {
                     idMaquina = (Integer) map.get("idMaquina");
                     System.out.println("id maquina inserir computador");
                     System.out.println(idMaquina);
+                    Session.idMaquina = idMaquina;
                 }
                 inserirUsuarioComputador();
             }
@@ -81,41 +81,45 @@ public class ConexaoBanco {
         }
     }
 
-    public  void inserirUsuarioComputador() {
+    public void inserirUsuarioComputador() {
         try {
-            jdbcTemplate.update("insert into usuarioComputador(fkAluno, fkMaquina) values  (?,?)", idAluno, idMaquina);
-            System.out.println("id aluno");
-            System.out.println(idAluno);
-            System.out.println("id maquin");
-            System.out.println(idMaquina);
-        } catch (Exception e) {
-            
-        }
-    }
-    
 
-    public void incluirProcessos() {
-        try {
-            for (OSProcess process : os.getProcesses()) {
-                jdbcTemplate.update("INSERT INTO Processos (nome, consumo, fkUsuarioComputador) VALUES (?,?,?)",
-                        process.getName(),
-                        (100d * (process.getKernelTime() + process.getUserTime()) / process.getUpTime()), "1");
+            jdbcTemplate.update("insert into usuarioComputador(fkAluno, fkMaquina, dataHora) values  (?,?,?)", Session.getIdAluno(), Session.getIdMaquina(), LocalDateTime.now());
+            List<Map<String, Object>> usuarioComputador = jdbcTemplate.queryForList("select idUsuarioComputador from UsuarioComputador where fkMaquina = ?", Session.getIdMaquina());
+           
+            for (Map<String, Object> map : usuarioComputador) {
+                idUsuarioComputador = (Integer) map.get("idUsuarioComputador");
+                Session.idUsuarioComputador = idUsuarioComputador;
             }
         } catch (Exception e) {
             Log.gravarLog(e);
         }
     }
-    
+
+    public void incluirProcessos() {
+        try {
+            List<OSProcess> procs = os.getProcesses(5, OperatingSystem.ProcessSort.MEMORY); //OperatingSystem.ProcessSort.CPU
+            for (int i = 0; i < procs.size(); i++) {
+                OSProcess p = procs.get(i);
+                jdbcTemplate.update(
+                        "INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)",
+                        p.getName(),
+                        (100d * p.getResidentSetSize() / memory.getTotal()), Session.getIdUsuarioComputador(), LocalDateTime.now());
+            }
+        } catch (Exception e) {
+            Log.gravarLog(e);
+        }
+    }
 
     public boolean login(String email, String senha) {
         try {
             List<Map<String, Object>> loginJava = jdbcTemplate.queryForList("SELECT idUsuario,login,senha  FROM [dbo].[Usuario] where login ='" + email + "'" + "and senha = '" + senha + "'");
-           
+
             if (loginJava.size() != 0) {
-                for (Map<String, Object> map : loginJava) {               
+                for (Map<String, Object> map : loginJava) {
                     idAluno = (Integer) map.get("idUsuario");
-                    System.out.println(idAluno);
-                }                
+                    Session.idAluno = idAluno;
+                }
                 return true;
             }
             return false;
