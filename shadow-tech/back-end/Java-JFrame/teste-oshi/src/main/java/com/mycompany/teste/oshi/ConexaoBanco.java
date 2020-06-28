@@ -131,12 +131,12 @@ public class ConexaoBanco {
         }
     }
 
-    //    public void incluirRegistros() {
-//        try {
-//            jdbcTemplate.update("INSERT INTO Registros (cpuPc, memoria, disco, dataHora,fkComputador) VALUES (?,?,?,?,?)",
-//                    cpu.getPorcentagemCpu(), ram.getPorcentagemAtual(), disco.discoUsado(), LocalDateTime.now(), "1");
-//        } catch (Exception e) {
-//            Log.gravarLog(e);
-//        }
-//    }
+        public void incluirRegistros() {
+        try {
+            jdbcTemplate.update("INSERT INTO Registros (cpuPc, memoria, disco, dataHora,fkUsuarioComputador) VALUES (?,?,?,?,?)",
+                    String.format("%.0f",cpu.getPorcentagemCpu()), String.format("%.0f",ram.getPorcentagemAtual()), String.format("%.0f",disco.discoPorcentagem()), LocalDateTime.now(), Session.getIdUsuarioComputador());
+        } catch (Exception e) {
+            Log.gravarLog(e);
+        }
+    }
 }

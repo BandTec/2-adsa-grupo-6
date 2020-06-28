@@ -62,6 +62,8 @@ public class Monitoramento extends javax.swing.JFrame {
         lblDiscoDisponivel.setText(String.format("%.0f GB", disco.discoLivre()));
 
         Timer timer = new Timer(5, (ActionEvent e) -> {
+            
+            con.incluirRegistros();
 
             lblTemperatura.setText(String.format("%.2f °C", cpu.mostrarTemperatura()));
 
