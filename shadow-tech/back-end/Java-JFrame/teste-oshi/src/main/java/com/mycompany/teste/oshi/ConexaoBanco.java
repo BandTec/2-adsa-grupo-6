@@ -104,7 +104,7 @@ public class ConexaoBanco {
                 jdbcTemplate.update(
                         "INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)",
                         p.getName(),
-                        (100d * p.getResidentSetSize() / memory.getTotal()), Session.getIdUsuarioComputador(), LocalDateTime.now());
+                       String.format(" %2.0f",(100d * p.getResidentSetSize() / memory.getTotal())), Session.getIdUsuarioComputador(), LocalDateTime.now());
             }
         } catch (Exception e) {
             Log.gravarLog(e);

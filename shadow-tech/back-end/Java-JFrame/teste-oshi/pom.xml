@@ -22,7 +22,7 @@
                     </descriptorRefs>
                     <archive>
                       <manifest>
-                        <mainClass>com.mycompany.teste.oshi.Monitoramento</mainClass>
+                        <mainClass>com.mycompany.teste.oshi.LoginJava</mainClass>
                       </manifest>
                     </archive>
 
