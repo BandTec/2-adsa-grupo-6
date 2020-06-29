@@ -31,3 +31,12 @@ Content-Type: application/json
 ### 
 
 GET {{url}}/plotDash HTTP/1.1
+
+###
+
+GET {{url}}/processosProfile HTTP/1.1
+Content-Type: application/json
+
+{
+    "idUsuario":7
+}

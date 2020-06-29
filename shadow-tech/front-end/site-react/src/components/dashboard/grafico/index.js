@@ -56,7 +56,7 @@ export default class Grafico extends Component {
                     xAxes: [{
                         ticks: {
                             min: 0,
-                            max: 65,
+                            // max: 65,
                             stepSize: 1
                         }
                     }]

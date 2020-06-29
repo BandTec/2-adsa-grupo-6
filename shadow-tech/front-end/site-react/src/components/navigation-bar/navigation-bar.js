@@ -4,7 +4,6 @@ import { useHistory } from 'react-router-dom';
 
 import Loading from '../../components/Loading';
 
-
 import logo from '../../assets/logo.png';
 import logoShiny from '../../assets/logo-shiny.png';
 import * as S from './style';
@@ -100,7 +99,7 @@ export default function NavigationBar({ isDash }) {
                 alert('Sem conexão com o banco')
             }
         })
-    }
+    }   
 
     return (
         <>

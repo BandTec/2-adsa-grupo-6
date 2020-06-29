@@ -15,7 +15,7 @@ export default function AlunosProcesso() {
 
     const hist = useHistory();
 
-    let [alunos, setAlunos] = useState(['']);
+    let [alunos, setAlunos] = useState([]);
 
     useEffect(() => {
         api.get('/alunosProcesso').then(res => {
@@ -27,9 +27,14 @@ export default function AlunosProcesso() {
         })
     }, [])
 
-    function redirect(path) {
+    function redirect(path, idUsuario) {
+        sessionStorage.setItem('idUsuario', idUsuario)
         hist.push(path);
     }
+
+    console.log(alunos);
+    
+
 
     return (
         <>
@@ -41,11 +46,11 @@ export default function AlunosProcesso() {
                     <input placeholder="Insira o nome de um aluno para consulta" />
                 </S.search>
                 <S.listAlunos>
-                    {alunos.map(alunos =>
+                    {alunos.map(aluno =>
                         <>
-                            <S.alunos onClick={() => redirect('/profile')}>
+                            <S.alunos onClick={() => redirect('/profile', aluno.idUsuario)}>
                                 <img src={imgAluno} height={70} alt="imagem do aluno" />
-                                <div>{alunos.nome}{alunos.processo}</div>
+                                <div>{aluno}</div>
                             </S.alunos>
                         </>
                     )}

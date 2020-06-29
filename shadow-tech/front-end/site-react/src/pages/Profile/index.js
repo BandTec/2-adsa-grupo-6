@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Topnav from '../../components/navigation-bar/navigation-bar';
 
 import * as S from './style.js'
@@ -10,38 +10,45 @@ import imgChip from '../../assets/chip.png';
 import imgHd from '../../assets/hd.png';
 import imgRam from '../../assets/ram.png';
 
+import api from '../../services/api';
+import Loading from '../../components/Loading';
+
+
 export default function Profile() {
+    let [isLoading, setIsLoading] = useState(true);
+    let [processos, setProcessos] = useState([]);
 
-    var processos = [
-        { "nome": "aVSCODE", "cpu": "80%" },
-        { "nome": "VSCODE", "cpu": "80%" },
-        { "nome": "VSCODE", "cpu": "80%" },
-        { "nome": "VSCODE", "cpu": "80%" },
-        { "nome": "VSCODE", "cpu": "80%" },
-        { "nome": "VSCODE", "cpu": "80%" },
-        { "nome": "VSCODE", "cpu": "80%" },
-        { "nome": "VSCODE", "cpu": "80%" },
-        { "nome": "VSCODE", "cpu": "80%" },
-        { "nome": "VSCODE", "cpu": "80%" },
-        { "nome": "VSCODE", "cpu": "80%" },
-    ];
+    const idUsuario = sessionStorage.getItem('idUsuario');
 
+    useEffect(() => {
+        api.get('/alunosProcesso').then(res => {
+            setIsLoading(false)
+            setProcessos(res.data);
+        }).catch(error => {
+            setIsLoading(false)
+            alert('Erro de conexão');
+        })
+    }, [])
+
+    console.log(processos);
+    
 
     return (
         <>
+            {isLoading ? <Loading /> : null}
             <S.DivFundoNavTopo />
             <Topnav isDash={true}/>
             <S.global>
                 <S.left>
                     <S.imgInfo>
                         <img src={imgAluno} alt="imgAluno" height={170} />
-                        <label>Aluno legal</label>
+                        <label>{}</label>
                     </S.imgInfo>
                     <S.processos>
                         {processos.map(processos =>
                             <>
                                 <S.processosI>
-                                    <div>{processos.nome}{processos.cpu}</div>
+                                    <div>{processos.nome[1]}{processos.consumo}% - RAM</div>
                                 </S.processosI>
                             </>
                         )}

@@ -60,7 +60,7 @@ export default function Home() {
             hist.push('/dashboards');
         }).catch(error => {
             setIsLoading(false);
-            if (error!=undefined&&error.response.status === 404) {
+            if (error!==undefined&&error.response.status === 404) {
                 alert('Credenciais inválidas!');
             } else {
                 alert('Problema de conexão!');
