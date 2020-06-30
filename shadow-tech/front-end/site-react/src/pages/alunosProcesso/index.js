@@ -32,7 +32,9 @@ export default function AlunosProcesso() {
         hist.push(path);
     }
 
-    console.log(alunos);
+    console.log(alunos)
+
+    // alunos.map(aluno => console.log(aluno));
     
 
 
@@ -46,14 +48,14 @@ export default function AlunosProcesso() {
                     <input placeholder="Insira o nome de um aluno para consulta" />
                 </S.search>
                 <S.listAlunos>
-                    {alunos.map(aluno =>
+                    {/* {alunos.map(aluno =>
                         <>
                             <S.alunos onClick={() => redirect('/profile', aluno.idUsuario)}>
                                 <img src={imgAluno} height={70} alt="imagem do aluno" />
-                                <div>{aluno}</div>
+                                <div>{aluno.nome[0]}</div>
                             </S.alunos>
                         </>
-                    )}
+                    )} */}
                 </S.listAlunos>
             </S.alunosSearch>
         </>

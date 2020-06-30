@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const UserController = require('./controller/user');
 const DashController = require('./controller/dash');
 const ListUSer = require('./controller/listUser');
+const RegisterUser = require('./controller/registersProfile');
 const server = express();
 
 // const path = require('path');
@@ -33,6 +34,14 @@ server.get('/plotDash', (req, res) => {
 
 server.get('/alunosProcesso', (req, res) => {
     ListUSer.list(req, res);
+});
+
+server.get('/processosDoAluno/:idUsuario', (req, res) => {
+    ListUSer.processUser(req, res);
+});
+
+server.get('/registrosAluno', (req, res) =>{
+    RegisterUser.registerProfile(req, res);
 });
 
 const port = process.env.port || 3001;

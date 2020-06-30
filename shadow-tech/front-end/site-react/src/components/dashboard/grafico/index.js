@@ -12,7 +12,7 @@ export default class Grafico extends Component {
         const processos = [];
 
         const myChartRef = this.chartRef.current.getContext('2d');
-
+        
         await api.get('/plotDash').then(res => {
             processos.push(res.data);
         }).catch(error => {
@@ -56,12 +56,13 @@ export default class Grafico extends Component {
                     xAxes: [{
                         ticks: {
                             min: 0,
-                            // max: 65,
+                            max: 65,
                             stepSize: 1
                         }
                     }]
                 }
             }
+
         });
 
     }

@@ -17,21 +17,40 @@ import Loading from '../../components/Loading';
 export default function Profile() {
     let [isLoading, setIsLoading] = useState(true);
     let [processos, setProcessos] = useState([]);
+    let [registros, setRegistros] = useState([]);
+    let [nome, setNome] = useState('');
 
-    const idUsuario = sessionStorage.getItem('idUsuario');
+    // const idUsuario = sessionStorage.getItem('idUsuario');
+    const idUsuario = 13;
+
 
     useEffect(() => {
-        api.get('/alunosProcesso').then(res => {
+        api.get('/processosDoAluno/'+ idUsuario).then(res => {
             setIsLoading(false)
             setProcessos(res.data);
+            setNome(res.data[0].unome)
         }).catch(error => {
             setIsLoading(false)
             alert('Erro de conexão');
         })
+        api.get('/registrosAluno').then(res => {
+            setIsLoading(false)
+            setRegistros(res.data)
+        }).catch(error => {
+            setIsLoading(false)
+            alert('Erro', error)
+        })
     }, [])
 
-    console.log(processos);
-    
+    // if(processos[0] != undefined){
+
+    //     console.log(processos[0].unome);
+    // }else{
+    //     console.log('indefinido rapa');
+        
+    // }
+    console.log(nome);
+
 
     return (
         <>
@@ -42,13 +61,13 @@ export default function Profile() {
                 <S.left>
                     <S.imgInfo>
                         <img src={imgAluno} alt="imgAluno" height={170} />
-                        <label>{}</label>
+                        <h2 style={{marginTop: '20px'}}>{nome}</h2>
                     </S.imgInfo>
                     <S.processos>
-                        {processos.map(processos =>
+                        {processos.map(processo =>
                             <>
                                 <S.processosI>
-                                    <div>{processos.nome[1]}{processos.consumo}% - RAM</div>
+                                    <div>{processo.pnome}-------------{processo.consumo}% - RAM</div>
                                 </S.processosI>
                             </>
                         )}

@@ -99,7 +99,23 @@ export default function NavigationBar({ isDash }) {
                 alert('Sem conexão com o banco')
             }
         })
-    }   
+    }
+
+    function suporte() {
+
+        var ttChatLoaderS = document.createElement('script');
+            document.tomticketChatLoaderScriptVersion = 2;
+            ttChatLoaderS.src = 'https://shadowtech.tomticket.com/scripts-chat/chat.min.js'
+            + '?id=EP47710'
+            + '&account=3053440P29062020050631'
+            + '&autoOpen=0'
+            + '&hideWhenOffline=0'
+            + '&d=shadowtech'
+            + '&ts=' + new Date().getTime()
+            + '&ref=' + encodeURIComponent(document.URL);
+            document.body.appendChild(ttChatLoaderS)
+            ;
+    }
 
     return (
         <>
@@ -116,7 +132,7 @@ export default function NavigationBar({ isDash }) {
                             <>
                                 <S.Button onClick={() => hist.push('/dashboards')}>Dashboard</S.Button>
                                 <S.Button onClick={() => hist.push('/alunosProcesso')}>Aluno</S.Button>
-                                <S.Button>Suporte</S.Button>
+                                <S.Button onClick={() => suporte()}>Suporte</S.Button>
                             </>
                             :
                             <>
@@ -158,7 +174,7 @@ export default function NavigationBar({ isDash }) {
             {isOpenModalLogin && (
                 <ModalLogin>
                     <S.Modal>
-                        {isLoading ? <Loading /> : null}  
+                        {isLoading ? <Loading /> : null}
                         <S.DivContainerClose>
                             <S.SpanClose onClick={fecharModalLogin}>
                                 &times;
@@ -229,7 +245,7 @@ export default function NavigationBar({ isDash }) {
             {isOpenCadastro && (
                 <ModalCadastro>
                     <S.Modal>
-                        {isLoading ? <Loading /> : null}  
+                        {isLoading ? <Loading /> : null}
                         <S.DivContainerClose>
                             <S.SpanClose onClick={fecharModalCadastro}>
                                 &times;
