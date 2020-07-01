@@ -40,7 +40,7 @@ server.get('/processosDoAluno/:idUsuario', (req, res) => {
     ListUSer.processUser(req, res);
 });
 
-server.get('/registrosAluno', (req, res) =>{
+server.get('/registrosAluno/:idUsuario', (req, res) =>{
     RegisterUser.registerProfile(req, res);
 });
 

@@ -16,7 +16,7 @@ class Users {
 
     processosUsuario(idUsuario) {
         const sql = `
-        select idUsuario, unome, consumo, pnome
+        select idUsuario, unome, consumo, sum(pnome)
         from
             (select top 5
                 processos.nome pnome, idUsuario,
@@ -24,14 +24,14 @@ class Users {
                 Processos.dataHora
             from Processos inner join UsuarioComputador
                 on idUsuarioComputador = fkUsuarioComputador
-                inner join Usuario on idUsuario = 13
+                inner join Usuario on idUsuario = fkAluno
+                where idUsuario = ${idUsuario}
                 order by
                 dataHora desc) as teste
                 order by consumo desc
                 `
-        //where Processos.datahora > CONVERT(DATETIME, CONVERT(DATE, DATEADD(HOUR, -3, GETDATE())))
-        // where UsuarioComputador.datahora > CONVERT(DATETIME, CONVERT(DATE, DATEADD(HOUR, -3, GETDATE())))
-        return database.query(sql);
+                // where Processos.datahora > CONVERT(DATETIME, CONVERT(DATE, DATEADD(HOUR, -3, GETDATE())))
+                return database.query(sql);
 
     }
 

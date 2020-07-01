@@ -14,7 +14,7 @@ class Dashboard {
             [dbo].[UsuarioComputador]
             inner join Processos P 
             on idUsuarioComputador = fkUsuarioComputador
-            where P.datahora > CONVERT(DATETIME, CONVERT(DATE, DATEADD(HOUR, -3, GETDATE())))
+            -- where P.datahora > CONVERT(DATETIME, CONVERT(DATE, DATEADD(HOUR, -3, GETDATE())))
             group by 
             fkMaquina,
             P.nome) as teste    
