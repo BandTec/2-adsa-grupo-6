@@ -35,7 +35,10 @@ class Users {
             SET @cnt = @cnt + 1
         END
         
-        SELECT * FROM #MaiorProcesso order by unome;
+        SELECT #MaiorProcesso.idUsuario, #MaiorProcesso.unome, 
+        #MaiorProcesso.pnome, #MaiorProcesso.consumo, Usuario.genero 
+        FROM #MaiorProcesso join Usuario on #MaiorProcesso.idUsuario = Usuario.idUsuario
+        order by unome;
         DROP TABLE #MaiorProcesso;
         
         `;
@@ -57,7 +60,7 @@ class Users {
                 where idUsuario = ${idUsuario}
                 order by
                 dataHora desc) as teste
-                where teste.datahora > CONVERT(DATETIME, CONVERT(DATE, DATEADD(HOUR, -3, GETDATE())))
+                --where teste.datahora > CONVERT(DATETIME, CONVERT(DATE, DATEADD(HOUR, -3, GETDATE())))
                 order by consumo desc
                 `
                 return database.query(sql);
