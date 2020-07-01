@@ -24,8 +24,8 @@
 //     let [memoria, setMemoria] = useState('');
 //     let [disco, setDisco] = useState('');
 
-//     const idUsuario = sessionStorage.getItem('idUsuario');
-//     const genero = sessionStorage.getItem('genero');
+//     // const idUsuario = sessionStorage.getItem('idUsuario');
+//     // const genero = sessionStorage.getItem('genero');
 
 //     useEffect(() => {
 //         setInterval(() => {

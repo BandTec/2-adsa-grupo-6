@@ -247,7 +247,9 @@ export const TituloEquipe = styled.h1`
 export const DivFotinhos = styled.div`
     padding: 10vh 0;
 `;
-export const MembroImagem = styled.img``;
+export const MembroImagem = styled.img`
+    margin: 4px;
+`;
 
 // MAPA 
 export const DivSectionMapa = styled.div`
