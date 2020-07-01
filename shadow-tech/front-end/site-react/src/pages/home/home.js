@@ -12,7 +12,13 @@ import search from '../../assets/search.png';
 import hourglass from '../../assets/hourglass.png';
 import like from '../../assets/like.png';
 import money from '../../assets/money.png';
-import draven from '../../assets/draven.png';
+import braian from '../../assets/braian.png';
+import jhonnatan from '../../assets/jhonnatan.png';
+import jp from '../../assets/jp.png';
+import martha from '../../assets/martha.png';
+import reis from '../../assets/rafaelreis.png';
+import bachega from '../../assets/raphaelbachega.png';
+
 
 import Loading from '../../components/Loading';
 
@@ -201,12 +207,12 @@ export default function Home() {
                         Equipe
                     </S.TituloEquipe>
                     <S.DivFotinhos>
-                        <S.MembroImagem src={draven} />
-                        <S.MembroImagem src={draven} />
-                        <S.MembroImagem src={draven} />
-                        <S.MembroImagem src={draven} />
-                        <S.MembroImagem src={draven} />
-                        <S.MembroImagem src={draven} />
+                        <S.MembroImagem src={braian} />
+                        <S.MembroImagem src={jp} />
+                        <S.MembroImagem src={reis} />
+                        <S.MembroImagem src={bachega} />
+                        <S.MembroImagem src={jhonnatan} />
+                        <S.MembroImagem src={martha} />
                     </S.DivFotinhos>
                 </S.DivEquipe>
             </S.DivSectionEquipe>
