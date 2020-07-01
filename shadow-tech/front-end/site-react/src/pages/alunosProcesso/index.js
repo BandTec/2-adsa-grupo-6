@@ -23,6 +23,9 @@ export default function AlunosProcesso() {
         api.get('/alunosProcesso').then(res => {
             setIsLoading(false)
             setAlunos(res.data);
+            console.log(res.data[0].genero);
+            
+            // setGenero(res.data[0].genero)
         }).catch(error => {
             setIsLoading(false)
             alert('Erro de conexão');
