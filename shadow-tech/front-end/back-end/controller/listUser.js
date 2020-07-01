@@ -24,6 +24,7 @@ const processUser = async (req, res) => {
     .then(function (response) {
         res.status(200).json(response.recordset);
     }).catch( function (error) {
+        
         res.status(406).send(error);
     });
 }

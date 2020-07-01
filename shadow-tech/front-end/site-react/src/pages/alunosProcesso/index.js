@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import Topnav from '../../components/navigation-bar/navigation-bar';
 
@@ -8,10 +8,12 @@ import Loading from '../../components/Loading';
 
 import * as S from './style.js'
 
-import imgAluno from '../../assets/aluno-legal.jpg';
+import imgAlunoM from '../../assets/person.png';
+import imgAlunoF from '../../assets/personF.png';
 
 export default function AlunosProcesso() {
     let [isLoading, setIsLoading] = useState(true);
+    let [genero, setGenero] = useState('');
 
     const hist = useHistory();
 
@@ -27,16 +29,12 @@ export default function AlunosProcesso() {
         })
     }, [])
 
-    function redirect(path, idUsuario) {
+
+    function redirect(path, idUsuario, genero) {
         sessionStorage.setItem('idUsuario', idUsuario)
+        sessionStorage.setItem('genero', genero)
         hist.push(path);
     }
-
-    console.log(alunos)
-
-    // alunos.map(aluno => console.log(aluno));
-    
-
 
     return (
         <>
@@ -48,14 +46,14 @@ export default function AlunosProcesso() {
                     <input placeholder="Insira o nome de um aluno para consulta" />
                 </S.search>
                 <S.listAlunos>
-                    {/* {alunos.map(aluno =>
+                    {alunos.map(aluno =>
                         <>
-                            <S.alunos onClick={() => redirect('/profile', aluno.idUsuario)}>
-                                <img src={imgAluno} height={70} alt="imagem do aluno" />
-                                <div>{aluno.nome[0]}</div>
+                            <S.alunos onClick={() => redirect('/profile', aluno.idUsuario, aluno.genero)}>
+                            {aluno.genero === 'M'? <img src={imgAlunoM} alt="imgAluno" height={70} /> : <img src={imgAlunoF} alt="imgAluno" height={70} />}
+                                <div>{aluno.unome}------{aluno.pnome}</div>
                             </S.alunos>
                         </>
-                    )} */}
+                    )}
                 </S.listAlunos>
             </S.alunosSearch>
         </>

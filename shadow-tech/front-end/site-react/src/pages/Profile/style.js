@@ -57,8 +57,8 @@ export const right = styled.div`
 `;
 
 export const especificacoes = styled.div`
-    height: 50%;
-    margin-top: 2vh;
+    /* height: 50%; */
+    /* margin-top: 2vh; */
     /* display: flex;
     flex-direction: column;
     justify-content: center; */

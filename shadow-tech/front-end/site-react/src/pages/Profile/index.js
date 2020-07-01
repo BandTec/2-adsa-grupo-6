@@ -3,7 +3,8 @@ import Topnav from '../../components/navigation-bar/navigation-bar';
 
 import * as S from './style.js'
 
-import imgAluno from '../../assets/aluno-legal.jpg';
+import imgAlunoM from '../../assets/person.png';
+import imgAlunoF from '../../assets/personF.png';
 import imgChip from '../../assets/chip.png';
 import imgHd from '../../assets/hd.png';
 import imgRam from '../../assets/ram.png';
@@ -17,15 +18,14 @@ export default function Profile() {
     let [isLoading, setIsLoading] = useState(true);
     let [processos, setProcessos] = useState([]);
     let [nome, setNome] = useState('');
+    let [genero, setGenero] = useState('');
 
     let [cpu, setCpu] = useState('');
     let [memoria, setMemoria] = useState('');
     let [disco, setDisco] = useState('');
 
-    // const idUsuario = sessionStorage.getItem('idUsuario');
-    const idUsuario = 11;
-
-    var cont = 0
+    const idUsuario = sessionStorage.getItem('idUsuario');
+    const genero = sessionStorage.getItem('genero');
 
     useEffect(() => {
         setInterval(() => {
@@ -33,10 +33,9 @@ export default function Profile() {
                 setIsLoading(false)
                 setProcessos(res.data);
                 setNome(res.data[0].unome)
-    
             }).catch(error => {
                 setIsLoading(false)
-                alert('Erro de conexão');
+                alert('não encontrou nenhum processo');
             })
             api.get('/registrosAluno/'+idUsuario).then(res => {
                 setIsLoading(false)
@@ -50,8 +49,7 @@ export default function Profile() {
                 alert('Erro', error)
             })
 
-
-        }, 5000);
+        }, 5000);    
 
     }, [])
 
@@ -63,9 +61,14 @@ export default function Profile() {
             <S.global>
                 <S.left>
                     <S.imgInfo>
-                        <img src={imgAluno} alt="imgAluno" height={170} />
+                        {genero === 'M'? <img src={imgAlunoM} alt="imgAluno" height={170} /> : <img src={imgAlunoF} alt="imgAluno" height={170} />}
                         <h2 style={{ marginTop: '20px' }}>{nome}</h2>
                     </S.imgInfo>
+                    <S.especificacoes>
+                        <Grafico />
+                    </S.especificacoes>
+                </S.left>
+                <S.right>
                     <S.processos>
                         {processos.map(processo =>
                             <>
@@ -75,11 +78,6 @@ export default function Profile() {
                             </>
                         )}
                     </S.processos>
-                </S.left>
-                <S.right>
-                    <S.especificacoes>
-                        <Grafico />
-                    </S.especificacoes>
                     <S.cpu>
                         <div><img src={imgChip} alt="cpu" height={60} /><label>CPU: {cpu}%</label></div>
                         <div><img src={imgRam} alt="cpu" height={60} /><label>RAM: {memoria}%</label></div>

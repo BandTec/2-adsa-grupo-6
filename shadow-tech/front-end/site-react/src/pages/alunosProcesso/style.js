@@ -25,14 +25,15 @@ export const search = styled.div`
         height: 40px;
         width: 80%;
         margin-right: 10px;
-        background-color: #3341A3;
+        /* background-color: #3341A3; */
+        background-color: white;
         border-radius: 5px;
         padding: 1vh 1vw;
-        color: white;
+        color: black;
     }
 
     input::placeholder{
-        color: white;
+        color: black;
     }   
 
 `
@@ -56,7 +57,7 @@ export const alunos = styled.div`
     border: 2px solid #3341A3;
     border-radius: 5px;
     padding-left: 2px;
-    background-color: red;
+    /* background-color: red; */
 
     cursor: pointer;
 
