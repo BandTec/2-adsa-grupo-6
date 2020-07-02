@@ -27,9 +27,10 @@ export const search = styled.div`
         margin-right: 10px;
         /* background-color: #3341A3; */
         background-color: white;
-        border-radius: 5px;
         padding: 1vh 1vw;
         color: black;
+        box-shadow: 5px 2px 5px gray;
+        border-radius: 5px;
     }
 
     input::placeholder{
@@ -52,10 +53,11 @@ export const listAlunos = styled.div`
 export const alunos = styled.div`
     display: flex;
     justify-content: center;
-    width: 97%;
+    width: 95%;
     margin: 1vh 1vw;
     background-color: white;
     border: 2px solid #3341A3;
+    box-shadow: 5px 2px 5px gray;
     border-radius: 5px;
     padding-left: 2px;
 

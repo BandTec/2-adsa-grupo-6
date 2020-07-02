@@ -8,6 +8,9 @@ export const divProcessos = styled.div`
   margin-bottom: 5vh;
   max-height: 50vh;
   overflow: auto;
+    
+  box-shadow: 5px 2px 5px gray;
+  border-radius: 5px;
 `;
 
 export const processos = styled.div`
