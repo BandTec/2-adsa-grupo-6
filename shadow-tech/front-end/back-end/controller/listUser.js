@@ -14,10 +14,6 @@ const list = async (req, res) =>{
 
 const processUser = async (req, res) => {
     let idUsuario = req.params.idUsuario;
-
-    console.log(idUsuario);
-    
-
     const listModel = new ListModel();
 
     await listModel.processosUsuario(idUsuario)

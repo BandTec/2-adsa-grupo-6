@@ -20,7 +20,7 @@ class Users {
                 (select top 1
                     idUsuario, unome, consumo, pnome
                 from
-                    (select top 5
+                    (select top 25
                         processos.nome pnome, idUsuario,
                         usuario.nome unome, consumo,
                         Processos.dataHora
@@ -48,10 +48,10 @@ class Users {
 
     processosUsuario(idUsuario) {
         const sql = `
-        select idUsuario, unome, consumo, pnome
+        select idUsuario, unome, consumo, pnome, teste.login, teste.dataHora
         from
-            (select top 5
-                processos.nome pnome, idUsuario,
+            (select top 20
+                processos.nome pnome, idUsuario, login,
                 usuario.nome unome, consumo,
                 Processos.dataHora
             from Processos inner join UsuarioComputador

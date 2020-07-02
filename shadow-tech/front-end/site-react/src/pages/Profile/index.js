@@ -5,8 +5,9 @@ import * as S from './style.js'
 
 import imgAlunoM from '../../assets/person.png';
 import imgAlunoF from '../../assets/personF.png';
+
 import imgChip from '../../assets/chip.png';
-import imgHd from '../../assets/hd.png';
+import imgHd from '../../assets/harddisk.png';
 import imgRam from '../../assets/ram.png';
 
 import api from '../../services/api';
@@ -18,6 +19,7 @@ export default function Profile() {
     let [isLoading, setIsLoading] = useState(true);
     let [processos, setProcessos] = useState([]);
     let [nome, setNome] = useState('');
+    let [email, setEmail] = useState('');
 
     let [cpu, setCpu] = useState('');
     let [memoria, setMemoria] = useState('');
@@ -28,11 +30,13 @@ export default function Profile() {
     const genero = sessionStorage.getItem('genero');
 
     useEffect(() => {
-        setInterval(() => {
+        // setInterval(() => {
+
             api.get('/processosDoAluno/' + idUsuario).then(res => {
                 setIsLoading(false)
                 setProcessos(res.data);
                 setNome(res.data[0].unome)
+                setEmail(res.data[0].login)
             }).catch(error => {
                 setIsLoading(false)
                 alert('não encontrou nenhum processo');
@@ -49,7 +53,7 @@ export default function Profile() {
                 alert('Erro', error)
             })
 
-        }, 5000);    
+        // }, 5000);    
 
     }, [])
 
@@ -59,33 +63,51 @@ export default function Profile() {
             <S.DivFundoNavTopo />
             <Topnav isDash={true} />
             <S.global>
-                <S.left>
-                    <S.imgInfo>
-                        {genero === 'M'? <img src={imgAlunoM} alt="imgAluno" height={170} /> : <img src={imgAlunoF} alt="imgAluno" height={170} />}
-                        <h2 style={{ marginTop: '20px' }}>{nome}</h2>
-                    </S.imgInfo>
-                    <S.especificacoes>
+                    <S.alunoInfo>
+                        <S.alunoDetalhes>
+                            <S.cardAluno>
+                                {genero === 'M'? <S.imgAluno src={imgAlunoM} alt="imgAluno" /> : <S.imgAluno src={imgAlunoF} alt="imgAluno" height={170} />}
+                                <h2 style={{ marginTop: '20px' }}>{nome}</h2>
+                                <h3 style={{ marginTop: '20px' }}>{email}</h3>
+                            </S.cardAluno>
+                        </S.alunoDetalhes>
+
+                        <S.cardConsumo>
+                            <h3>CONSUMO</h3>
+                            <S.divCardConsumo><S.imgConsumo src={imgChip} alt="Cpu" />     <label>CPU: {cpu}%</label></S.divCardConsumo>
+                            <S.divCardConsumo><S.imgConsumo src={imgRam} alt="Memoria" />  <label>RAM: {memoria}%</label></S.divCardConsumo>
+                            <S.divCardConsumo><S.imgConsumo src={imgHd} alt="Disco" />     <label>DISCO: {disco}%</label></S.divCardConsumo>
+                        </S.cardConsumo>
+                    
+                    </S.alunoInfo>
+                    
+                    <S.consumo>
+                       
+                    </S.consumo>
+                    <S.grafico>
                         <Grafico />
-                    </S.especificacoes>
-                </S.left>
-                <S.right>
-                    <S.cpu>
-
-                        <div><img src={imgChip} alt="Cpu" height={60}    />     <label>CPU: {cpu}%</label></div>
-                        <div><img src={imgRam} alt="Memoria" height={60} />  <label>RAM: {memoria}%</label></div>
-                        <div><img src={imgHd} alt="Disco" height={60}    />     <label>DISCO: {disco}%</label></div>
-
-                    </S.cpu>
+                    </S.grafico>
                     <S.processos>
+                        <S.cardProcessos>
                         {processos.map(processo =>
                             <>
                                 <S.processosI>
-                                    <div> {processo.pnome}      --      {processo.consumo}% - RAM </div>
+                                    <div style={{width: '100%', display: 'flex', flexDirection:'row', justifyContent:'space-between', alignItems:'center'}}>
+                                        <div>
+                                            {processo.pnome}                                         
+                                        </div>
+                                        <div>
+                                            {processo.consumo}%                                         
+                                        </div>
+                                        <div>
+                                            RAM
+                                        </div>
+                                    </div>
                                 </S.processosI>
                             </>
                         )}
+                        </S.cardProcessos>
                     </S.processos>
-                </S.right>
             </S.global>
         </>
     );

@@ -35,8 +35,7 @@ export const search = styled.div`
     input::placeholder{
         color: black;
     }   
-
-`
+`;
 
 export const listAlunos = styled.div`
     width: 75%;
@@ -74,4 +73,11 @@ export const alunos = styled.div`
         padding: 0 10px;
         color: black;
     }
+`;
+
+export const itemProcesso = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 `;

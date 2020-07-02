@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const chart = styled.div`
-  height: 40vh;
-  width: 45vw;
+  height: 95%;
+  width: 90%;
   color: white; 
   background-color: white;
   margin: 3vh 0;
