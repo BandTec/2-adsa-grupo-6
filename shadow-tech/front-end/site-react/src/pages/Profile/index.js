@@ -69,6 +69,13 @@ export default function Profile() {
                     </S.especificacoes>
                 </S.left>
                 <S.right>
+                    <S.cpu>
+
+                        <div><img src={imgChip} alt="Cpu" height={60}    />     <label>CPU: {cpu}%</label></div>
+                        <div><img src={imgRam} alt="Memoria" height={60} />  <label>RAM: {memoria}%</label></div>
+                        <div><img src={imgHd} alt="Disco" height={60}    />     <label>DISCO: {disco}%</label></div>
+
+                    </S.cpu>
                     <S.processos>
                         {processos.map(processo =>
                             <>
@@ -78,13 +85,6 @@ export default function Profile() {
                             </>
                         )}
                     </S.processos>
-                    <S.cpu>
-
-                        <div><img src={imgChip} alt="Cpu" height={60}    />     <label>CPU: {cpu}%</label></div>
-                        <div><img src={imgRam} alt="Memoria" height={60} />  <label>RAM: {memoria}%</label></div>
-                        <div><img src={imgHd} alt="Disco" height={60}    />     <label>DISCO: {disco}%</label></div>
-
-                    </S.cpu>
                 </S.right>
             </S.global>
         </>

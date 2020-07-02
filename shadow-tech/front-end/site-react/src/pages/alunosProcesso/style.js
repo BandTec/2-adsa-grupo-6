@@ -39,11 +39,13 @@ export const search = styled.div`
 `
 
 export const listAlunos = styled.div`
-    width: 90%;
+    width: 75%;
     border-radius: 5px;
     margin-bottom: 3vh;
     max-height: 80vh;
     overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     // background-color: #ccc;
 `;
@@ -57,7 +59,6 @@ export const alunos = styled.div`
     border: 2px solid #3341A3;
     border-radius: 5px;
     padding-left: 2px;
-    /* background-color: red; */
 
     cursor: pointer;
 
@@ -65,6 +66,7 @@ export const alunos = styled.div`
         cursor: pointer;
         background-color: #FFF;
         display: flex;
+        justify-content: space-between;
         width: 100%;
         margin: 0 1%;
         border-radius: 5px;

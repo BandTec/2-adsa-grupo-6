@@ -13,7 +13,7 @@ import imgAlunoF from '../../assets/personF.png';
 
 export default function AlunosProcesso() {
     let [isLoading, setIsLoading] = useState(true);
-    let [genero, setGenero] = useState('');
+    let [pesquisa, setPesquisa] = useState('');
 
     const hist = useHistory();
 
@@ -23,20 +23,20 @@ export default function AlunosProcesso() {
         api.get('/alunosProcesso').then(res => {
             setIsLoading(false)
             setAlunos(res.data);
-            console.log(res.data[0].genero);
-            
-            // setGenero(res.data[0].genero)
         }).catch(error => {
             setIsLoading(false)
             alert('Erro de conexão');
         })
     }, [])
 
-
     function redirect(path, idUsuario, genero) {
         sessionStorage.setItem('idUsuario', idUsuario)
         sessionStorage.setItem('genero', genero)
         hist.push(path);
+    }
+
+    function filtro(item) {
+        return item.unome.toLowerCase().includes(pesquisa.toLowerCase());
     }
 
     return (
@@ -46,14 +46,14 @@ export default function AlunosProcesso() {
             <Topnav isDash={true} />
             <S.alunosSearch>
                 <S.search>
-                    <input placeholder="Insira o nome de um aluno para consulta" />
+                    <input placeholder="Insira o nome de um aluno para consulta" onChange={(e) => setPesquisa(e.target.value)}/>
                 </S.search>
                 <S.listAlunos>
-                    {alunos.map(aluno =>
+                    {alunos.filter(filtro).map(aluno =>
                         <>
                             <S.alunos onClick={() => redirect('/profile', aluno.idUsuario, aluno.genero)}>
-                            {aluno.genero === 'M'? <img src={imgAlunoM} alt="imgAluno" height={70} /> : <img src={imgAlunoF} alt="imgAluno" height={70} />}
-                                <div>{aluno.unome}------{aluno.pnome}</div>
+                                {aluno.genero === 'M' ? <img src={imgAlunoM} alt="imgAluno" height={70} /> : <img src={imgAlunoF} alt="imgAluno" height={70} />}
+                                <div><span>{aluno.unome}</span><span>{aluno.pnome}</span><span>{aluno.consumo}% RAM</span></div>
                             </S.alunos>
                         </>
                     )}

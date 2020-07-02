@@ -11,32 +11,55 @@ import oshi.software.os.OperatingSystem;
 
 public class ProcessosMemoria {
 
-    @SuppressWarnings("unchecked")
-    public static void main(String[] args) {
-        SystemInfo info = new SystemInfo();
-        HardwareAbstractionLayer hal = info.getHardware();
-        GlobalMemory memory = hal.getMemory();
-        OperatingSystem op = info.getOperatingSystem();
-        List ProcessosMemoria = printProcesses(op, memory);
-        ProcessosMemoria.forEach((i) -> {
-            System.out.println(i + "\n");
-        });
+    protected static class ProcessosFormat {
+
+        public String nome;
+        public Double consumoMemoria;
+
+        public ProcessosFormat(String nome, Double consumoMemoria) {
+            this.nome = nome;
+            this.consumoMemoria = consumoMemoria;
+        }
+
+        public String getNome() {
+            return nome;
+        }
+
+        public Double getConsumoMemoria() {
+            return consumoMemoria;
+        }
+
+        @Override
+        public String toString() {
+            return "ProcessosFormat{" + "nome=" + nome + ", consumoMemoria=" + consumoMemoria + '}';
+        }
+
     }
 
     @SuppressWarnings("unchecked")
     public static List printProcesses(OperatingSystem os, GlobalMemory memory) {
 
-        List oshi = new ArrayList();
-        OSProcess myProc = os.getProcess(os.getProcessId());
+        List<ProcessosFormat> oshi = new ArrayList();
+
         List<OSProcess> procs = os.getProcesses(30, OperatingSystem.ProcessSort.MEMORY); //OperatingSystem.ProcessSort.CPU
-        oshi.add(" %CPU %MEM   Name");
+
         for (int i = 0; i < procs.size(); i++) {
             OSProcess p = procs.get(i);
-            oshi.add(String.format("%5.1f %2.2f   %s",
-                    100d * (p.getKernelTime() + p.getUserTime()) / p.getUpTime(),
-                    100d * p.getResidentSetSize() / memory.getTotal(),
-                    p.getName()));
+
+            boolean temNaLista = false;
+
+            for (ProcessosFormat proc : oshi) {
+                if (proc.getNome().contains(p.getName().toUpperCase())) {
+                    temNaLista = true;
+                }
+
+            }
+            
+            if(!temNaLista){
+                oshi.add(new ProcessosFormat(p.getName().toUpperCase(), 100d * p.getResidentSetSize() / memory.getTotal()));
+            }
         }
+
         return oshi;
     }
 }

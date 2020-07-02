@@ -12,11 +12,11 @@ com/mycompany/teste/oshi/ErroLogin$1.class
 com/mycompany/teste/oshi/LoginJava$1.class
 com/mycompany/teste/oshi/Log.class
 com/mycompany/teste/oshi/ErroLogin$2.class
-com/mycompany/teste/oshi/Processos.class
 com/mycompany/teste/oshi/Session.class
 com/mycompany/teste/oshi/ConexaoBanco.class
 com/mycompany/teste/oshi/Ram.class
 com/mycompany/teste/oshi/LoginJava$3.class
+com/mycompany/teste/oshi/ProcessosMemoria$ProcessosFormat.class
 com/mycompany/teste/oshi/SlackMessage.class
 com/mycompany/teste/oshi/Disco.class
 com/mycompany/teste/oshi/Monitoramento.class
