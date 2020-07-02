@@ -37,7 +37,8 @@ echo ""
                 
         esac
 
-            mkdir -p "instalador-shadow-tech"
+            #sudo mkdir -p "instalador-shadow-tech"
+	    sudo mkdir "instalador-shadow-tech"
             cd "instalador-shadow-tech"
 	    sudo rm -rf shadowtech-script
             sudo git clone https://github.com/reisrb/shadowtech-script.git
@@ -48,7 +49,8 @@ echo ""
                 case $response in
                 s|S|sim|y|yes|Y)
                     echo "Aplicação adicionada a área de trabalho."
-                    cp -p shadowtech.jar /home/$USER/Desktop
+                    #cp -p shadowtech.jar /home/$USER/Desktop
+		     cp shadowtech.jar /home/$USER/Desktop
                         ;;
                 n|nao|N|not)
                     echo "Tudo bem, vamos continuar assim mesmo!"
