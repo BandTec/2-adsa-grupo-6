@@ -126,7 +126,7 @@ export const processos = styled.div`
 `;
 
 export const processosI = styled.div`
-    height: 5vh;
+    height: 8vh;
     width: 90%;
     margin: 1vh 0 0 1vw;
     background-color: #011638;
