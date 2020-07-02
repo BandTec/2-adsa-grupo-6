@@ -614,3 +614,267 @@
      java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
 
 --+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:47:24
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:47:28
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:47:31
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:47:35
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:47:38
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:47:42
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:47:45
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:47:48
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:47:51
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:47:55
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:47:58
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:02
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:05
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:08
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:11
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:15
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:18
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:21
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:25
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:28
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:31
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:34
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:38
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  12:48:41
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: PreparedStatementCallback; uncategorized SQLException for SQL [INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)]; SQL state [null]; error code [0]; The value is not set for the parameter number 4.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: The value is not set for the parameter number 4.
+
+--+--FIM LOG

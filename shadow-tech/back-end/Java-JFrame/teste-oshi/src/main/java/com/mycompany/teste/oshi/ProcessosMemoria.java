@@ -41,7 +41,7 @@ public class ProcessosMemoria {
 
         List<ProcessosFormat> oshi = new ArrayList();
 
-        List<OSProcess> procs = os.getProcesses(30, OperatingSystem.ProcessSort.MEMORY); //OperatingSystem.ProcessSort.CPU
+        List<OSProcess> procs = os.getProcesses(40, OperatingSystem.ProcessSort.MEMORY); //OperatingSystem.ProcessSort.CPU
 
         for (int i = 0; i < procs.size(); i++) {
             OSProcess p = procs.get(i);

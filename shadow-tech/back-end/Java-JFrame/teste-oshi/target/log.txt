@@ -1,0 +1,11 @@
+
+
+--+--INÍCIO LOG
+
+     DATA: 02/07/2020  00:02:29
+     IPV4: 192.168.255.1
+     FABRICANTE & MODELO: manufacturer=Acer, model=Aspire A515-51 (version: V2.02), serial number=unknown
+     MENSAGEM: 
+     org.springframework.jdbc.UncategorizedSQLException: StatementCallback; uncategorized SQLException for SQL [SELECT idUsuario,login,senha  FROM [dbo].[Usuario] where login ='rafael@bandtec.com.br''and senha = '123456']; SQL state [S0001]; error code [102]; Incorrect syntax near '123456'.; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: Incorrect syntax near '123456'.
+
+--+--FIM LOG

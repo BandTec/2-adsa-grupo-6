@@ -86,7 +86,7 @@ public class ConexaoBanco {
 
             jdbcTemplate.update("insert into usuarioComputador(fkAluno, fkMaquina, dataHora) values  (?,?,?)", Session.getIdAluno(), Session.getIdMaquina(), LocalDateTime.now());
             List<Map<String, Object>> usuarioComputador = jdbcTemplate.queryForList("select idUsuarioComputador from UsuarioComputador where fkMaquina = ?", Session.getIdMaquina());
-           
+
             for (Map<String, Object> map : usuarioComputador) {
                 idUsuarioComputador = (Integer) map.get("idUsuarioComputador");
                 Session.idUsuarioComputador = idUsuarioComputador;
@@ -98,14 +98,19 @@ public class ConexaoBanco {
 
     public void incluirProcessos() {
         try {
-            List<OSProcess> procs = os.getProcesses(5, OperatingSystem.ProcessSort.MEMORY); //OperatingSystem.ProcessSort.CPU
-            for (int i = 0; i < procs.size(); i++) {
-                OSProcess p = procs.get(i);
+            ProcessosMemoria processos = new ProcessosMemoria();
+
+            List<ProcessosMemoria.ProcessosFormat> oshi = new ArrayList<>();
+
+            oshi = processos.printProcesses(os, memory);
+
+            for (ProcessosMemoria.ProcessosFormat proc : oshi) {
                 jdbcTemplate.update(
                         "INSERT INTO Processos (nome, consumo, fkUsuarioComputador, dataHora) VALUES (?,?,?, ?)",
-                        p.getName(),
-                       String.format(" %2.0f",(100d * p.getResidentSetSize() / memory.getTotal())), Session.getIdUsuarioComputador(), LocalDateTime.now());
+                        proc.getNome(),
+                        String.format(" %2.0f", proc.getConsumoMemoria()), Session.getIdUsuarioComputador(), LocalDateTime.now());
             }
+
         } catch (Exception e) {
             Log.gravarLog(e);
         }
@@ -131,10 +136,10 @@ public class ConexaoBanco {
         }
     }
 
-        public void incluirRegistros() {
+    public void incluirRegistros() {
         try {
             jdbcTemplate.update("INSERT INTO Registros (cpuPc, memoria, disco, dataHora,fkUsuarioComputador) VALUES (?,?,?,?,?)",
-                    String.format("%.0f",cpu.getPorcentagemCpu()), String.format("%.0f",ram.getPorcentagemAtual()), String.format("%.0f",disco.discoPorcentagem()), LocalDateTime.now(), Session.getIdUsuarioComputador());
+                    String.format("%.0f", cpu.getPorcentagemCpu()), String.format("%.0f", ram.getPorcentagemAtual()), String.format("%.0f", disco.discoPorcentagem()), LocalDateTime.now(), Session.getIdUsuarioComputador());
         } catch (Exception e) {
             Log.gravarLog(e);
         }
