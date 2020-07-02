@@ -6,6 +6,13 @@ export const dashs = styled.div`
   div{
     border-radius: 5px;
   }
+
+  h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7px;
+  }
 `;
 
 

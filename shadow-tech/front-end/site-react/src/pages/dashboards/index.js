@@ -21,6 +21,7 @@ export default function Dashboards() {
       }}>
         <S.dashs>
           <Grafico />
+          <h1>Processos</h1>
           <Processos />
         </S.dashs>
       </div>
