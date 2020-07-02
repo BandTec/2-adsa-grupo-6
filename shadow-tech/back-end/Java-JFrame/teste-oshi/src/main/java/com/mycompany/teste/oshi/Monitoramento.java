@@ -96,8 +96,8 @@ public class Monitoramento extends javax.swing.JFrame {
             lblP4.setText(oshi.get(3).getNome());
             pb4.setValue(oshi.get(3).getConsumoMemoria().intValue());
             
-//            lblP5.setText(oshi.get(4).getNome());
-//            pb5.setValue(oshi.get(4).getConsumoMemoria().intValue());
+            lblP5.setText(oshi.get(4).getNome());
+            pb5.setValue(oshi.get(4).getConsumoMemoria().intValue());
 
             con.incluirRegistros();
 
@@ -239,7 +239,6 @@ public class Monitoramento extends javax.swing.JFrame {
 
         jLabel9 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         pbCpu = new javax.swing.JProgressBar();
         jLabel1 = new javax.swing.JLabel();
@@ -272,6 +271,9 @@ public class Monitoramento extends javax.swing.JFrame {
         jPanel15 = new javax.swing.JPanel();
         lblP4 = new javax.swing.JLabel();
         pb4 = new javax.swing.JProgressBar();
+        jPanel16 = new javax.swing.JPanel();
+        lblP5 = new javax.swing.JLabel();
+        pb5 = new javax.swing.JProgressBar();
         jLabel54 = new javax.swing.JLabel();
         lblDiscoTotal = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -303,34 +305,29 @@ public class Monitoramento extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setFont(new java.awt.Font("Roboto", 0, 36)); // NOI18N
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Monitoramento");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(86, 128, -1, -1));
-
         jLabel2.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("CPU");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 69, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 69, -1));
 
         pbCpu.setForeground(new java.awt.Color(5, 133, 234));
-        getContentPane().add(pbCpu, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 75, 207));
+        getContentPane().add(pbCpu, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 75, 207));
 
         jLabel1.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("RAM");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, 75, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 75, -1));
 
         pbRam.setForeground(new java.awt.Color(5, 133, 234));
-        getContentPane().add(pbRam, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 320, 75, 207));
+        getContentPane().add(pbRam, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 75, 207));
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("DISCO");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 220, 84, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 250, 84, -1));
 
         pbDisco.setForeground(new java.awt.Color(5, 133, 234));
-        getContentPane().add(pbDisco, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 320, 76, 205));
+        getContentPane().add(pbDisco, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, 76, 205));
 
         jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Especificações", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 14))); // NOI18N
         jPanel10.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
@@ -455,7 +452,7 @@ public class Monitoramento extends javax.swing.JFrame {
             .addGroup(jPanel15Layout.createSequentialGroup()
                 .addGap(71, 71, 71)
                 .addComponent(lblP4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
                 .addComponent(pb4, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30))
         );
@@ -469,6 +466,33 @@ public class Monitoramento extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        lblP5.setText("P5");
+
+        pb5.setForeground(new java.awt.Color(54, 65, 86));
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addGap(71, 71, 71)
+                .addComponent(lblP5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(pb5, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30))
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblP5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pb5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
         jPanel11Layout.setHorizontalGroup(
@@ -478,7 +502,8 @@ public class Monitoramento extends javax.swing.JFrame {
                     .addComponent(jPanel12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel11Layout.setVerticalGroup(
@@ -491,7 +516,8 @@ public class Monitoramento extends javax.swing.JFrame {
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         jLabel54.setText("Disco Total:");
@@ -575,7 +601,7 @@ public class Monitoramento extends javax.swing.JFrame {
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
+                .addGap(0, 0, 0)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel47, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -624,53 +650,53 @@ public class Monitoramento extends javax.swing.JFrame {
                         .addComponent(lblMac)))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39))
+                .addGap(12, 12, 12))
         );
 
-        getContentPane().add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 6, 520, 611));
+        getContentPane().add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(378, 6, 520, 650));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/codigo (1).png"))); // NOI18N
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 41, 46));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 41, 46));
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/disco.png"))); // NOI18N
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 260, -1, 40));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 290, -1, 40));
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/server.png"))); // NOI18N
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 41, -1));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 300, 41, -1));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img-logo.png"))); // NOI18N
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 34, -1, -1));
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/logopequeno.png"))); // NOI18N
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 20, -1, -1));
 
         lblPorCpu.setText("0");
-        getContentPane().add(lblPorCpu, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 537, 33, -1));
+        getContentPane().add(lblPorCpu, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 570, 33, -1));
 
         lblTotalCpu.setText("0.0");
         lblTotalCpu.setPreferredSize(new java.awt.Dimension(37, 14));
-        getContentPane().add(lblTotalCpu, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 562, 57, 19));
+        getContentPane().add(lblTotalCpu, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 590, 57, 19));
 
         jLabel6.setText("%");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(92, 537, 24, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 570, 24, -1));
 
         lblPorRam.setText("0");
-        getContentPane().add(lblPorRam, new org.netbeans.lib.awtextra.AbsoluteConstraints(158, 537, 49, -1));
+        getContentPane().add(lblPorRam, new org.netbeans.lib.awtextra.AbsoluteConstraints(169, 570, 30, -1));
 
         jLabel4.setText("%");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(213, 537, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 570, -1, -1));
 
         lblConsumoRam.setText("0.0");
-        getContentPane().add(lblConsumoRam, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 560, -1, -1));
+        getContentPane().add(lblConsumoRam, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 590, 30, -1));
 
         lblTotalRam.setText("/ 0.0 GB");
-        getContentPane().add(lblTotalRam, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 560, -1, -1));
+        getContentPane().add(lblTotalRam, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 590, -1, -1));
 
         lblPorDisco.setText("0");
-        getContentPane().add(lblPorDisco, new org.netbeans.lib.awtextra.AbsoluteConstraints(279, 537, 30, -1));
+        getContentPane().add(lblPorDisco, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 560, 30, -1));
 
         lblTempDisco.setText("0.00");
-        getContentPane().add(lblTempDisco, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 560, 76, 20));
+        getContentPane().add(lblTempDisco, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 590, 76, 20));
 
         lblPorDisco1.setText("%");
-        getContentPane().add(lblPorDisco1, new org.netbeans.lib.awtextra.AbsoluteConstraints(315, 537, 30, -1));
+        getContentPane().add(lblPorDisco1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 560, 30, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -742,7 +768,6 @@ public class Monitoramento extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel10;
@@ -751,6 +776,7 @@ public class Monitoramento extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
     private javax.swing.JLabel lblConsumoRam;
     private javax.swing.JLabel lblDiscoDisponivel;
     private javax.swing.JLabel lblDiscoTotal;
@@ -759,6 +785,7 @@ public class Monitoramento extends javax.swing.JFrame {
     private javax.swing.JLabel lblP2;
     private javax.swing.JLabel lblP3;
     private javax.swing.JLabel lblP4;
+    private javax.swing.JLabel lblP5;
     private javax.swing.JLabel lblPorCpu;
     private javax.swing.JLabel lblPorDisco;
     private javax.swing.JLabel lblPorDisco1;
@@ -774,6 +801,7 @@ public class Monitoramento extends javax.swing.JFrame {
     private javax.swing.JProgressBar pb2;
     private javax.swing.JProgressBar pb3;
     private javax.swing.JProgressBar pb4;
+    private javax.swing.JProgressBar pb5;
     private javax.swing.JProgressBar pbCpu;
     private javax.swing.JProgressBar pbDisco;
     private javax.swing.JProgressBar pbRam;
