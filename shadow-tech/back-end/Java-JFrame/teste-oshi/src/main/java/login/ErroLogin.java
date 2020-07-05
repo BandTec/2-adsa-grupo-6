@@ -1,4 +1,4 @@
-package com.mycompany.teste.oshi;
+package login;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -57,7 +57,6 @@ public class ErroLogin extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mail.png"))); // NOI18N
 
-        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\brain\\OneDrive\\Área de Trabalho\\ShadowTech\\shadow-tech\\back-end\\Java-JFrame\\teste-oshi\\src\\main\\resources\\exit (2).png")); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

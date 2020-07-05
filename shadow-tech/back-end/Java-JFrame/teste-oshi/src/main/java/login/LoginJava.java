@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.teste.oshi;
+package login;
 
+import com.mycompany.tela.monitoramento.Monitoramento;
+import conexa.banco.ConexaoBanco;
 import java.awt.Color;
 import java.awt.HeadlessException;
 import javax.swing.JOptionPane;

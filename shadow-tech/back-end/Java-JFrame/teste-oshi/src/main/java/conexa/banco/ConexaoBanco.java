@@ -1,5 +1,11 @@
-package com.mycompany.teste.oshi;
+package conexa.banco;
 
+import oshi.Cpu;
+import oshi.Disco;
+import log.Log;
+import oshi.ProcessosMemoria;
+import oshi.Ram;
+import login.Session;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import oshi.SystemInfo;

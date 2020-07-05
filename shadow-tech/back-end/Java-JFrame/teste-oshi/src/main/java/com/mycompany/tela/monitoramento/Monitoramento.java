@@ -3,8 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.teste.oshi;
+package com.mycompany.tela.monitoramento;
 
+import oshi.ProcessosMemoria;
+import oshi.Disco;
+import oshi.Cpu;
+import oshi.Ram;
+import conexa.banco.ConexaoBanco;
 import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;

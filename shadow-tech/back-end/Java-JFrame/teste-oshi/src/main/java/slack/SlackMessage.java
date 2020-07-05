@@ -1,5 +1,5 @@
 	
-package com.mycompany.teste.oshi;
+package slack;
   
   import lombok.*;
   

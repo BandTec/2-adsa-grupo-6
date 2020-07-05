@@ -1,4 +1,4 @@
-package com.mycompany.teste.oshi;
+package oshi;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import oshi.software.os.OperatingSystem;
 
 public class ProcessosMemoria {
 
-    protected static class ProcessosFormat {
+    public static class ProcessosFormat {
 
         public String nome;
         public Double consumoMemoria;

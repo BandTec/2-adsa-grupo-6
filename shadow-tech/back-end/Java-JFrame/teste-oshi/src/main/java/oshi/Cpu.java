@@ -3,8 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.teste.oshi;
+package oshi;
 
+import slack.SlackMessage;
+import slack.SlackUtils;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.Comparator;

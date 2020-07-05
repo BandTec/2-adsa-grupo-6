@@ -136,11 +136,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\brain\OneDrive\&#xc1;rea de Trabalho\ShadowTech\shadow-tech\back-end\Java-JFrame\teste-oshi\src\main\resources\exit (2).png"/>
-            </Property>
-          </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
           </Events>
